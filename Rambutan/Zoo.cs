@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Rambutan
 {
-    class Program
+    class Zoo
     {
         static void Main()
         {
