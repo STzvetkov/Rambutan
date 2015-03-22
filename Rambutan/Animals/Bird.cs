@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Rambutan
+namespace Rambutan.Animals
 {
-    class Bird
+    public class Bird:Animal
     {
     }
 }
