@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Rambutan.Animals
 {
-    public class Carnivorous:Mammal
+    public class Carnivore : Mammal
     {
     }
 }

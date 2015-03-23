@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Rambutan.Administration
 {
-    public class Plan
+    public class Schedule
     {
     }
 }

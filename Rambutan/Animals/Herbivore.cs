@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Rambutan.Administration
+namespace Rambutan.Animals
 {
-    public class VetExaminationsPlan:Plan
+    public class Herbivore : Mammal
     {
     }
 }

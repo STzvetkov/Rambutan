@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Rambutan.Animals
+namespace Rambutan.Administration
 {
-    public class Herbivorous:Mammal
+    public class FeedingSchedule : Schedule
     {
     }
 }
