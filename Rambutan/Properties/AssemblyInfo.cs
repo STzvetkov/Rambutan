@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Rambutan")]
+[assembly: AssemblyTitle("ExampleRambutan")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Rambutan")]
+[assembly: AssemblyProduct("ExampleRambutan")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("bdbb9540-ca30-4da0-a27e-5f30014c8231")]
+[assembly: Guid("ed14ba0a-5e9e-4f1b-a15b-820fd9d110c0")]
 
 // Version information for an assembly consists of the following four values:
 //

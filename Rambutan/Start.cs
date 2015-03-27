@@ -1,12 +1,15 @@
-﻿namespace Rambutan.Animals
+﻿namespace Zoo
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
-
-    public class Carnivore : Mammal
+    
+    class Start
     {
+        static void Main()
+        {
+        }
     }
 }
