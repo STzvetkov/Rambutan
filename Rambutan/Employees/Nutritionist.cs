@@ -18,13 +18,19 @@
 
         // TODO : Implement more constructors.
 
+
+        protected override string GetSpecifics()
+        {
+            return string.Format("Monthly salary: {0:C} \nAnimals fed daily: {1}", this.monthlySalary, this.animalsFedDaily);
+        }
+        
         public double MonthlySalary
         {
             get { return this.monthlySalary; }
             set { this.monthlySalary = value; } // TODO : Enter checks.
         }
 
-        public int AnimalsTreatedDaily
+        public int AnimalsFedDaily
         {
             get { return this.animalsFedDaily; }
             set { this.animalsFedDaily = value; } // TODO : Enter checks. Should be private.

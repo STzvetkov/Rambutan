@@ -18,6 +18,11 @@
 
         // TODO : Implement more constructors.
 
+        protected override string GetSpecifics()
+        {
+            return string.Format("Hourly rate: {0:C} \nHours worked: {1}", this.hourlyRate, this.hoursWorked);
+        }
+
         public double HourlyRate
         {
             get { return this.hourlyRate; }

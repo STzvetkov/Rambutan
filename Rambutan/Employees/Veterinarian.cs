@@ -18,6 +18,11 @@
 
         // TODO : Implement more constructors.
 
+        protected override string GetSpecifics()
+        {
+            return string.Format("Monthly salary: {0:C} \nAnimals treated daily: {1}", this.monthlySalary,this.animalsTreatedDaily);
+        }
+
         public double MonthlySalary
         {
             get { return this.monthlySalary; }
