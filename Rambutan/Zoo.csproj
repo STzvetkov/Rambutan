@@ -48,7 +48,10 @@
     <Compile Include="Animals\Species\GoldFish.cs" />
     <Compile Include="Animals\Species\Lion.cs" />
     <Compile Include="Animals\Species\Monkey.cs" />
+    <Compile Include="Animals\Species\Ostrich.cs" />
     <Compile Include="Animals\Species\Python.cs" />
+    <Compile Include="Animals\Type\Flightless.cs" />
+    <Compile Include="Animals\Type\Flying.cs" />
     <Compile Include="BudgetInfo\Expense.cs" />
     <Compile Include="BudgetInfo\Income.cs" />
     <Compile Include="Employees\Director.cs" />

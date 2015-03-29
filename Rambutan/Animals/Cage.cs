@@ -2,6 +2,8 @@
 {
     using System;
 
+
+    //TODO: enumeration with habitat type (coop, pool, etc.)
     public class Cage // They are not exactly consumables but will be bought or repaired frequently.
     {
         // TODO : Enter needed fields and methods.
@@ -10,6 +12,7 @@
         private double depth;
         private decimal price;
         private bool isRepaired;
+        //TODO: add fieal with habitat type
 
         public Cage(double width, double height, double depth)
         {

@@ -5,7 +5,7 @@
     using Zoo.Animals.Type;
     using Zoo.Interfaces;
 
-    public class Eagle : Bird, ICarnivore, IFeedable
+    public class Eagle : Flying, ICarnivore, IFeedable
     {
         // TODO : Implement needed methods and fields.
     }
