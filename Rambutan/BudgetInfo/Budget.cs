@@ -1,30 +1,77 @@
-﻿namespace Zoo.BudgetInfo
+namespace Zoo.BudgetInfo
 {
     using System;
+    using System.Collections.Generic;
 
     public class Budget
     {
-        // TODO : Add methods to register Income and Expenses and a fields to store the result. Add field trade balance to contain the difference of Income and Expenses.
-        public Income Income
+        
+        private static Budget instance;
+        private double netBudget;
+        private Dictionary<string, double> expenseDictionary =
+        new Dictionary<string, double>();
+        private Dictionary<string, double> incomeDictionary =
+        new Dictionary<string, double>();
+        
+
+
+        
+        protected Budget()
+        {}
+
+        public void AddIncome(string incomeName, double incomeSum)
         {
-            get
+            try
             {
-                throw new System.NotImplementedException();
+                expenseDictionary.Add(incomeName, incomeSum);
             }
-            set
+            catch (Exception)
             {
+                
+                throw new ArgumentException("Incorect input! First write a string for the name of the income, then a double for the sum!");
             }
+            
         }
 
-        public Expense Expense
+        public void AddExpense(string expenseName, double expenseSum)
         {
-            get
+            try
             {
-                throw new System.NotImplementedException();
+                expenseDictionary.Add(expenseName, expenseSum);
             }
-            set
+            catch (Exception)
             {
+
+                throw new ArgumentException("Incorect input! First write a string for the name of the expense, then a double for the sum!");
             }
+
+        }
+
+        public double NetBudget()
+        {
+            netBudget = 0;
+            foreach (var item in expenseDictionary)
+            {
+                netBudget -= item.Value;
+            }
+
+            foreach (var item in incomeDictionary)
+            {
+                netBudget += item.Value;
+            }
+
+           
+            return netBudget;
+        }
+
+        public static Budget Instance()
+        {
+            if (instance == null)
+            {
+                instance = new Budget();
+            }
+            return instance;
         }
     }
 }
+
