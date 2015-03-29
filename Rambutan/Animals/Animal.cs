@@ -30,13 +30,13 @@
 
         private string healthStatus;
 
-        private DateTime dateOfLastExamination
+        private DateTime dateOfLastExamination;
 
         private Veterinarian examinedBy;
 
         // constructors
 
-        public Animal(string animalID)
+        public Animal(long animalID)
         {
             this.AnimalID = animalID;
         }
@@ -45,7 +45,7 @@
 
         //properties => TODO : Enter checks.
 
-        public int animalID
+        public long animalID
         {
             get
             {
@@ -60,6 +60,8 @@
                 this.animalID = value; 
             }
         }
+
+
 
         // TODO: implement more properties after corroboration of the fields
 
@@ -84,20 +86,20 @@ HealthStatus: {11}
 DateOfLastExamination: {12}
 ExaminedBy: {13}
 {14}",            
-            this.animalID;
-            this.type;
-            this.gender;
-            this.dietType;
-            this.height;
-            this.weight;
-            this.color;
-            this.description;        
-            this.arrivalDate;
-            this.cage;
-            this.habitat;
-            this.healthStatus;
-            this.dateOfLastExamination
-            this.examinedBy;            
+            this.animalID,
+            this.type,
+            this.gender,
+            this.dietType,
+            this.height,
+            this.weight,
+            this.color,
+            this.description,        
+            this.arrivalDate,
+            this.cage,
+            this.habitat,
+            this.healthStatus,
+            this.dateOfLastExamination,
+            this.examinedBy,            
             new string('-', 40)
            );
         }
