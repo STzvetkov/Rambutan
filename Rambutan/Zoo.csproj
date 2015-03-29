@@ -69,6 +69,7 @@
     <Compile Include="Schedules\WorkingSchedule.cs" />
     <Compile Include="Start.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ZooManagement.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
