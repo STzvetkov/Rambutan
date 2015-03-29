@@ -1,11 +1,12 @@
-﻿using System;
-
-using Zoo.Animals.Type;
-using Zoo.Interfaces;
-
-namespace Zoo.Animals.Species
+﻿namespace Zoo.Animals.Species
 {
-    public class Ostrich:Flightless
+    using System;
+    using Zoo.Animals.Type;
+    using Zoo.Interfaces;
+
+    public class Ostrich : Flightless, IOmnivore, IFeedable
     {
+        // TODO : Implement needed methods and fields.
+        // food: plants, insects, lizards
     }
 }

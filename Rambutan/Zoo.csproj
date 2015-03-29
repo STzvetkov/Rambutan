@@ -47,9 +47,11 @@
     <Compile Include="Animals\Species\ClownFish.cs" />
     <Compile Include="Animals\Species\Dolphin.cs" />
     <Compile Include="Animals\Species\Eagle.cs" />
+    <Compile Include="Animals\Species\Hoodie.cs" />
     <Compile Include="Animals\Species\Lion.cs" />
     <Compile Include="Animals\Species\Monkey.cs" />
     <Compile Include="Animals\Species\Ostrich.cs" />
+    <Compile Include="Animals\Species\Penguin.cs" />
     <Compile Include="Animals\Species\Python.cs" />
     <Compile Include="Animals\Type\Flightless.cs" />
     <Compile Include="Animals\Type\Flying.cs" />
