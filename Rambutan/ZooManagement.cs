@@ -17,12 +17,14 @@ namespace Zoo
         }
 
         // Stores all employees
-        public List<Employee> StaffDB { get; private set; }
-        
+        public List<Employee> StaffDB { get; private set; }       
 
 
         // Stores all animals in the zoo
         public List<Animal> AnimalsDB { get; private set; }
+
+        // Stores all cages
+        public List<Cage> CagesDB { get; private set; }
         
         public void HireEmployee(Employee employee)
         {

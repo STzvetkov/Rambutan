@@ -3,6 +3,10 @@
     using System;
     using Zoo.Employees;
 
+    public enum AnimalType
+    {
+        // TODO: AnymalType enumeration with all specific lowest level names like "Lion", "Python", etc.
+    }
     public abstract class Animal
     {
         // abstract information/methods that all animals can have.

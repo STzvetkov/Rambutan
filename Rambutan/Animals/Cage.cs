@@ -2,6 +2,7 @@
 {
     using System;
 
+    public enum CageType { Pool, Aquarium, Steppe}
 
     //TODO: enumeration with habitat type (coop, pool, etc.)
     public class Cage // They are not exactly consumables but will be bought or repaired frequently.
