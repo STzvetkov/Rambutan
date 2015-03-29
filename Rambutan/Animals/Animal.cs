@@ -77,10 +77,7 @@
             }
             set
             {
-                if (AnimalType.IsNullOrEmpty(value))
-                {
-                    throw new ArgumentException("Animal type can not be null or empty!");
-                }
+                // TODO: Enter checks
                 this.type = value;
             }
         }
