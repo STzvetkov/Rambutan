@@ -1,6 +1,7 @@
 ﻿namespace Zoo.Animals
 {
     using System;
+    using Zoo.Employees;
 
     public abstract class Animal
     {
@@ -8,9 +9,9 @@
 
         private long animalID;
 
-        private AnymalType type; // AnymalType is enumeration with all specific lowest level names like "Lion", "Python", etc.
+        private AnymalType type; // TODO: AnymalType enumeration with all specific lowest level names like "Lion", "Python", etc.
         
-        private Gender gender;  // Gender is enumeration
+        private Gender gender;  // TODO: Gender enumeration
 
         private string dietType;
 
@@ -24,7 +25,7 @@
         
         private DateTime arrivalDate;
 
-        private Cade cage;
+        private Cage cage;  // TODO: implement Cage
 
         private HabitatType habitat;        
 
