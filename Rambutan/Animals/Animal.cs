@@ -11,7 +11,7 @@
 
         private AnimalType type; // TODO: AnymalType enumeration with all specific lowest level names like "Lion", "Python", etc.
         
-        private Gender gender;  // TODO: Gender enumeration
+        private Gender gender;  // Gender enumeration
 
         private int age;
 
