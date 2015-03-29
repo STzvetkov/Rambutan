@@ -29,7 +29,7 @@ namespace Zoo
         public void HireEmployee(Employee employee)
         {
             this.StaffDB.Add(employee);
-            //Budget.Instance().AddExpense(employee.Position, employee.);
+           
         }
 
         public void DischargeEmployee(long employeeID)

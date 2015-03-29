@@ -39,6 +39,18 @@
 
         // TODO : Implement more constructors.
 
+        public string City1
+        {
+            get
+            {
+                return this.city;
+            }
+            set
+            {
+                this.city = value;
+            }
+        }
+
         public override string ToString()
         {
             return string.Format(

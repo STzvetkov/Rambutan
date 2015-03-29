@@ -67,6 +67,7 @@
     <Compile Include="Interfaces\IFeedable.cs" />
     <Compile Include="Animals\Type\Aquatic.cs" />
     <Compile Include="Animals\Type\Terrestrial.cs" />
+    <Compile Include="Interfaces\IPayable.cs" />
     <Compile Include="Schedules\FeedingSchedule.cs" />
     <Compile Include="Schedules\Schedule.cs" />
     <Compile Include="Schedules\WorkingSchedule.cs" />

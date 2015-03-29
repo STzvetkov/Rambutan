@@ -2,8 +2,23 @@
 {
     using System;
 
-    public class Food
+    public struct Food
     {
-        // TODO : Enter needed fields and methods.
+        // TODO : Enter needed fields and methods. No properties!
+        int quantity;
+
+        public Food(int inputQuantity)
+        {
+            this.quantity = inputQuantity;
+        }
+
+        public void ConsumeAmount(int amount)
+        {
+            this.quantity = this.quantity - amount;
+        }
+        public  int GetQuantity ()
+        {
+            return this.quantity;
+        }
     }
 }

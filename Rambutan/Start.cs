@@ -4,6 +4,7 @@
     using System.Collections.Generic;
     using Employees;
     using Zoo.Animals;
+    using Zoo.Animals.Consumables;
 
     class Start
     {
@@ -22,6 +23,10 @@
             Console.WriteLine(vet);
             // </test>
 
+            Food newF = new Food(1000);
+
+            newF.ConsumeAmount(500);
+            Console.WriteLine(newF.GetQuantity());
         }
     }
 }
