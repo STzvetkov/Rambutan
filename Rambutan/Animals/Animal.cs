@@ -13,6 +13,8 @@
         
         private Gender gender;  // TODO: Gender enumeration
 
+        private int age;
+
         private string dietType;
 
         private double height;
@@ -54,9 +56,9 @@
             }
             set
             {
-                if (string.IsNullOrEmpty(value))
+                if (long.IsNullOrEmpty(value))
                 {
-                    throw new ArgumentException("can not be null or empty!");
+                    throw new ArgumentException("AnimalID can not be null or empty!");
                 }                
                 this.animalID = value; 
             }
@@ -70,9 +72,9 @@
             }
             set
             {
-                if (string.IsNullOrEmpty(value))
+                if (AnymalType.IsNullOrEmpty(value))
                 {
-                    throw new ArgumentException("can not be null or empty!");
+                    throw new ArgumentException("Animal type can not be null or empty!");
                 }
                 this.type = value;
             }
@@ -82,6 +84,7 @@
 
         // methods 
 
+        // TODO: modify ToString()
         public override string ToString()
         {
             return string.Format(
