@@ -3,10 +3,7 @@
     using System;
     using System.Collections.Generic;
 
-    public enum HabitatType
-    {
-        Ground, Air, Pool
-    }
+    public enum HabitatType { Pool, Aquarium, Steppe }
 
     public class Cage
     {
