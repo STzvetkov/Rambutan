@@ -27,7 +27,7 @@
 
         private Cage cage;  // TODO: implement Cage
 
-        private HabitatType habitat;        
+        private HabitatType habitat;  // TODO: HabitatType enumeration      
 
         private string healthStatus;
 
@@ -62,7 +62,21 @@
             }
         }
 
-
+        public AnymalType Type
+        {
+            get
+            {
+                return this.type;
+            }
+            set
+            {
+                if (string.IsNullOrEmpty(value))
+                {
+                    throw new ArgumentException("can not be null or empty!");
+                }
+                this.type = value;
+            }
+        }
 
         // TODO: implement more properties after corroboration of the fields
 
