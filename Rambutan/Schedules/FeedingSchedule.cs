@@ -5,5 +5,7 @@
     public class FeedingSchedule : Schedule
     {
         // TODO : Throw exception " Not implemented yet. "
+
+        // feeded once or twice a day
     }
 }
