@@ -57,7 +57,7 @@
   <Class Name="Zoo.Animals.Type.Aquatic" Collapsed="true">
     <Position X="3.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Animals\Type\Aquatic.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -162,9 +162,10 @@
   <Class Name="Zoo.Animals.Animal" Collapsed="true">
     <Position X="9" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAgABAAAQEIAQAgAAAAABBiECgAAAAAAEAAIA=</HashCode>
+      <HashCode>AAAAAAAAgABAQAQEIAQAgAAAAABBiECgAQAAAAAAAIA=</HashCode>
       <FileName>Animals\Animal.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="Zoo.Animals.Type.Flightless" Collapsed="true">
     <Position X="8" Y="3.25" Width="1.5" />
@@ -190,7 +191,7 @@
   <Class Name="Zoo.ZooManagement" Collapsed="true">
     <Position X="9" Y="10" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAABAAAAAAAAAAAAAgAAAAAAAAQBAAAAIAAACAAAAAA=</HashCode>
+      <HashCode>AAABAAAAAAAAAAAAAgAAAAAAAAQBAAAAIAAACAAQAAA=</HashCode>
       <FileName>ZooManagement.cs</FileName>
     </TypeIdentifier>
   </Class>
