@@ -46,7 +46,7 @@
 
         //properties => TODO : Enter checks.
 
-        public long animalID
+        public long AnimalID
         {
             get
             {
