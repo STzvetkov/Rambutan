@@ -83,7 +83,7 @@
     <Compile Include="ZooManagement.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ExampleDiagram.cd" />
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

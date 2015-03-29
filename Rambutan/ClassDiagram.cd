@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Zoo.Animals.Species.Aquatic.ClownFish" Collapsed="true">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Animals\Species\Aquatic\ClownFish.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Zoo.Animals.Species.Aquatic.Dolphin" Collapsed="true">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Animals\Species\Aquatic\Dolphin.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Zoo.Animals.Species.Bird.Eagle" Collapsed="true">
+    <Position X="8.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Animals\Species\Bird\Eagle.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Zoo.Animals.Species.Bird.Hoodie" Collapsed="true">
+    <Position X="10.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Animals\Species\Bird\Hoodie.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Zoo.Animals.Species.Bird.Ostrich" Collapsed="true">
+    <Position X="4.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Animals\Species\Bird\Ostrich.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Zoo.Animals.Species.Bird.Penguin" Collapsed="true">
+    <Position X="6.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Animals\Species\Bird\Penguin.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Zoo.Animals.Species.Terrestrial.Bear" Collapsed="true">
+    <Position X="12.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Animals\Species\Terrestrial\Bear.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Zoo.Animals.Species.Terrestrial.Deer" Collapsed="true">
+    <Position X="14.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Animals\Species\Terrestrial\Deer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Zoo.Animals.Species.Terrestrial.Fox" Collapsed="true">
+    <Position X="16.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Animals\Species\Terrestrial\Fox.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Zoo.Animals.Species.Terrestrial.Lion" Collapsed="true">
+    <Position X="19" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Animals\Species\Terrestrial\Lion.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Zoo.Animals.Species.Terrestrial.Monkey" Collapsed="true">
+    <Position X="21.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Animals\Species\Terrestrial\Monkey.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Zoo.Animals.Species.Terrestrial.Python" Collapsed="true">
+    <Position X="23.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Animals\Species\Terrestrial\Python.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Zoo.Animals.Species.Terrestrial.Rabbit" Collapsed="true">
+    <Position X="25.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Animals\Species\Terrestrial\Rabbit.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Zoo.Animals.Type.Aquatic" Collapsed="true">
+    <Position X="1.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Animals\Type\Aquatic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zoo.Animals.Type.Bird" Collapsed="true">
+    <Position X="7" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Animals\Type\Bird.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zoo.Animals.Type.Flightless" Collapsed="true">
+    <Position X="5.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Animals\Type\Flightless.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zoo.Animals.Type.Flying" Collapsed="true">
+    <Position X="9.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Animals\Type\Flying.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zoo.Animals.Type.Terrestrial" Collapsed="true">
+    <Position X="17.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Animals\Type\Terrestrial.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zoo.Animals.Animal" Collapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgABAQAQEIAQAgAAAAABBiECgAQAAAAAAAIA=</HashCode>
+      <FileName>Animals\Animal.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Zoo.Animals.Cage" Collapsed="true">
+    <Position X="19.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAABQBAAAQAQAAEAEAAACBBAAAgAYEEIAABAAA=</HashCode>
+      <FileName>Animals\Cage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zoo.BudgetInfo.Budget" Collapsed="true">
+    <Position X="7.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAABAAAAAAAABAAAAAxAAAAAAAAAA=</HashCode>
+      <FileName>BudgetInfo\Budget.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zoo.BudgetInfo.Expense" Collapsed="true">
+    <Position X="9.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BudgetInfo\Expense.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zoo.BudgetInfo.Income" Collapsed="true">
+    <Position X="11.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BudgetInfo\Income.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zoo.Employees.Director" Collapsed="true">
+    <Position X="12.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAKAAAACgAAAAAAAAAAAAAAAAAAgAAAIAAAAAA=</HashCode>
+      <FileName>Employees\Director.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zoo.Employees.Employee" Collapsed="true">
+    <Position X="6.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EBAAIEAQAQBAAACsCAAAqAgAAAAQAgACAAIACgAAAAg=</HashCode>
+      <FileName>Employees\Employee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zoo.Employees.Nutritionist" Collapsed="true">
+    <Position X="3" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAIAEAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAAA=</HashCode>
+      <FileName>Employees\Nutritionist.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zoo.Employees.Veterinarian" Collapsed="true">
+    <Position X="5.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAIAEAAAAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Employees\Veterinarian.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zoo.Employees.ZooKeeper" Collapsed="true">
+    <Position X="7.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAIAAAACAAAAAAAAAEAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Employees\ZooKeeper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zoo.Schedules.FeedingSchedule" Collapsed="true">
+    <Position X="2.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Schedules\FeedingSchedule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zoo.Schedules.Schedule" Collapsed="true">
+    <Position X="4" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Schedules\Schedule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zoo.Schedules.WorkingSchedule" Collapsed="true">
+    <Position X="5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Schedules\WorkingSchedule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zoo.Start" Collapsed="true">
+    <Position X="21.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Start.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zoo.ZooManagement" Collapsed="true">
+    <Position X="23.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAgAAAAAAAAQBAAAAIAAACAAQAAA=</HashCode>
+      <FileName>ZooManagement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="Zoo.Animals.Consumables.Food" Collapsed="true">
+    <Position X="14.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAABAAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Animals\Consumables\Food.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="Zoo.Interfaces.ICarnivore" Collapsed="true">
+    <Position X="0.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\ICarnivore.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Zoo.Interfaces.IFeedable" Collapsed="true">
+    <Position X="0.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IFeedable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Zoo.Interfaces.IHerbivore" Collapsed="true">
+    <Position X="0.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IHerbivore.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Zoo.Interfaces.IOmnivore" Collapsed="true">
+    <Position X="0.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IOmnivore.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Zoo.Interfaces.IPayable" Collapsed="true">
+    <Position X="0.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAAAQAAAAAABAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Interfaces\IPayable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Zoo.Animals.AnimalType" Collapsed="true">
+    <Position X="17" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Animals\Animal.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Zoo.Animals.HabitatType" Collapsed="true">
+    <Position X="17" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACACAAAAAAAAAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Animals\Cage.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Zoo.Employees.Gender" Collapsed="true">
+    <Position X="17" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Employees\Employee.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Zoo.Interfaces.PaymentTypes" Collapsed="true">
+    <Position X="17" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Interfaces\IPayable.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
