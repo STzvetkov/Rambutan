@@ -4,7 +4,7 @@
 
     public class Veterinarian : Employee
     {
-        private double monthlySalary;
+        private decimal monthlySalary;
         private int animalsTreatedDaily;
 
         public Veterinarian()
@@ -23,7 +23,7 @@
             return string.Format("Monthly salary: {0:C} \nAnimals treated daily: {1}", this.monthlySalary,this.animalsTreatedDaily);
         }
 
-        public double MonthlySalary
+        public decimal MonthlySalary
         {
             get { return this.monthlySalary; }
             set { this.monthlySalary = value; } // TODO : Enter checks.
