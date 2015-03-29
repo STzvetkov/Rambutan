@@ -1,6 +1,7 @@
 ﻿namespace Zoo.Animals.Type
 {
     using System;
+    
 
     public abstract class Terrestrial : Animal
     {

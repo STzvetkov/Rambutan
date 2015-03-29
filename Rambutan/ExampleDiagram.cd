@@ -1,16 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Zoo.Animals.Animal" Collapsed="true">
-    <Position X="9" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Animals\Animal.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="Zoo.Animals.Cage" Collapsed="true">
     <Position X="17.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAABAAAABQAAAAQAQAAEAEAAACAAAAAgAAEAIAABAAA=</HashCode>
       <FileName>Animals\Cage.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -99,7 +92,7 @@
   <Class Name="Zoo.Employees.Director" Collapsed="true">
     <Position X="7.25" Y="6.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAKAAAACgAAAAAAAAAAAAAAAAAAgAAAIAAAAAA=</HashCode>
       <FileName>Employees\Director.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -164,6 +157,13 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>BudgetInfo\Income.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zoo.Animals.Animal" Collapsed="true">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgABAAAQEIAQAgAAAAAABiECgAAAAAAEAAIA=</HashCode>
+      <FileName>Animals\Animal.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Interface Name="Zoo.Interfaces.ICarnivore" Collapsed="true">

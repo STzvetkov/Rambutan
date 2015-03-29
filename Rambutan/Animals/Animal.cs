@@ -1,14 +1,21 @@
-﻿namespace Zoo.Animals
-{
-    using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Zoo.Animals;
+using Zoo.Employees;
+using Zoo.BudgetInfo;
+using Zoo.Schedules;
 
+namespace Zoo.Animals
+{
     public abstract class Animal
     {
         // abstract information/methods that all animals can have.
-
         private long animalID;
 
-        private AnymalType type; // AnymalType is enumeration with all specific lowest level names like "Lion", "Python", etc.
+        //private AnymalType type; // AnymalType is enumeration with all specific lowest level names like "Lion", "Python", etc.
         
         private Gender gender;  // Gender is enumeration
 
@@ -24,19 +31,23 @@
         
         private DateTime arrivalDate;
 
-        private Cade cage;
+        private Cage cage;
 
-        private HabitatType habitat;        
+        //private HabitatType habitat;        
 
         private string healthStatus;
 
-        private DateTime dateOfLastExamination
+        private DateTime dateOfLastExamination;
 
         private Veterinarian examinedBy;
 
         // constructors
 
-        public Animal(string animalID)
+        public Animal() : this(0)
+        {
+        }
+
+        public Animal(long animalID)
         {
             this.AnimalID = animalID;
         }
@@ -45,7 +56,7 @@
 
         //properties => TODO : Enter checks.
 
-        public int animalID
+        public long AnimalID
         {
             get
             {
@@ -53,10 +64,10 @@
             }
             set
             {
-                if (string.IsNullOrEmpty(value))
+                if (string.IsNullOrEmpty(value.ToString()))
                 {
                     throw new ArgumentException("can not be null or empty!");
-                }                
+                }
                 this.animalID = value; 
             }
         }
@@ -68,8 +79,7 @@
         public override string ToString()
         {
             return string.Format(
-
-           @"AnimalID : {0} 
+                @"AnimalID : {0} 
 AnimalType: {1}
 Gender: {2}
 DietType: {3}
@@ -83,25 +93,23 @@ Habitat: {10}
 HealthStatus: {11}
 DateOfLastExamination: {12}
 ExaminedBy: {13}
-{14}",            
-            this.animalID;
-            this.type;
-            this.gender;
-            this.dietType;
-            this.height;
-            this.weight;
-            this.color;
-            this.description;        
-            this.arrivalDate;
-            this.cage;
-            this.habitat;
-            this.healthStatus;
-            this.dateOfLastExamination
-            this.examinedBy;            
-            new string('-', 40)
-           );
+{14}",
+                this.animalID,
+                //this.type,
+                this.gender,
+                this.dietType,
+                this.height,
+                this.weight,
+                this.color,
+                this.description,
+                this.arrivalDate,
+                this.cage,
+                //this.habitat,
+                this.healthStatus,
+                this.dateOfLastExamination,
+                this.examinedBy,
+                new string('-', 40));
         }
-
         //TODO: Implement more methods
     }
 }
