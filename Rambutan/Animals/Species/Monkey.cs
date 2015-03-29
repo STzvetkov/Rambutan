@@ -1,7 +1,6 @@
 ﻿namespace Zoo.Animals.Species
 {
     using System;
-
     using Zoo.Animals.Type;
     using Zoo.Interfaces;
 
