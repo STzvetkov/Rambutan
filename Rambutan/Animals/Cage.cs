@@ -1,27 +1,58 @@
 ﻿namespace Zoo.Animals
 {
     using System;
+    using System.Collections.Generic;
 
-    public enum CageType { Pool, Aquarium, Steppe}
+    public enum HabitatType { Pool, Aquarium, Steppe }
 
-    //TODO: enumeration with habitat type (coop, pool, etc.)
-    public class Cage // They are not exactly consumables but will be bought or repaired frequently.
+    public class Cage
     {
-        // TODO : Enter needed fields and methods.
         private double width;
         private double height;
         private double depth;
         private decimal price;
         private bool isRepaired;
-        //TODO: add fieal with habitat type
+        private HabitatType type;
+        private List<Animal> animalsInCage;
 
-        public Cage(double width, double height, double depth)
+        public Cage(double width, double height, double depth, HabitatType type)
         {
             this.Width = width;
             this.Height = height;
             this.Depth = depth;
             this.Price = (decimal)(width * depth);
             this.IsRepaired = true;
+            this.Type = type;
+            this.AnimalsInCage = new List<Animal>();
+        }
+
+        public List<Animal> AnimalsInCage
+        {
+            get
+            {
+                return this.animalsInCage;
+            }
+            private set
+            {
+                this.animalsInCage = value;
+            }
+        }
+
+        public HabitatType Type
+        {
+            get
+            {
+                return this.type;
+            }
+            private set
+            {
+                if (value == null)
+                {
+                    throw new ArgumentNullException("The type cannot be nullable!");
+                }
+
+                this.type = value;
+            }
         }
 
         public bool IsRepaired
@@ -30,7 +61,7 @@
             {
                 return this.isRepaired;
             }
-            set
+            private set
             {
                 this.isRepaired = value;
             }
@@ -101,7 +132,6 @@
 
         public void Break()
         {
-            // TODO : if something happens : 
             this.IsRepaired = false;
         }
 
@@ -109,7 +139,24 @@
         {
             this.IsRepaired = true;
         }
+        
+        public void AddAnimal(Animal animal)
+        {
+            if (this.IsRepaired = true)
+            {
+                this.AnimalsInCage.Add(animal);
 
-        // TODO : Depending on the dimensions of the cage : what animal will be in 
+                if (this.AnimalsInCage.Count > 5) // 5 is the maximum amount of animals in a singe cage
+                {
+                    Break();
+                    Console.WriteLine("The cage is now broken !");
+                }
+            }
+        }
+
+        public void RemoveAnimal(Animal animal)
+        {
+            this.AnimalsInCage.Remove(animal);
+        }
     }
 }

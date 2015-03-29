@@ -1,12 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Zoo.Animals.Cage" Collapsed="true">
-    <Position X="16.75" Y="2.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAABAAAABQAAAAQAQAAEAEAAACAAAAAgAAEAIAABAAA=</HashCode>
-      <FileName>Animals\Cage.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="Zoo.Animals.Consumables.Food" Collapsed="true">
     <Position X="16.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
@@ -193,6 +186,13 @@
     <TypeIdentifier>
       <HashCode>AAABAAAAAAAAAAAAAgAAAAAAAAQBAAAAIAAACAAQAAA=</HashCode>
       <FileName>ZooManagement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zoo.Animals.Cage" Collapsed="true">
+    <Position X="16.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAABQBAAAQAQAAEAEAAACBBAAAgAYEEIAABAAA=</HashCode>
+      <FileName>Animals\Cage.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Interface Name="Zoo.Interfaces.ICarnivore" Collapsed="true">
