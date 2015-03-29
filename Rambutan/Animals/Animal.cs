@@ -9,7 +9,7 @@
 
         private long animalID;
 
-        private AnymalType type; // TODO: AnymalType enumeration with all specific lowest level names like "Lion", "Python", etc.
+        private AnimalType type; // TODO: AnymalType enumeration with all specific lowest level names like "Lion", "Python", etc.
         
         private Gender gender;  // TODO: Gender enumeration
 
@@ -29,7 +29,7 @@
 
         private Cage cage;  // TODO: implement Cage
 
-        private HabitatType habitat;  // TODO: HabitatType enumeration      
+        //private HabitatType habitat;  // TODO: HabitatType enumeration      
 
         private string healthStatus;
 
@@ -38,6 +38,11 @@
         private Veterinarian examinedBy;
 
         // constructors
+
+        public Animal()
+        {
+            
+        }
 
         public Animal(long animalID)
         {
@@ -56,15 +61,15 @@
             }
             set
             {
-                if (long.IsNullOrEmpty(value))
+                if (value == 0)
                 {
-                    throw new ArgumentException("AnimalID can not be null or empty!");
+                    throw new ArgumentException("AnimalID can not be null!");
                 }                
                 this.animalID = value; 
             }
         }
 
-        public AnymalType Type
+        public AnimalType Type
         {
             get
             {
@@ -72,7 +77,7 @@
             }
             set
             {
-                if (AnymalType.IsNullOrEmpty(value))
+                if (AnimalType.IsNullOrEmpty(value))
                 {
                     throw new ArgumentException("Animal type can not be null or empty!");
                 }
@@ -114,7 +119,7 @@ ExaminedBy: {13}
             this.description,        
             this.arrivalDate,
             this.cage,
-            this.habitat,
+            //this.habitat,
             this.healthStatus,
             this.dateOfLastExamination,
             this.examinedBy,            
