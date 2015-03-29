@@ -1,4 +1,4 @@
-﻿namespace Zoo.Animals
+﻿namespace Zoo.Interfaces
 {
     using System;
 

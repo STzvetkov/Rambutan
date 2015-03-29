@@ -85,13 +85,9 @@
   <Class Name="Zoo.BudgetInfo.Budget" Collapsed="true">
     <Position X="17.5" Y="5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAQAAAAAAAAAABAAAAAAAABAAAAAxAAAAAAAAAA=</HashCode>
       <FileName>BudgetInfo\Budget.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Income" />
-      <Property Name="Expense" />
-    </ShowAsAssociation>
   </Class>
   <Class Name="Zoo.Start" Collapsed="true">
     <Position X="10.5" Y="8.5" Width="1.5" />
@@ -110,28 +106,28 @@
   <Class Name="Zoo.Employees.Employee" Collapsed="true">
     <Position X="6" Y="5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>EBAAIEAQAABAAACsCAAAqAgAAAAQAgACAAIACgAAAAg=</HashCode>
       <FileName>Employees\Employee.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Zoo.Employees.Nutritionist" Collapsed="true">
     <Position X="9.5" Y="6.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AQAAIAEAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAAA=</HashCode>
       <FileName>Employees\Nutritionist.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Zoo.Employees.Veterinarian" Collapsed="true">
     <Position X="2.75" Y="6.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AQAAIAEAAAAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Employees\Veterinarian.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Zoo.Employees.ZooKeeper" Collapsed="true">
     <Position X="5" Y="6.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAIAAIAAAACAAAAAAAAAEAAAABAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Employees\ZooKeeper.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -170,28 +166,28 @@
       <FileName>BudgetInfo\Income.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Interface Name="Zoo.Animals.ICarnivore" Collapsed="true">
+  <Interface Name="Zoo.Interfaces.ICarnivore" Collapsed="true">
     <Position X="1.5" Y="1.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\ICarnivore.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="Zoo.Animals.IFeedable" Collapsed="true">
+  <Interface Name="Zoo.Interfaces.IFeedable" Collapsed="true">
     <Position X="1.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\IFeedable.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="Zoo.Animals.IHerbivore" Collapsed="true">
+  <Interface Name="Zoo.Interfaces.IHerbivore" Collapsed="true">
     <Position X="1.5" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\IHerbivore.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="Zoo.Animals.IOmnivore" Collapsed="true">
+  <Interface Name="Zoo.Interfaces.IOmnivore" Collapsed="true">
     <Position X="1.5" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>

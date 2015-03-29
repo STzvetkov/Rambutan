@@ -5,21 +5,17 @@ namespace Zoo.BudgetInfo
 
     public class Budget
     {
-        
         private static Budget instance;
-        private double netBudget;
-        private Dictionary<string, double> expenseDictionary =
-        new Dictionary<string, double>();
-        private Dictionary<string, double> incomeDictionary =
-        new Dictionary<string, double>();
+        private decimal netBudget;
+        private readonly Dictionary<string, decimal> expenseDictionary = new Dictionary<string, decimal>();
+        private readonly Dictionary<string, decimal> incomeDictionary = new Dictionary<string, decimal>();
         
+        public Budget()
+        {
 
+        }
 
-        
-        protected Budget()
-        {}
-
-        public void AddIncome(string incomeName, double incomeSum)
+        public void AddIncome(string incomeName, decimal incomeSum)
         {
             try
             {
@@ -27,13 +23,11 @@ namespace Zoo.BudgetInfo
             }
             catch (Exception)
             {
-                
                 throw new ArgumentException("Incorect input! First write a string for the name of the income, then a double for the sum!");
             }
-            
         }
 
-        public void AddExpense(string expenseName, double expenseSum)
+        public void AddExpense(string expenseName, decimal expenseSum)
         {
             try
             {
@@ -41,15 +35,14 @@ namespace Zoo.BudgetInfo
             }
             catch (Exception)
             {
-
                 throw new ArgumentException("Incorect input! First write a string for the name of the expense, then a double for the sum!");
             }
-
         }
 
-        public double NetBudget()
+        public decimal NetBudget()
         {
-            netBudget = 0;
+            netBudget = 0.0M;
+
             foreach (var item in expenseDictionary)
             {
                 netBudget -= item.Value;
@@ -60,7 +53,6 @@ namespace Zoo.BudgetInfo
                 netBudget += item.Value;
             }
 
-           
             return netBudget;
         }
 
@@ -70,6 +62,7 @@ namespace Zoo.BudgetInfo
             {
                 instance = new Budget();
             }
+
             return instance;
         }
     }
