@@ -44,8 +44,9 @@
     <Compile Include="Animals\Animal.cs" />
     <Compile Include="Animals\Cage.cs" />
     <Compile Include="Animals\Consumables\Food.cs" />
+    <Compile Include="Animals\Species\ClownFish.cs" />
+    <Compile Include="Animals\Species\Dolphin.cs" />
     <Compile Include="Animals\Species\Eagle.cs" />
-    <Compile Include="Animals\Species\GoldFish.cs" />
     <Compile Include="Animals\Species\Lion.cs" />
     <Compile Include="Animals\Species\Monkey.cs" />
     <Compile Include="Animals\Species\Ostrich.cs" />
