@@ -14,14 +14,27 @@
         public Director(string firstName, string lastName)
             :base(firstName, lastName, "Director") // it is better to make it through an enumerator Position.Director or a class Positions
         {
-
         }
         
         // Properties
 
-        public decimal MontlySalary { get; set; }
-        public int EmplayeesToManage { get; set; }
-        public decimal PrivateBudget { get; set; }
+        public decimal MontlySalary 
+        {
+            get { return this.montlySalary; }
+            set { this.montlySalary = value; }
+        }
+
+        public int EmplayeesToManage
+        {
+            get { return this.employeesToManage; }
+            set { this.employeesToManage = value; }
+        }
+
+        public decimal PrivateBudget
+        {
+            get { return this.privateBudget; }
+            set { this.privateBudget = value; }
+        }
 
         /* Methods
 

@@ -8,6 +8,13 @@
         Female
     }
 
+    public enum Position
+    {
+        Director,
+        Veterinarian,
+        Nutritionist,
+        ZooKeeper
+    }
 
     public class Employee
     {
@@ -22,7 +29,7 @@
         private int postalNumber;
 
         private int staffID;
-        private string position;
+        private Position position;
         //private string username;
         //private string password;
 
@@ -141,7 +148,7 @@ Position: {9}
             set { this.staffID = value; }   // TODO : Enter checks.
         }
 
-        public string Position
+        public Position Position
         {
             get { return this.position; }
             set { this.position = value; }  // TODO : Enter checks
