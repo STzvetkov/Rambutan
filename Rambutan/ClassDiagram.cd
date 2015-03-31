@@ -185,7 +185,7 @@
   <Class Name="Zoo.Employees.Employee" Collapsed="true">
     <Position X="7.75" Y="6.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>EBAAIEAQAQBAAACsCAAAqAgAAAAQAgACAAIACgAAAAg=</HashCode>
+      <HashCode>EBAAIEAQAABAAACsCAAAqAgAAAAQAgACAAIACgAAAAg=</HashCode>
       <FileName>Employees\Employee.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -222,6 +222,27 @@
     <TypeIdentifier>
       <HashCode>AAABAAAAAAAAAAAAAgAAAAAAAAQBAAAAIAAACAAQAAA=</HashCode>
       <FileName>ZooManagement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zoo.Schedules.FeedingSchedule" Collapsed="true">
+    <Position X="5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAFCAAAAAAAAAEAAAAEAI=</HashCode>
+      <FileName>Schedules\FeedingSchedule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zoo.Schedules.Schedule" Collapsed="true">
+    <Position X="6.25" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAABAAAAEAAQAAAAAQAAAAAAAEAAAAAAAAIAAAAAAgA=</HashCode>
+      <FileName>Schedules\Schedule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zoo.Schedules.WorkingSchedule" Collapsed="true">
+    <Position X="7.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Schedules\WorkingSchedule.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Struct Name="Zoo.Animals.Consumables.Food" Collapsed="true">
