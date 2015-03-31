@@ -16,7 +16,7 @@
         ZooKeeper
     }
 
-    public class Employee
+    public abstract class Employee
     {
         private string firstName;
         private string lastName;
@@ -145,7 +145,5 @@ Position: {9}
         }
 
         // TODO : Enter eventually username and password properties.
-
-
     }
 }

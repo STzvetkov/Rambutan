@@ -2,10 +2,14 @@
 {
     using System;
 
-    public class Veterinarian : Employee
+    using Zoo.Interfaces;
+
+    public class Veterinarian : Employee, IPayable
     {
-        private decimal monthlySalary;
         private int animalsTreatedDaily;
+        private PaymentTypes paymentType;
+        private double paymentRate;
+        private double workedTime;
 
         public Veterinarian()
             :base(Position.Veterinarian)
@@ -18,22 +22,38 @@
         }
 
         // TODO : Implement more constructors.
+        public double CalculatePayment()
+        {
+            return this.workedTime * this.paymentRate;
+        }
 
         protected override string GetSpecifics()
         {
-            return string.Format("Monthly salary: {0:C} \nAnimals treated daily: {1}", this.monthlySalary,this.animalsTreatedDaily);
-        }
-
-        public decimal MonthlySalary
-        {
-            get { return this.monthlySalary; }
-            set { this.monthlySalary = value; } // TODO : Enter checks.
+            return string.Format("Monthly salary: {0:C} \nAnimals treated daily: {1}", this.CalculatePayment(),this.animalsTreatedDaily);
         }
 
         public int AnimalsTreatedDaily
         {
             get { return this.animalsTreatedDaily; }
             set { this.animalsTreatedDaily = value; } // TODO : Enter checks. Should be private.
+        }
+
+        public PaymentTypes PaymentType
+        {
+            get { return this.paymentType; }
+            set { this.paymentType = value; }
+        }
+
+        public double PaymentRate
+        {
+            get { return this.paymentRate; }
+            set { this.paymentRate = value; }
+        }
+
+        public double WorkedTime
+        {
+            get { return this.workedTime; }
+            set { this.workedTime = value; }
         }
     }
 }

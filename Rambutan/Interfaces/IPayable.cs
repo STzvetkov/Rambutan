@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Zoo.Interfaces
+﻿namespace Zoo.Interfaces
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+
     public enum PaymentTypes 
     {
         Monthly,
@@ -18,6 +18,6 @@ namespace Zoo.Interfaces
         PaymentTypes PaymentType { get; set; }
         double PaymentRate { get; set; }
 
-        DateTime WorkedTime { get; set; }
+        double WorkedTime { get; set; }
     }
 }

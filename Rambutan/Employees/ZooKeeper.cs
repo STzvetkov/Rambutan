@@ -2,10 +2,13 @@
 {
     using System;
 
-    public class ZooKeeper : Employee
+    using Zoo.Interfaces;
+
+    public class ZooKeeper : Employee, IPayable
     {
-        private double hourlyRate;
-        private double hoursWorked;
+        private PaymentTypes paymentType;
+        private double paymentRate;
+        private double workedTime;
 
         public ZooKeeper()
             :base(Position.ZooKeeper)
@@ -19,21 +22,32 @@
 
         // TODO : Implement more constructors.
 
+        public double CalculatePayment()
+        {
+            return this.workedTime * this.paymentRate;
+        }
+
         protected override string GetSpecifics()
         {
-            return string.Format("Hourly rate: {0:C} \nHours worked: {1}", this.hourlyRate, this.hoursWorked);
+            return string.Format("Payment: {0:C} \nHours worked: {1}", this.CalculatePayment(), this.workedTime);
         }
 
-        public double HourlyRate
+        public PaymentTypes PaymentType
         {
-            get { return this.hourlyRate; }
-            set { this.hourlyRate = value; }
+            get { return this.paymentType; }
+            set { this.paymentType = value; }
         }
 
-        public double HoursWorked
+        public double PaymentRate
         {
-            get { return this.hoursWorked; }
-            set { this.hoursWorked = value; }
+            get { return this.paymentRate; }
+            set { this.paymentRate = value; }
+        }
+
+        public double WorkedTime
+        {
+            get { return this.workedTime; }
+            set { this.workedTime = value; }
         }
     }
 }
