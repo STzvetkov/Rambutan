@@ -36,17 +36,5 @@
             set { this.privateBudget = value; }
         }
 
-        /* Methods
-
-        public void Hire(Employee hired)
-        {
-        allEmployees.Add(hired)
-        }
-
-        public void Fire(Employee fired)
-        {
-        allEmplotees.Remove(fired)
-        }
-        */
     }
 }
