@@ -4,11 +4,18 @@
 
     using Zoo.Interfaces;
 
+    public enum Shift
+    {
+        Day,
+        Night
+    }
+
     public class ZooKeeper : Employee, IPayable
     {
         private PaymentTypes paymentType;
         private double paymentRate;
         private double workedTime;
+        private Shift shift;
 
         public ZooKeeper()
             :base(Position.ZooKeeper)
@@ -29,7 +36,7 @@
 
         protected override string GetSpecifics()
         {
-            return string.Format("Payment: {0:C} \nHours worked: {1}", this.CalculatePayment(), this.workedTime);
+            return string.Format("Payment rate: {0:C}/{1} \n Shift:{2} ",this.paymentRate,this.PaymentType, this.shift);
         }
 
         public PaymentTypes PaymentType
@@ -48,6 +55,12 @@
         {
             get { return this.workedTime; }
             set { this.workedTime = value; }
+        }
+
+        public Shift Shift
+        {
+            get { return this.shift; }
+            set { this.shift = value; }
         }
     }
 }

@@ -39,7 +39,5 @@
                 return this.food;
             }
         }
-
-
     }
 }

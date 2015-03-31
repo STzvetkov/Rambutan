@@ -13,7 +13,7 @@
     }
     public interface IPayable
     {
-        double CalculatePayment();
+        double CalculatePayment(double hours);
         
         PaymentTypes PaymentType { get; set; }
         double PaymentRate { get; set; }
