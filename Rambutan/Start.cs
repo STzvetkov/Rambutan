@@ -5,7 +5,7 @@
     using Employees;
     using Zoo.Animals;
     using Zoo.Animals.Consumables;
-    using Zoo.Schedules;
+    //using Zoo.Schedules;
 
     class Start
     {
@@ -29,8 +29,9 @@
             newF.ConsumeAmount(500);
             Console.WriteLine(newF.GetQuantity());
 
-            var schedule = new Schedule("11:15",Frequency.weekly);
-            schedule.AddDay(DayOfWeek.Sunday);
+            //var schedule = new Schedule("11:15",Frequency.weekly);
+            //schedule.AddDay(DayOfWeek.Sunday);
+
 
 
         }

@@ -33,30 +33,20 @@
         //private string username;
         //private string password;
 
-
-        public Employee()
-        {
-        }
-
-        public Employee(string firstName, string lastName, string position)
+        public Employee(string firstName, string lastName, Position position)
         {
             this.FirstName = firstName;
             this.LastName = lastName;
+            this.Position = position;
+        }
+
+        public Employee(Employees.Position position)
+        {
+            this.Position = position;
         }
 
         // TODO : Implement more constructors.
 
-        public string City1
-        {
-            get
-            {
-                return this.city;
-            }
-            set
-            {
-                this.city = value;
-            }
-        }
 
         public override string ToString()
         {

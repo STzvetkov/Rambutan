@@ -12,7 +12,7 @@
 
         // Constructors
         public Director(string firstName, string lastName)
-            :base(firstName, lastName, "Director") // it is better to make it through an enumerator Position.Director or a class Positions
+            : base(firstName, lastName, Position.Director) // it is better to make it through an enumerator Position.Director or a class Positions
         {
         }
         

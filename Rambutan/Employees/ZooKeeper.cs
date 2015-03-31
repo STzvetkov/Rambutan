@@ -8,11 +8,12 @@
         private double hoursWorked;
 
         public ZooKeeper()
+            :base(Position.ZooKeeper)
         {
         }
 
         public ZooKeeper(string firstName, string lastName)
-            : base(firstName, lastName, "ZooKeeper")
+            : base(firstName, lastName, Position.ZooKeeper)
         {
         }
 

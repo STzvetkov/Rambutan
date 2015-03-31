@@ -8,11 +8,12 @@
         private int animalsTreatedDaily;
 
         public Veterinarian()
+            :base(Position.Veterinarian)
         {
         }
 
         public Veterinarian(string firstName, string lastName)
-            :base(firstName,lastName,"Veterinarian")
+            : base(firstName, lastName, Position.Veterinarian)
         {
         }
 

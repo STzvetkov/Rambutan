@@ -8,12 +8,12 @@
         private int animalsFedDaily;
 
         public Nutritionist()
+            :base(Position.Nutritionist)
         {
-
         }
 
         public Nutritionist(string firstName, string lastName)
-            : base(firstName, lastName, "Nutritionist")
+            : base(firstName, lastName, Position.Nutritionist)
         {
 
         }
