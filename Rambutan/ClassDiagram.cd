@@ -213,14 +213,14 @@
   <Class Name="Zoo.Schedules.FeedingSchedule" Collapsed="true">
     <Position X="2.75" Y="10.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAECAAAAAAAAAEAAAAAAA=</HashCode>
       <FileName>Schedules\FeedingSchedule.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Zoo.Schedules.Schedule" Collapsed="true">
     <Position X="4" Y="9.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAABAAAAEAAAAAAAAQAAAAAAAEAAAAAAAAIAAAAAAgA=</HashCode>
       <FileName>Schedules\Schedule.cs</FileName>
     </TypeIdentifier>
   </Class>
