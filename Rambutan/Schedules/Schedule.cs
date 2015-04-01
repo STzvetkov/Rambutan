@@ -9,7 +9,7 @@
 
         private List<DayOfWeek> toDoAtDay = new List<DayOfWeek>();
 
-        public List<string> time { get; }
+        public List<string> time = new List<string>();
 
         public void AddTime(string newTime)
         {
@@ -95,6 +95,11 @@
                 return true;
             }
             return false;
+        }
+
+        public enum Frequency
+        { 
+        daily, weekly, once
         }
 
 

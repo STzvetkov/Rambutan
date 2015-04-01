@@ -29,8 +29,8 @@
             newF.ConsumeAmount(500);
             Console.WriteLine(newF.GetQuantity());
 
-            //var schedule = new Schedule("11:15",Frequency.weekly);
-            //schedule.AddDay(DayOfWeek.Sunday);
+            var schedule = new Schedule("11:15",Zoo.Schedules.Schedule.Frequency.weekly); // kak da se sykrati?
+            schedule.AddDay(DayOfWeek.Sunday);
 
 
         }
