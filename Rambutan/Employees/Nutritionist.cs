@@ -25,7 +25,17 @@
 
         public double CalculatePayment(double hours)
         {
-            return this.workedTime*this.paymentRate;
+            this.workedTime = hours;
+            var normalWorkDay = 8;
+            if (paymentType == PaymentTypes.Hourly)
+            {
+                return this.workedTime * this.paymentRate;
+            }
+            else
+            {
+                return (this.workedTime / normalWorkDay) * this.paymentRate;
+            }
+
         }
 
         protected override string GetSpecifics()

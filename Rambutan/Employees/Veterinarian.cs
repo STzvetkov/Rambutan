@@ -22,14 +22,24 @@
         }
 
         // TODO : Implement more constructors.
-        public double CalculatePayment()
+        public double CalculatePayment(double hours)
         {
-            return this.workedTime * this.paymentRate;
+            this.workedTime = hours;
+            var normalWorkDay = 8;
+            if (paymentType == PaymentTypes.Hourly)
+            {
+                return this.workedTime * this.paymentRate;
+            }
+            else
+            {
+                return (this.workedTime / normalWorkDay) * this.paymentRate;
+            }
+
         }
 
         protected override string GetSpecifics()
         {
-            return string.Format("Payment rate: {0:C}/{1} \nAnimals treated daily: {1}", this.paymentRate, this.PaymentType, this.animalsTreatedDaily);
+            return string.Format("Payment rate: {0:C}/{1} \nAnimals treated daily: {2}", this.paymentRate, this.PaymentType, this.animalsTreatedDaily);
         }
 
         public int AnimalsTreatedDaily
