@@ -6,7 +6,7 @@
 
     public class FeedingSchedule : Schedule
     {
-        // TODO : Throw exception " Not implemented yet. "
+        // TODO : Override ToString()
 
         // feeded once or twice a day
 

@@ -5,6 +5,8 @@
 
     public class Schedule
     {
+        // TODO : Override ToString()
+
         // TODO : Add fields and methods which all schedules should have.
 
         private Frequency repeat;

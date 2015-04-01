@@ -7,7 +7,7 @@
 
     public class WorkingSchedule : Schedule
     {
-        // TODO : Throw exception "Not implemented yet."
+        // TODO : Override ToString()
 
         // once a week veterinary exam at certain cage
         private string workType { get; set; }
