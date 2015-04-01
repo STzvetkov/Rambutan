@@ -29,7 +29,7 @@
 
         protected override string GetSpecifics()
         {
-            return string.Format("Monthly salary: {0:C} \nAnimals treated daily: {1}", this.CalculatePayment(),this.animalsTreatedDaily);
+            return string.Format("Payment rate: {0:C}/{1} \nAnimals treated daily: {1}", this.paymentRate, this.PaymentType, this.animalsTreatedDaily);
         }
 
         public int AnimalsTreatedDaily

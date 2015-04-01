@@ -176,21 +176,21 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Zoo.Employees.Director" Collapsed="true">
-    <Position X="14" Y="8.25" Width="1.5" />
+    <Position X="12.25" Y="8.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAKAAAACgAAAAAAAAAAAAAAAAAAgAAAIAAAAAA=</HashCode>
       <FileName>Employees\Director.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Zoo.Employees.Employee" Collapsed="true">
-    <Position X="7.75" Y="6.75" Width="1.5" />
+    <Position X="6" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>EBAAIEAQAABAAACsCAAAqAgAAAAQAgACAAIACgAAAAg=</HashCode>
       <FileName>Employees\Employee.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Zoo.Employees.Nutritionist" Collapsed="true">
-    <Position X="4.5" Y="8" Width="1.5" />
+    <Position X="2.75" Y="8" Width="1.5" />
     <TypeIdentifier>
       <HashCode>QAAAIABAAAAAABAAAAAQAAAAAABAACAEAAAgBAAAAAA=</HashCode>
       <FileName>Employees\Nutritionist.cs</FileName>
@@ -198,7 +198,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Zoo.Employees.Veterinarian" Collapsed="true">
-    <Position X="6.75" Y="8" Width="1.5" />
+    <Position X="5" Y="8" Width="1.5" />
     <TypeIdentifier>
       <HashCode>QAAAIABAAAAAABAQAAAQEAAAAABAAAAEAAAABAAAAAA=</HashCode>
       <FileName>Employees\Veterinarian.cs</FileName>
@@ -206,9 +206,9 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Zoo.Employees.ZooKeeper" Collapsed="true">
-    <Position X="9" Y="8" Width="1.5" />
+    <Position X="7.25" Y="8" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>QAAAIABAAAAAABAAAAAQAAAAAABAAAAEAAAABAAAAAA=</HashCode>
+      <HashCode>QAAAIABACAAAABgAAAAQAAAAAABAAAAEAAAABAAAAAA=</HashCode>
       <FileName>Employees\ZooKeeper.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -284,7 +284,7 @@
     </TypeIdentifier>
   </Interface>
   <Interface Name="Zoo.Interfaces.IPayable" Collapsed="true">
-    <Position X="9.75" Y="6.75" Width="1.5" />
+    <Position X="4" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAABAAAAAAAAAAAAQAAAAAABAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Interfaces\IPayable.cs</FileName>
@@ -305,17 +305,24 @@
     </TypeIdentifier>
   </Enum>
   <Enum Name="Zoo.Employees.Gender" Collapsed="true">
-    <Position X="13.75" Y="6.75" Width="1.5" />
+    <Position X="9.75" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
       <FileName>Employees\Employee.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="Zoo.Interfaces.PaymentTypes" Collapsed="true">
-    <Position X="11.75" Y="6.75" Width="1.5" />
+    <Position X="8" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
       <FileName>Interfaces\IPayable.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Zoo.Employees.Shift" Collapsed="true">
+    <Position X="11.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Employees\ZooKeeper.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Font Name="Segoe UI" Size="9" />
