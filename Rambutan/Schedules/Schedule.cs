@@ -7,6 +7,8 @@
     {
         // TODO : Add fields and methods which all schedules should have.
 
+        private Frequency repeat;
+
         private List<DayOfWeek> toDoAtDay = new List<DayOfWeek>();
 
         public List<string> time = new List<string>();
@@ -25,7 +27,7 @@
         {
             get
             {
-                return this.Repeat;
+                return this.repeat;
             }
             set 
             {
@@ -40,7 +42,7 @@
                     this.toDoAtDay.Add(DayOfWeek.Saturday);
                     this.toDoAtDay.Add(DayOfWeek.Sunday);
                 }
-                this.Repeat = value;
+                this.repeat = value;
             }
 
         }
@@ -51,7 +53,6 @@
             if (!RepeatValidate())
             {
                 this.toDoAtDay.Add(day);
-
             }
             else
             {
@@ -73,24 +74,24 @@
 
         public Schedule()
         {
-            this.Repeat = Frequency.daily;
+            this.repeat = Frequency.daily;
         }
 
         public Schedule(string newTime)
         {
             this.time.Add(newTime);
-            this.Repeat = Frequency.daily;
+            this.repeat = Frequency.daily;
         }
 
-        public Schedule(string newTime, Frequency repeat)
+        public Schedule(string newTime, Frequency newRepeat)
         {
             this.time.Add(newTime);
-            this.Repeat = repeat;
+            this.repeat = newRepeat;
         }
 
         public bool RepeatValidate()
         {
-            if (this.Repeat == Frequency.daily)
+            if (this.repeat == Frequency.once)
             {
                 return true;
             }

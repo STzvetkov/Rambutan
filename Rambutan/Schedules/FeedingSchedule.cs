@@ -19,6 +19,11 @@
             this.animals.Add(newAnimal);
         }
 
+        public void RemoveAnimal(Animal newAnimal)
+        {
+            this.animals.Remove(newAnimal);
+        }
+
         public List<Animal> AnimalsList
         {
             get
