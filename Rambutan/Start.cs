@@ -31,7 +31,9 @@
             var schedule = new Schedule("11:15",Zoo.Schedules.Schedule.Frequency.weekly); // kak da se sykrati?
             schedule.AddDay(DayOfWeek.Sunday);
             
-
+            // test event
+            FeedingAnimalAndOrderingFood.CreateFood();
+            
 
         }
     }
