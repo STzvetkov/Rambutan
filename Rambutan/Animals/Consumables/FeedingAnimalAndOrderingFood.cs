@@ -14,7 +14,7 @@ namespace Zoo.Animals.Consumables
             firstUnit.CriticalLimitReached += FoodForMammals_CriticalLimitReached;
             firstUnit.FoodStorageLimitReached += FoodForMammals_FoodStorageLimitReached;
 
-            Console.WriteLine("All food for Mammals: {0}",firstUnit);
+            Console.WriteLine("All food for Mammals: {0}", firstUnit);
 
             firstUnit.Feed(10);
             Console.WriteLine("Food Left: {0}", firstUnit);
@@ -33,9 +33,6 @@ namespace Zoo.Animals.Consumables
                 firstUnit.Order(10); // order allways 10  //TODO: substract in the budget
                 Console.WriteLine("Food Left: {0}", firstUnit);
             }
-
-
-
         }
 
         static void FoodForMammals_FoodStorageLimitReached(object sender, EventArgs e)

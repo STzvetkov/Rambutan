@@ -8,7 +8,6 @@ namespace Zoo.Animals.Consumables
 {
     class FoodForMammals
     {
-
         public event EventHandler CriticalLimitReached; // the EventHandler
         public event EventHandler FoodStorageLimitReached; // the EventHandler
 
@@ -54,6 +53,7 @@ namespace Zoo.Animals.Consumables
             }
 
         }
+
         public void Order(int amount)
         {
             foodAvailable += amount;
@@ -63,8 +63,6 @@ namespace Zoo.Animals.Consumables
                 OnFoodStorageLimitReached(EventArgs.Empty);
             }
         }
-
-
 
         public override string ToString()
         {

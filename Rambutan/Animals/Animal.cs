@@ -6,7 +6,19 @@
 
     public enum AnimalType
     {
-        // TODO: AnymalType enumeration with all specific lowest level names like "Lion", "Python", etc.
+        ClownFish,
+        Dolphin,
+        Eagle,
+        Hoodie,
+        Ostrich,
+        Penguin,
+        Bear,
+        Deer,
+        Fox,
+        Lion,
+        Monkey,
+        Python,
+        Rabbit
     }
     public abstract class Animal:IFeedable
     {
@@ -14,7 +26,7 @@
 
         private long animalID;
 
-        private AnimalType type; // TODO: AnymalType enumeration with all specific lowest level names like "Lion", "Python", etc.
+        private AnimalType type; 
         
         private Gender gender;  // Gender enumeration
 
