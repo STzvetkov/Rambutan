@@ -2,12 +2,15 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Reflection;
+
     using Employees;
     using Zoo.Animals;
     using Zoo.Animals.Consumables;
-    using Zoo.Schedules;   
-    using System.Drawing;
+    using Zoo.Schedules;
     using Zoo.Menu;
+    using Zoo.Common;
+
 
     class Start
     {
@@ -34,7 +37,7 @@
             newF.ConsumeAmount(500);
             Console.WriteLine(newF.GetQuantity());
 
-            var schedule = new Schedule("11:15",Zoo.Schedules.Schedule.Frequency.weekly); // kak da se sykrati?
+            var schedule = new Schedule("11:15", Zoo.Schedules.Schedule.Frequency.weekly); // kak da se sykrati?
             schedule.AddDay(DayOfWeek.Sunday);
 
             // test event
@@ -44,7 +47,10 @@
             Console.BufferHeight = Console.WindowHeight;
             Console.WindowWidth = 100;
             Console.BufferWidth = Console.WindowWidth;
-            
+
+            var attr = typeof(ZooManagement).GetCustomAttributes<VersionAttribute>();
+
+
 
             #region Menu
             ChangeMenu(new MainMenu());
@@ -55,8 +61,16 @@
             {
                 Console.Clear();
                 state.PrintMenu();
+                
+                foreach (var attribute in attr)
+                {
+                    Print(43, 60, string.Join(", ", attribute.Component,attribute.Name,attribute.Version));
+                }
                 ReadKey();
                 TakeChoice(cki);
+
+
+
             }
             #endregion
         }

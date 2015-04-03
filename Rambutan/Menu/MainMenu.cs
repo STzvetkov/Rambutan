@@ -22,6 +22,7 @@
             Print(15, 10, "4. Manage budget.");
             Print(18, 10, "5. Manage schedules.");
             Print(21, 10, "0. Exit.");
+
         }
 
         public override void OptionZero()

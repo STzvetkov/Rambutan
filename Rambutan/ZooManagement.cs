@@ -6,11 +6,14 @@ using System.Threading.Tasks;
 using Zoo.Animals;
 using Zoo.Employees;
 using Zoo.BudgetInfo;
+using Zoo.Common;
 
 namespace Zoo
 {
+   [Version(VersionAttribute.Type.ZooManagementTool, "Rambutan Zoo", "1.0.0")]
     public class ZooManagement
     {
+       
         public ZooManagement()
         {
             this.AnimalsDB = new List<Animal>();
