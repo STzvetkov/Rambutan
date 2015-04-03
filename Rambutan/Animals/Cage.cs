@@ -46,10 +46,11 @@
             }
             private set
             {
-                if (value == null)
-                {
-                    throw new ArgumentNullException("The type cannot be nullable!");
-                }
+                // no need from check, because HabitatType is enumeration
+                //if (value == null)
+                //{
+                //    throw new ArgumentNullException("The type cannot be nullable!");
+                //}
 
                 this.type = value;
             }
