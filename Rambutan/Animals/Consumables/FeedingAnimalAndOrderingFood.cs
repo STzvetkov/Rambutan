@@ -10,7 +10,7 @@ namespace Zoo.Animals.Consumables
     {
        public static void CreateFood()
         {
-            var firstUnit = new FoodForMammals(100);
+            var firstUnit = new FoodForMammals(101, 10, 110);
             firstUnit.CriticalLimitReached += FoodForMammals_CriticalLimitReached;
             firstUnit.FoodStorageLimitReached += FoodForMammals_FoodStorageLimitReached;
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Zoo.Animals.Consumables
 {
-    class FoodForMammals
+    public struct FoodForMammals
     {
         public event EventHandler CriticalLimitReached; // the EventHandler
         public event EventHandler FoodStorageLimitReached; // the EventHandler
@@ -30,13 +30,15 @@ namespace Zoo.Animals.Consumables
         }
 
         private int foodAvailable;
-        private int foodLimitBeforeOrder = 10;
-        private int foodStorageLimit = 110;
+        private int foodLimitBeforeOrder;
+        private int foodStorageLimit;
 
         // Constructors
-        public FoodForMammals(int initialFood)
+        public FoodForMammals(int initialFood, int foodLimitBeforeOrder, int foodStorageLimit) : this()
         {
-            foodAvailable = initialFood;
+            this.foodAvailable = initialFood;
+            this.foodLimitBeforeOrder = 10;
+            this.foodStorageLimit = 110;
         }
 
         //// Properties
@@ -46,7 +48,16 @@ namespace Zoo.Animals.Consumables
         // Methods
         public void Feed(int portion)
         {
-            foodAvailable -= portion;
+            if (portion > foodAvailable)
+            {
+                Console.WriteLine(" Not enought food");                
+            }            
+
+            else
+            {
+                foodAvailable -= portion;     
+            }
+
             if (foodAvailable <= foodLimitBeforeOrder)
             {
                 OnCriticalLimitReached(EventArgs.Empty);
@@ -56,7 +67,15 @@ namespace Zoo.Animals.Consumables
 
         public void Order(int amount)
         {
-            foodAvailable += amount;
+            if (foodStorageLimit-foodAvailable < amount)
+            {
+                Console.WriteLine("Not enough space in Storage");
+            }
+
+            else
+            {
+                foodAvailable += amount;
+            }           
 
             if (foodAvailable >= foodStorageLimit)
             {
