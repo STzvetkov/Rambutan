@@ -3,12 +3,16 @@
     using System;
     using Zoo.Interfaces;
 
-    public class Director : Employee
+    public class Director : Employee, IPayable
     {
-        //Fields 
-        private double montlySalary;
-        private int employeesToManage; //??
-        private double privateBudget; // money for meetings, taxi, etc.
+        //Fields
+        private PaymentTypes paymentType;
+        private double paymentRate;
+        private double workedTime;
+        private double privateBudget; // money for meetings, taxi, etc.   
+         
+
+        
 
         // Constructors
         public Director(string firstName, string lastName)
@@ -17,18 +21,10 @@
         }
 
         // Properties
-
-        public double MontlySalary
-        {
-            get { return this.montlySalary; }
-            set { this.montlySalary = value; }
-        }
-
-        public int EmplayeesToManage
-        {
-            get { return this.employeesToManage; }
-            set { this.employeesToManage = value; }
-        }
+        public PaymentTypes PaymentType { get; set; }
+        public double PaymentRate { get; set; }
+        public double WorkedTime { get; set; }
+        
 
         public double PrivateBudget
         {
@@ -36,9 +32,21 @@
             set { this.privateBudget = value; }
         }
 
-        //public double CalculatePayment(double hours)
-        //{
-        //    return montlySalary;
-        //}
+        // Methods
+        public double CalculatePayment(double hours)
+        {
+            this.workedTime = hours;
+            var normalWorkDay = 8;
+            if (paymentType == PaymentTypes.Hourly)
+            {
+                return this.workedTime * this.paymentRate;
+            }
+            else
+            {
+                return (this.workedTime / normalWorkDay) * this.paymentRate;
+            }
+        }
+
+
     }
 }

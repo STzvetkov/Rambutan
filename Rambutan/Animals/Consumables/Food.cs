@@ -16,6 +16,7 @@
         {
             this.quantity = this.quantity - amount;
         }
+
         public  int GetQuantity ()
         {
             return this.quantity;
