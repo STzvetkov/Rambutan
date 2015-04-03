@@ -34,6 +34,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -61,6 +63,7 @@
     <Compile Include="Animals\Type\Flying.cs" />
     <Compile Include="BudgetInfo\Expense.cs" />
     <Compile Include="BudgetInfo\Income.cs" />
+    <Compile Include="Common\NoMenuException.cs" />
     <Compile Include="Employees\Director.cs" />
     <Compile Include="Interfaces\ICarnivore.cs" />
     <Compile Include="Interfaces\IHerbivore.cs" />
@@ -75,6 +78,21 @@
     <Compile Include="Animals\Type\Aquatic.cs" />
     <Compile Include="Animals\Type\Terrestrial.cs" />
     <Compile Include="Interfaces\IPayable.cs" />
+    <Compile Include="Menu\BaseMenuState.cs" />
+    <Compile Include="Menu\EstateInformation\MenuAllAnimals.cs" />
+    <Compile Include="Menu\EstateInformation\MenuAllEmployees.cs" />
+    <Compile Include="Menu\EstateInformation\MenuBudgetSurplus.cs" />
+    <Compile Include="Menu\EstateInformation\MenuFoodAvailable.cs" />
+    <Compile Include="Menu\EstateInformation\MenuNumberOfCages.cs" />
+    <Compile Include="Menu\MainMenu.cs" />
+    <Compile Include="Menu\EstateInformation\MenuEstateInformation.cs" />
+    <Compile Include="Menu\ManageAnimals\MenuBuyAnimals.cs" />
+    <Compile Include="Menu\ManageAnimals\MenuBuyCages.cs" />
+    <Compile Include="Menu\ManageAnimals\MenuManageAnimals.cs" />
+    <Compile Include="Menu\ManageAnimals\MenuSellAnimals.cs" />
+    <Compile Include="Menu\ManageBudget\MenuManageBudget.cs" />
+    <Compile Include="Menu\ManageEmployees\MenuManageEmployees.cs" />
+    <Compile Include="Menu\ManageSchedules\MenuManageSchedules.cs" />
     <Compile Include="Schedules\FeedingSchedule.cs" />
     <Compile Include="Schedules\Schedule.cs" />
     <Compile Include="Schedules\WorkingSchedule.cs" />
