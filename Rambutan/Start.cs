@@ -38,10 +38,7 @@
             schedule.AddDay(DayOfWeek.Sunday);
 
             // test event
-            FeedingAnimalAndOrderingFood.CreateFood();
-
-            bool programIsRunning = true;
-
+            //FeedingAnimalAndOrderingFood.CreateFood();
 
             Console.WindowHeight = 45;
             Console.BufferHeight = Console.WindowHeight;
@@ -64,6 +61,7 @@
             #endregion
         }
 
+        #region MenuMethods
         private static void Print(int row, int col, object data)
         {
             Console.SetCursorPosition(col, row);
@@ -147,5 +145,6 @@
         {
             state = menu;
         }
+        #endregion
     }
 }

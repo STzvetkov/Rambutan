@@ -1,15 +1,15 @@
-﻿namespace Zoo.Menu.ManageBudget
-{
-    using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 
-    public class MenuManageBudget : BaseMenuState
+namespace Zoo.Menu.ManageBudget
+{
+    public class RegisterIncome : BaseMenuState
     {
         public override void PrintMenu()
         {
-            Print(6, 10, "1. Register income.");
-            Print(9, 10, "2. Register expense.");
-            Print(12, 10, "0. Back to Main menu.");
-
+            Print(35, 10, "0. Return to Main menu.");
         }
 
         public override void OptionZero()
@@ -18,12 +18,12 @@
         }
         public override BaseMenuState OptionOne
         {
-            get { return new RegisterExpenses(); }
+            get { throw new NotImplementedException(); }
         }
 
         public override BaseMenuState OptionTwo
         {
-            get { return new RegisterIncome(); }
+            get { throw new NotImplementedException(); }
         }
 
         public override BaseMenuState OptionThree
@@ -43,12 +43,12 @@
 
         public override bool HasOptionOne
         {
-            get { return true; }
+            get { return false; }
         }
 
         public override bool HasOptionTwo
         {
-            get { return true; }
+            get { return false; }
         }
 
         public override bool HasOptionThree

@@ -27,6 +27,11 @@
         public override void OptionZero()
         {
             Start.programIsRunning = false;
+            Console.Clear();
+
+            Print(15, 10, "Thank you for using Team Rambutan's zoo management tool.");
+            Print(17, 13, "Be sure to check for newer versions!");
+            Console.SetCursorPosition(10, 22);
         }
 
 

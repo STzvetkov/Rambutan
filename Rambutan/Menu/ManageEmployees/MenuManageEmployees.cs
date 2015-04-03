@@ -4,59 +4,33 @@
 
     public class MenuManageEmployees : BaseMenuState
     {
+
         public override void PrintMenu()
         {
-            throw new NotImplementedException();
+            Print(6, 10, "1. Register hired employee.");
+            Print(9, 10, "2. Register fired employee.");
+            Print(12, 10, "3. Manage salaries.");
+            Print(15, 10, "0. Back to Main menu.");
         }
 
         public override void OptionZero()
         {
-            throw new NotImplementedException();
-        }
-
-        public override bool HasOptionOne
-        {
-            get { throw new NotImplementedException(); }
-        }
-
-        public override bool HasOptionTwo
-        {
-            get { throw new NotImplementedException(); }
-        }
-
-        public override bool HasOptionThree
-        {
-            get { throw new NotImplementedException(); }
-        }
-
-        public override bool HasOptionFour
-        {
-            get { throw new NotImplementedException(); }
-        }
-
-        public override bool HasOptionFive
-        {
-            get { throw new NotImplementedException(); }
-        }
-
-        public override bool HasOptionSix
-        {
-            get { throw new NotImplementedException(); }
+            Start.state = new MainMenu();
         }
 
         public override BaseMenuState OptionOne
         {
-            get { throw new NotImplementedException(); }
+            get { return new RegisterHiredEmployee(); }
         }
 
         public override BaseMenuState OptionTwo
         {
-            get { throw new NotImplementedException(); }
+            get { return new RegisterFiredEmployee(); }
         }
 
         public override BaseMenuState OptionThree
         {
-            get { throw new NotImplementedException(); }
+            get { return new ManageSalaries(); }
         }
 
         public override BaseMenuState OptionFour
@@ -67,6 +41,36 @@
         public override BaseMenuState OptionFive
         {
             get { throw new NotImplementedException(); }
+        }
+
+        public override bool HasOptionOne
+        {
+            get { return true; }
+        }
+
+        public override bool HasOptionTwo
+        {
+            get { return true; }
+        }
+
+        public override bool HasOptionThree
+        {
+            get { return true; }
+        }
+
+        public override bool HasOptionFour
+        {
+            get { return false; }
+        }
+
+        public override bool HasOptionFive
+        {
+            get { return false; }
+        }
+
+        public override bool HasOptionSix
+        {
+            get { return false; ; }
         }
     }
 }

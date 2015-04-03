@@ -93,7 +93,14 @@
     <Compile Include="Menu\ManageAnimals\MenuManageAnimals.cs" />
     <Compile Include="Menu\ManageAnimals\MenuSellAnimals.cs" />
     <Compile Include="Menu\ManageBudget\MenuManageBudget.cs" />
+    <Compile Include="Menu\ManageBudget\RegisterExpenses.cs" />
+    <Compile Include="Menu\ManageBudget\RegisterIncome.cs" />
+    <Compile Include="Menu\ManageEmployees\ManageSalaries.cs" />
     <Compile Include="Menu\ManageEmployees\MenuManageEmployees.cs" />
+    <Compile Include="Menu\ManageEmployees\RegisterFiredEmployee.cs" />
+    <Compile Include="Menu\ManageEmployees\RegisterHiredEmployee.cs" />
+    <Compile Include="Menu\ManageSchedules\ManageFeedingSchedule.cs" />
+    <Compile Include="Menu\ManageSchedules\ManageWorkingSchedule.cs" />
     <Compile Include="Menu\ManageSchedules\MenuManageSchedules.cs" />
     <Compile Include="Schedules\FeedingSchedule.cs" />
     <Compile Include="Schedules\Schedule.cs" />

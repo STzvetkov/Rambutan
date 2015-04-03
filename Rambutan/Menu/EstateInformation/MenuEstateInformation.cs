@@ -28,6 +28,11 @@ namespace Zoo.Menu.EstateInformation
 
         }
 
+        public override void OptionZero()
+        {
+            Start.state = new MainMenu();
+        }
+
         public override BaseMenuState OptionOne
         {
             get { return new MenuNumberOfCages(); }
@@ -81,12 +86,6 @@ namespace Zoo.Menu.EstateInformation
         public override bool HasOptionSix
         {
             get { return true; }
-        }
-
-
-        public override void OptionZero()
-        {
-            Start.state = new MainMenu();
         }
     }
 }

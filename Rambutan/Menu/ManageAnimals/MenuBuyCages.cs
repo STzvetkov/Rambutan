@@ -7,46 +7,20 @@ namespace Zoo.Menu.ManageAnimals
 {
     public class MenuBuyCages : BaseMenuState
     {
+
+        public MenuBuyCages()
+        {
+        }
+
         public override void PrintMenu()
         {
-            throw new NotImplementedException();
+            Print(35, 10, "0. Return to Main menu.");
         }
 
         public override void OptionZero()
         {
-            throw new NotImplementedException();
+            Start.state = new MainMenu();
         }
-
-        public override bool HasOptionOne
-        {
-            get { throw new NotImplementedException(); }
-        }
-
-        public override bool HasOptionTwo
-        {
-            get { throw new NotImplementedException(); }
-        }
-
-        public override bool HasOptionThree
-        {
-            get { throw new NotImplementedException(); }
-        }
-
-        public override bool HasOptionFour
-        {
-            get { throw new NotImplementedException(); }
-        }
-
-        public override bool HasOptionFive
-        {
-            get { throw new NotImplementedException(); }
-        }
-
-        public override bool HasOptionSix
-        {
-            get { throw new NotImplementedException(); }
-        }
-
         public override BaseMenuState OptionOne
         {
             get { throw new NotImplementedException(); }
@@ -70,6 +44,36 @@ namespace Zoo.Menu.ManageAnimals
         public override BaseMenuState OptionFive
         {
             get { throw new NotImplementedException(); }
+        }
+
+        public override bool HasOptionOne
+        {
+            get { return false; }
+        }
+
+        public override bool HasOptionTwo
+        {
+            get { return false; }
+        }
+
+        public override bool HasOptionThree
+        {
+            get { return false; }
+        }
+
+        public override bool HasOptionFour
+        {
+            get { return false; }
+        }
+
+        public override bool HasOptionFive
+        {
+            get { return false; }
+        }
+
+        public override bool HasOptionSix
+        {
+            get { return false; ; }
         }
     }
 }

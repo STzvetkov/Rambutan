@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Zoo.Common;
 
 namespace Zoo.Menu.EstateInformation
 {
@@ -11,19 +12,19 @@ namespace Zoo.Menu.EstateInformation
         {
         }
 
-        public override void OptionZero()
-        {
-            throw new NotImplementedException();
-        }
-
         public override void PrintMenu()
         {
-            throw new NotImplementedException();
+            Print(35, 10, "0. Return to Main menu.");
+        }
+
+        public override void OptionZero()
+        {
+            Start.state = new MainMenu();
         }
 
         public override bool HasOptionOne
         {
-            get { throw new NotImplementedException(); }
+            get { return false; }
         }
 
         public override bool HasOptionTwo
@@ -48,32 +49,32 @@ namespace Zoo.Menu.EstateInformation
 
         public override bool HasOptionSix
         {
-            get { throw new NotImplementedException(); }
+            get { throw new NoMenuException("No assigned menu."); }
         }
 
         public override BaseMenuState OptionOne
         {
-            get { throw new NotImplementedException(); }
+            get { throw new NoMenuException("No assigned menu."); }
         }
 
         public override BaseMenuState OptionTwo
         {
-            get { throw new NotImplementedException(); }
+            get { throw new NoMenuException("No assigned menu."); }
         }
 
         public override BaseMenuState OptionThree
         {
-            get { throw new NotImplementedException(); }
+            get { throw new NoMenuException("No assigned menu."); }
         }
 
         public override BaseMenuState OptionFour
         {
-            get { throw new NotImplementedException(); }
+            get { throw new NoMenuException("No assigned menu."); }
         }
 
         public override BaseMenuState OptionFive
         {
-            get { throw new NotImplementedException(); }
+            get { throw new NoMenuException("No assigned menu."); }
         }
     }
 }

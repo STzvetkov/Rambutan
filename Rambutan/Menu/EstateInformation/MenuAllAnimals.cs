@@ -1,10 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace Zoo.Menu.EstateInformation
+﻿namespace Zoo.Menu.EstateInformation
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+
+    using Zoo.Common;
+
     public class MenuAllAnimals : BaseMenuState
     {
         public MenuAllAnimals()
@@ -20,6 +22,31 @@ namespace Zoo.Menu.EstateInformation
         public override void OptionZero()
         {
             Start.state = new MainMenu();
+        }
+
+        public override BaseMenuState OptionOne
+        {
+            get { throw new NoMenuException("No assigned menu."); }
+        }
+
+        public override BaseMenuState OptionTwo
+        {
+            get { throw new NoMenuException("No assigned menu."); }
+        }
+
+        public override BaseMenuState OptionThree
+        {
+            get { throw new NoMenuException("No assigned menu."); }
+        }
+
+        public override BaseMenuState OptionFour
+        {
+            get { throw new NoMenuException("No assigned menu."); }
+        }
+
+        public override BaseMenuState OptionFive
+        {
+            get { throw new NoMenuException("No assigned menu."); }
         }
 
         public override bool HasOptionOne
@@ -52,30 +79,6 @@ namespace Zoo.Menu.EstateInformation
             get { return false; }
         }
 
-        public override BaseMenuState OptionOne
-        {
-            get { throw new ArgumentException("No assigned menu."); }
-        }
-
-        public override BaseMenuState OptionTwo
-        {
-            get { throw new ArgumentException("No assigned menu."); }
-        }
-
-        public override BaseMenuState OptionThree
-        {
-            get { throw new ArgumentException("No assigned menu."); }
-        }
-
-        public override BaseMenuState OptionFour
-        {
-            get { throw new ArgumentException("No assigned menu."); }
-        }
-
-        public override BaseMenuState OptionFive
-        {
-            get { throw new ArgumentException("No assigned menu."); }
-        }
 
     }
 }
