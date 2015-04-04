@@ -27,6 +27,20 @@ namespace Zoo.BudgetInfo
             }
         }
 
+
+        public void RemoveIncome(string incomeName)
+        {
+            try
+            {
+                expenseDictionary.Remove(incomeName);
+            }
+            catch (Exception)
+            {
+                throw new ArgumentException("Incorect input! Write an exsisting income name!");
+            }
+        }
+
+
         public void AddExpense(string expenseName, decimal expenseSum)
         {
             try
