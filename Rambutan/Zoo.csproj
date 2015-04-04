@@ -69,6 +69,9 @@
     <Compile Include="Common\NoMenuException.cs" />
     <Compile Include="Common\VersionAttribute.cs" />
     <Compile Include="Employees\Director.cs" />
+    <Compile Include="Exceptions\AnimalNotFoundException.cs" />
+    <Compile Include="Exceptions\CageNotFoundException.cs" />
+    <Compile Include="Exceptions\EmployeeNotFoundException.cs" />
     <Compile Include="Interfaces\ICarnivore.cs" />
     <Compile Include="Interfaces\IHerbivore.cs" />
     <Compile Include="Interfaces\IOmnivore.cs" />
