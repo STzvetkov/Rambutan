@@ -19,11 +19,11 @@ namespace Zoo.BudgetInfo
         {
             try
             {
-                expenseDictionary.Add(incomeName, incomeSum);
+                incomeDictionary.Add(incomeName, incomeSum);
             }
             catch (Exception)
             {
-                throw new ArgumentException("Incorect input! First write a string for the name of the income, then a double for the sum!");
+                throw new ArgumentException("Incorect input! First write a string for the name of the income, then a decimal for the sum!");
             }
         }
 
@@ -32,7 +32,7 @@ namespace Zoo.BudgetInfo
         {
             try
             {
-                expenseDictionary.Remove(incomeName);
+                incomeDictionary.Remove(incomeName);
             }
             catch (Exception)
             {
@@ -49,7 +49,19 @@ namespace Zoo.BudgetInfo
             }
             catch (Exception)
             {
-                throw new ArgumentException("Incorect input! First write a string for the name of the expense, then a double for the sum!");
+                throw new ArgumentException("Incorect input! First write a string for the name of the expense, then a decimal for the sum!");
+            }
+        }
+
+        public void RemoveExpense(string incomeName)
+        {
+            try
+            {
+                expenseDictionary.Remove(incomeName);
+            }
+            catch (Exception)
+            {
+                throw new ArgumentException("Incorect input! Write an exsisting expense name!");
             }
         }
 
