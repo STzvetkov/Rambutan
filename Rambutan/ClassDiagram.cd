@@ -140,7 +140,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Zoo.Animals.Cage" Collapsed="true">
-    <Position X="18.5" Y="6.75" Width="1.5" />
+    <Position X="16.75" Y="7.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>EAABAAAABQBAAAQAQAAEAEAAACBBAAAgAYEEIBABAAA=</HashCode>
       <FileName>Animals\Cage.cs</FileName>
@@ -461,49 +461,49 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Zoo.Exceptions.AnimalNotFoundException" Collapsed="true">
-    <Position X="18.25" Y="9.25" Width="1.5" />
+    <Position X="16.75" Y="8.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Exceptions\AnimalNotFoundException.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Zoo.Exceptions.CageNotFoundException" Collapsed="true">
-    <Position X="20" Y="9.25" Width="1.5" />
+    <Position X="18.5" Y="8.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Exceptions\CageNotFoundException.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Zoo.Exceptions.EmployeeNotFoundException" Collapsed="true">
-    <Position X="18.25" Y="10.25" Width="1.5" />
+    <Position X="16.75" Y="9.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Exceptions\EmployeeNotFoundException.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Zoo.Exceptions.NoMenuException" Collapsed="true">
-    <Position X="20" Y="10.25" Width="1.5" />
+    <Position X="18.5" Y="9.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Exceptions\NoMenuException.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Zoo.Animals.Consumables.FeedingAnimalAndOrderingFood" Collapsed="true">
-    <Position X="25" Y="6.75" Width="1.5" />
+    <Position X="22.25" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAACAAAAAAAAAAACA=</HashCode>
       <FileName>Animals\Consumables\FeedingAnimalAndOrderingFood.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Struct Name="Zoo.Animals.Consumables.Food" Collapsed="true">
-    <Position X="23.25" Y="7.5" Width="1.5" />
+    <Position X="20.5" Y="7.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAACAABAAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
       <FileName>Animals\Consumables\Food.cs</FileName>
     </TypeIdentifier>
   </Struct>
   <Struct Name="Zoo.Animals.Consumables.FoodForMammals" Collapsed="true">
-    <Position X="25" Y="7.5" Width="1.5" />
+    <Position X="22.25" Y="7.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>BEEAAgAAQAAAAAAEEAAAAAAAAAACAAAAAAAAACAAAAA=</HashCode>
       <FileName>Animals\Consumables\FoodForMammals.cs</FileName>
@@ -545,14 +545,14 @@
     </TypeIdentifier>
   </Interface>
   <Enum Name="Zoo.Animals.AnimalType" Collapsed="true">
-    <Position X="20.25" Y="6" Width="1.5" />
+    <Position X="18.5" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAEAEAAAAAAAQIAAAIAAABAMIAAAAAAAICgAAAgAAAA=</HashCode>
       <FileName>Animals\Animal.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="Zoo.Animals.HabitatType" Collapsed="true">
-    <Position X="20.25" Y="6.75" Width="1.5" />
+    <Position X="18.5" Y="7.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAACACAAAAAAAAAAAACAAAAAAAAAAAAAA=</HashCode>
       <FileName>Animals\Cage.cs</FileName>
