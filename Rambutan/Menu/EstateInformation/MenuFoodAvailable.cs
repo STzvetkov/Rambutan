@@ -6,9 +6,9 @@ using Zoo.Exceptions;
 
 namespace Zoo.Menu.EstateInformation
 {
-    public class MenuAllEmployees : BaseMenuState
+    public class MenuFoodAvailable : BaseMenuState
     {
-        public MenuAllEmployees()
+        public MenuFoodAvailable()
         {
         }
 
@@ -24,7 +24,7 @@ namespace Zoo.Menu.EstateInformation
 
         public override bool HasOptionOne
         {
-            get { return false; }
+            get { throw new NotImplementedException(); }
         }
 
         public override bool HasOptionTwo
@@ -49,7 +49,7 @@ namespace Zoo.Menu.EstateInformation
 
         public override bool HasOptionSix
         {
-            get { throw new NoMenuException("No assigned menu."); }
+            get { throw new NotImplementedException(); }
         }
 
         public override BaseMenuState OptionOne
@@ -76,5 +76,8 @@ namespace Zoo.Menu.EstateInformation
         {
             get { throw new NoMenuException("No assigned menu."); }
         }
+
+
+
     }
 }

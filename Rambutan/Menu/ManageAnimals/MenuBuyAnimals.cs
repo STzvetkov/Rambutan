@@ -2,13 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Zoo.Exceptions;
 
-namespace Zoo.Menu.EstateInformation
+namespace Zoo.Menu.ManageAnimals
 {
-    public class MenuAllEmployees : BaseMenuState
+    public class MenuBuyAnimals : BaseMenuState
     {
-        public MenuAllEmployees()
+        public MenuBuyAnimals()
         {
         }
 
@@ -24,7 +23,7 @@ namespace Zoo.Menu.EstateInformation
 
         public override bool HasOptionOne
         {
-            get { return false; }
+            get { throw new NotImplementedException(); }
         }
 
         public override bool HasOptionTwo
@@ -49,32 +48,32 @@ namespace Zoo.Menu.EstateInformation
 
         public override bool HasOptionSix
         {
-            get { throw new NoMenuException("No assigned menu."); }
+            get { throw new NotImplementedException(); }
         }
 
         public override BaseMenuState OptionOne
         {
-            get { throw new NoMenuException("No assigned menu."); }
+            get { throw new NotImplementedException(); }
         }
 
         public override BaseMenuState OptionTwo
         {
-            get { throw new NoMenuException("No assigned menu."); }
+            get { throw new NotImplementedException(); }
         }
 
         public override BaseMenuState OptionThree
         {
-            get { throw new NoMenuException("No assigned menu."); }
+            get { throw new NotImplementedException(); }
         }
 
         public override BaseMenuState OptionFour
         {
-            get { throw new NoMenuException("No assigned menu."); }
+            get { throw new NotImplementedException(); }
         }
 
         public override BaseMenuState OptionFive
         {
-            get { throw new NoMenuException("No assigned menu."); }
+            get { throw new NotImplementedException(); }
         }
     }
 }
