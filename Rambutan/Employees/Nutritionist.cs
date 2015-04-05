@@ -65,6 +65,6 @@
         {
             get { return this.workedTime; }
             set { this.workedTime = value; }
-        }
+        }        
     }
 }

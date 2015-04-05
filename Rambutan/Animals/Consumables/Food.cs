@@ -1,25 +1,62 @@
-﻿namespace Zoo.Animals.Consumables
-{
-    using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
+namespace Zoo.Animals.Consumables
+{
+    
     public struct Food
     {
-        // TODO : Enter needed fields and methods. No properties!
-        int quantity;
+        public event EventHandler CriticalLimitReached; // the EventHandler        
 
-        public Food(int inputQuantity)
+        void OnCriticalLimitReached(EventArgs e)
         {
-            this.quantity = inputQuantity;
+            // proverka za zakacheni subscribers
+            if (this.CriticalLimitReached != null)
+            {
+                this.CriticalLimitReached(this, e);
+            }
+        }        
+
+        private FoodType typeOfFood;
+        
+        private int foodAvailable;
+        private int foodLimitBeforeOrder;        
+        
+
+        // Constructors
+        public Food(FoodType type, int initialFood, int foodLimitBeforeOrder) : this()
+        {
+            this.typeOfFood = type;
+            this.foodAvailable = initialFood;
+            this.foodLimitBeforeOrder = 10;
+        }      
+
+        // Methods
+        public override string ToString()
+        {
+            return String.Format("{0} of {1} available", this.foodAvailable, this.typeOfFood);
         }
 
-        public void ConsumeAmount(int amount)
+        public void Deplete(int amount) // feeding animals shoud invoke also method Deplete()
         {
-            this.quantity = this.quantity - amount;
-        }
+            if (amount > foodAvailable)
+            {
+                Console.WriteLine(" Not enought food");
+            }
 
-        public  int GetQuantity ()
-        {
-            return this.quantity;
-        }
+            else
+            {
+                foodAvailable -= amount;
+            }
+
+            if (foodAvailable <= foodLimitBeforeOrder)
+            {
+                OnCriticalLimitReached(EventArgs.Empty);
+            }
+
+        }       
     }
 }
