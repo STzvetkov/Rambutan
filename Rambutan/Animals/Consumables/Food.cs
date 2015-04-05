@@ -1,61 +1,36 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace Zoo.Animals.Consumables
+{
+    using System;
 
-namespace Zoo.Animals.Consumables
-{  
     public struct Food
     {
-        public event EventHandler CriticalLimitReached; // the EventHandler        
-
-        void OnCriticalLimitReached(EventArgs e)
-        {
-            // proverka za zakacheni subscribers
-            if (this.CriticalLimitReached != null)
-            {
-                this.CriticalLimitReached(this, e);
-            }
-        }        
-
-        private FoodType typeOfFood;
+        // TODO : Enter needed fields and methods. No properties!
+        int quantity;
         
-        private int foodAvailable;
-        private int foodLimitBeforeOrder;        
-        
-
-        // Constructors
-        public Food(FoodType type, int initialFood, int foodLimitBeforeOrder) : this()
+        public Food(int inputQuantity)
         {
-            this.typeOfFood = type;
-            this.foodAvailable = initialFood;
-            this.foodLimitBeforeOrder = 10;
-        }      
-
-        // Methods
-        public override string ToString()
-        {
-            return String.Format("{0} of {1} available", this.foodAvailable, this.typeOfFood);
+            this.quantity = inputQuantity;
+           
         }
 
-        public void Deplete(int amount) // feeding animals shoud invoke also method Deplete()
+        public void ConsumeAmount(int amount)
         {
-            if (amount > foodAvailable)
-            {
-                Console.WriteLine(" Not enought food");
-            }
+            
+            this.quantity -= amount;
+           
+        }
 
-            else
-            {
-                foodAvailable -= amount;
-            }
+        public void ReplenishAmount(int amount)
+        {
 
-            if (foodAvailable <= foodLimitBeforeOrder)
-            {
-                OnCriticalLimitReached(EventArgs.Empty);
-            }
+            this.quantity += amount;
 
-        }       
+        }
+
+        public  int GetQuantity ()
+        {
+
+            return this.quantity;
+        }
     }
 }

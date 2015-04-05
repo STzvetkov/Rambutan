@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Zoo.Exceptions;
-using Zoo.Animals.Consumables;
 
 namespace Zoo.Menu.EstateInformation
 {
@@ -15,9 +14,7 @@ namespace Zoo.Menu.EstateInformation
 
         public override void PrintMenu()
         {
-            Print(6, 10, "1. Available Food");
-            Print(9, 10, "2. Order Food");
-            Print(21, 10, "0. Return to Main menu.");
+            Print(35, 10, "0. Return to Main menu.");
         }
 
         public override void OptionZero()
@@ -27,12 +24,12 @@ namespace Zoo.Menu.EstateInformation
 
         public override bool HasOptionOne
         {
-            get { return true; }
+            get { throw new NotImplementedException(); }
         }
 
         public override bool HasOptionTwo
         {
-            get { return true; }
+            get { throw new NotImplementedException(); }
         }
 
         public override bool HasOptionThree
@@ -57,12 +54,12 @@ namespace Zoo.Menu.EstateInformation
 
         public override BaseMenuState OptionOne
         {
-            get { throw new NoMenuException("No assigned menu."); } // food instance.Available
+            get { throw new NoMenuException("No assigned menu."); }
         }
 
         public override BaseMenuState OptionTwo
         {
-            get { throw new NoMenuException("No assigned menu."); } // FoodManipulations.CreateFood();
+            get { throw new NoMenuException("No assigned menu."); }
         }
 
         public override BaseMenuState OptionThree

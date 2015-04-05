@@ -21,6 +21,8 @@
         Rabbit
     }
 
+
+
     public abstract class Animal : IFeedable
     {
         // abstract information/methods that all animals can have.
@@ -235,6 +237,57 @@
                 this.examinedBy = value;
             }
         }
+        // methods for change after actual implenetetion agter construct /Alex
+
+        public string toString()
+        {
+            // <test>int quanty_of_food, long animalID, Employees.Gender gender, int age,
+            //string dietType, decimal price, DateTime arrivalDate, Cage cage, string healthStatus, Employees.Veterinarian examinedBy
+
+            string id = "ID is " + this.AnimalID;
+
+            string gen = "Gender :" + this.Gender;
+            string age = "Age :" + this.Age;
+            string diet = "Diet Type :" + this.DietType;
+            string price = "Price :" + this.Price;
+            string arriveTime = "Date of Arrival :" + this.ArrivalDate;
+            string cageNumber = "Cage number:" + this.Cage;
+            string helt = "Healt Status:" + this.HealthStatus;
+            string vet = "Veterinarian :" + this.ExaminedBy;
+            return id + age + gen + diet + price + arriveTime + cageNumber + helt;
+
+        }
+       
+        public void changeCage(Cage cageNum)
+        {
+            // cage`s doesn`t work ?!
+            this.Cage.RemoveAnimal(this);
+            cageNum.AddAnimal(this);
+        }
+        public void changeHealthStatus(string status)
+        {
+            //good ,bad
+            if (status == "bad")
+            {
+                this.HealthStatus = status;
+                //make vet appoyntment
+            }
+            else
+            {
+                this.HealthStatus = status;
+            }
+        }
+        public void changePriceTag(decimal price)
+        {
+            //good ,bad
+
+            this.Price = price;
+
+        }
+
+
+
+
 
         // TODO: eventually implement more properties after corroboration of the fields
 

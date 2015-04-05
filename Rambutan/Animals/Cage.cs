@@ -162,10 +162,10 @@
         
         public void AddAnimal(Animal animal)
         {
-            if (this.IsRepaired = true)
+            if (this.IsRepaired == true)
             {
                 this.AnimalsInCage.Add(animal);
-
+                Console.WriteLine(this.AnimalsInCage.Remove(animal));
                 if (this.AnimalsInCage.Count > 5) // 5 is the maximum amount of animals in a singe cage
                 {
                     Break();
@@ -176,7 +176,10 @@
 
         public void RemoveAnimal(Animal animal)
         {
+
+            // this doesn`t seem to work ,returns false
             this.AnimalsInCage.Remove(animal);
+          
         }
     }
 }

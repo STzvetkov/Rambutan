@@ -20,7 +20,15 @@
 
         static void Main()
         {
-            // <test>
+            //testing animals ,must add species.*
+            Cage c = new Cage(22, 300, 300, 300, HabitatType.Steppe);
+             Cage c2 = new Cage(21,300,300,300,HabitatType.Steppe);
+            Veterinarian v = new Veterinarian();
+            // <test>int quanty_of_food, long animalID, Employees.Gender gender, int age,
+            //string dietType, decimal price, DateTime arrivalDate, Cage cage, string healthStatus, Employees.Veterinarian examinedBy
+            Zoo.Animals.Species.Bird.Eagle d = new Zoo.Animals.Species.Bird.Eagle(200, 3, Gender.Female, 23, "Food", 10, DateTime.Today, c,HabitatType.Steppe, "fine", v);
+
+           
             var nutr = new Nutritionist();
             nutr.AnimalsFedDaily = 3;
 
@@ -32,7 +40,10 @@
             Console.WriteLine(vet);
             // </test>
 
-            
+            Food newF = new Food(1000);
+
+            newF.ConsumeAmount(500);
+            Console.WriteLine(newF.GetQuantity());
 
             var schedule = new Schedule("11:15", Zoo.Schedules.Schedule.Frequency.weekly); // kak da se sykrati?
             schedule.AddDay(DayOfWeek.Sunday);
@@ -40,15 +51,15 @@
             // test event
             //FeedingAnimalAndOrderingFood.CreateFood();
 
-            Console.WindowHeight = 45;
-            Console.BufferHeight = Console.WindowHeight;
-            Console.WindowWidth = 100;
-            Console.BufferWidth = Console.WindowWidth;
+            //Console.WindowHeight = 45;
+            //Console.BufferHeight = Console.WindowHeight;
+            //Console.WindowWidth = 100;
+            //Console.BufferWidth = Console.WindowWidth;
 
             var attr = typeof(ZooManagement).GetCustomAttributes<VersionAttribute>();
-
-
-
+            string a = d.toString();
+           
+           
             #region Menu
             ChangeMenu(new MainMenu());
 
@@ -61,6 +72,11 @@
                 
                 foreach (var attribute in attr)
                 {
+                    Console.WriteLine(d.Price + "");
+                    d.changePriceTag(3002);
+                    Console.WriteLine(d.Price + "");
+                   
+                    Console.WriteLine( d.Cage.CageID+ "");
                     Print(43, 60, string.Join(", ", attribute.Component,attribute.Name,attribute.Version));
                 }
                 ReadKey();
