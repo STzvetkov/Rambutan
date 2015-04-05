@@ -5,8 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Zoo.Animals.Consumables
-{
-    
+{  
     public struct Food
     {
         public event EventHandler CriticalLimitReached; // the EventHandler        

@@ -22,7 +22,7 @@ namespace Zoo.Menu.EstateInformation
             Print(6, 10, "1. Number of empty cages.");
             Print(9, 10, "2. All animals.");
             Print(12, 10, "3. All employees.");
-            Print(15, 10, "4. Food available.");
+            Print(15, 10, "4. Food operations.");
             Print(18, 10, "5. Budget surplus.");
             Print(21, 10, "0. Back to Main menu.");
 
