@@ -2,7 +2,9 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Text;
     using Zoo.Animals;
+    using Zoo.Animals.Consumables;
 
     public class FeedingSchedule : Schedule
     {
@@ -10,9 +12,25 @@
 
         // feeded once or twice a day
 
-        private List<Animal> animals = new List<Animal>();
-        private List<string> food = new List<string>();
+        private ICollection<Animal> animals;
 
+        private ICollection<Food> food;
+
+
+         public FeedingSchedule(string newName, string newTime)
+            : base (newName, newTime)
+        {
+            this.animals = new List<Animal>();
+            this.food = new List<Food>();
+
+        }
+
+         public FeedingSchedule(string newName, string newTime, string newRepeat)
+            :base (newName, newTime, newRepeat)
+        {
+            this.animals = new List<Animal>();
+            this.food = new List<Food>();
+        }
 
         public void AddAnimal(Animal newAnimal)
         {
@@ -24,7 +42,7 @@
             this.animals.Remove(newAnimal);
         }
 
-        public List<Animal> AnimalsList
+        public ICollection<Animal> AnimalsList
         {
             get
             {
@@ -32,17 +50,38 @@
             }
         }
 
-        public void AddFood(string newFood)
+        public void AddFood(Food newFood)
         {
             this.food.Add(newFood);
         }
 
-        public List<string> FoodList
+        public ICollection<Food> FoodList
         {
             get
             {
                 return this.food;
             }
+        }
+
+        public override string ToString()
+        {
+            StringBuilder schedule = new StringBuilder();
+           
+            schedule.AppendLine("Animals: ");
+            foreach (var animal in animals)
+            {
+                //TODO Add Animal name
+                schedule.AppendLine(string.Format("{0,7} - {2}", animal.Type, animal.AnimalID));
+            }
+           
+            schedule.AppendLine("Food: ");
+            foreach (var meal in food)
+            {
+                //TODO Add food name
+                schedule.AppendLine(string.Format("{0,7}", meal.GetType().Name));
+            }
+
+            return base.ToString() + schedule.ToString();
         }
     }
 }

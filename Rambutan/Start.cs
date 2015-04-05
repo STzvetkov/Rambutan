@@ -28,8 +28,19 @@
             newF.ConsumeAmount(500);
             Console.WriteLine(newF.GetQuantity());
 
-            var schedule = new Schedule("11:15",Zoo.Schedules.Schedule.Frequency.weekly); // kak da se sykrati?
+            var schedule = new WorkingSchedule("Visit","11:15","Weekly");
             schedule.AddDay(DayOfWeek.Sunday);
+            schedule.AddDay(DayOfWeek.Tuesday);
+            schedule.AddDay(DayOfWeek.Monday);
+            schedule.AddTime("15:15");
+            schedule.AddTime("18:15");
+            schedule.AddTime("09:15");
+            schedule.AddEployee(new Veterinarian("Bai", "Krustio"));
+            
+
+            Console.WriteLine(schedule);
+
+            //var schedule2 = new WorkingSchedule("cleaning","12:30");
             
             // test event
             FeedingAnimalAndOrderingFood.CreateFood();
