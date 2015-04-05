@@ -7,16 +7,18 @@
 
     public class Cage
     {
+        private long cageID;
         private double width;
         private double height;
         private double depth;
         private decimal price;
         private bool isRepaired;
         private HabitatType type;
-        private List<Animal> animalsInCage;
+        private List<Animal> animalsInCage;        
 
-        public Cage(double width, double height, double depth, HabitatType type)
+        public Cage(long id, double width, double height, double depth, HabitatType type)
         {
+            this.CageID = id;
             this.Width = width;
             this.Height = height;
             this.Depth = depth;
@@ -65,6 +67,23 @@
             private set
             {
                 this.isRepaired = value;
+            }
+        }
+
+        public long CageID
+        {
+            get
+            {
+                return this.cageID;
+            }
+            set
+            {
+                if (value == 0)
+                {
+                    throw new ArgumentException("CageID can not be null!");
+                }
+
+                this.cageID = value;
             }
         }
 
@@ -143,10 +162,10 @@
         
         public void AddAnimal(Animal animal)
         {
-            if (this.IsRepaired = true)
+            if (this.IsRepaired == true)
             {
                 this.AnimalsInCage.Add(animal);
-
+                Console.WriteLine(this.AnimalsInCage.Remove(animal));
                 if (this.AnimalsInCage.Count > 5) // 5 is the maximum amount of animals in a singe cage
                 {
                     Break();
@@ -157,7 +176,10 @@
 
         public void RemoveAnimal(Animal animal)
         {
+
+            // this doesn`t seem to work ,returns false
             this.AnimalsInCage.Remove(animal);
+          
         }
     }
 }

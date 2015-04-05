@@ -78,7 +78,7 @@
             foreach (var meal in food)
             {
                 //TODO Add food name
-                schedule.AppendLine(string.Format("{0,7}", meal.GetType().Name));
+                schedule.AppendLine(string.Format("{0,7} - {1}", meal,meal.GetQuantity()));
             }
 
             return base.ToString() + schedule.ToString();
