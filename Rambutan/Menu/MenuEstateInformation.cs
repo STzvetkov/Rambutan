@@ -5,18 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 using Zoo.Exceptions;
 using Zoo.Menu.EstateInformation;
+using Zoo.Animals;
 
 namespace Zoo.Menu.EstateInformation
 {
     public class MenuEstateInformation : BaseMenuState
     {
-
         public MenuEstateInformation()
         {
         }
-
-
-
 
         public override void PrintMenu()
         {
@@ -40,8 +37,17 @@ namespace Zoo.Menu.EstateInformation
 
         public override void OptionOne()
         {
-           // TODO : Fill with method to show empty cages.
-            throw new NotImplementedException();
+            // TODO : Fill with method to show empty cages.
+            ClearDetailsScreen();
+            Print(12, (Console.WindowWidth / 2 + 20), "Empy cages:");
+            int currentRow = 1;
+            foreach (HabitatType habitat in Enum.GetValues(typeof(HabitatType)))
+            { 
+                Print(12 + currentRow * 3, (Console.WindowWidth / 2 + 20),
+                    String.Format("Cage typpe; {0}   //  Available: {1}",
+                        habitat, ZooManagement.CountCagesByTypeAndOccupation(habitat, 0)));
+                currentRow++;
+            }
         }
 
         public override void OptionTwo()
@@ -75,33 +81,50 @@ namespace Zoo.Menu.EstateInformation
 
         public override bool HasOptionOne
         {
-            get { return true; }
+            get
+            {
+                return true;
+            }
         }
 
         public override bool HasOptionTwo
         {
-            get { return true; }
+            get
+            {
+                return true;
+            }
         }
 
         public override bool HasOptionThree
         {
-            get { return true; }
+            get
+            {
+                return true;
+            }
         }
 
         public override bool HasOptionFour
         {
-            get { return true; }
+            get
+            {
+                return true;
+            }
         }
 
         public override bool HasOptionFive
         {
-            get { return true; }
+            get
+            {
+                return true;
+            }
         }
 
         public override bool HasOptionSix
         {
-            get { return true; }
+            get
+            {
+                return true;
+            }
         }
-
     }
 }
