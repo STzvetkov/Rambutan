@@ -51,7 +51,7 @@
             this.ExaminedBy = examinedBy;
         }
 
-        // properties => TODO : Enter checks.
+        // properties 
 
         public long AnimalID
         {
@@ -61,13 +61,9 @@
             }
             set
             {
-                if (value == null)
-                {
-                    throw new NullReferenceException("AnimalID can not be null!");
-                }
                 if (value == 0)
                 {
-                    throw new ArgumentException("AnimalID can not be zero!");
+                    throw new ArgumentException("AnimalID cannot be zero!");
                 }
 
                 this.animalID = value;
@@ -106,10 +102,6 @@
             }
             set
             {
-                if (value == null)
-                {
-                    throw new NullReferenceException("Animal age cannot be null!");
-                }
                 this.age = value;
             }
         }
@@ -134,9 +126,9 @@
             }
             set
             {
-                if (value == null)
+                if (value == 0)
                 {
-                    throw new NullReferenceException("Animal price cannot be null!");
+                    throw new ArgumentException("Animal price cannot be zero!");
                 }
                 this.price = value;
             }
