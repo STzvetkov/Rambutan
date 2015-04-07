@@ -1,36 +1,62 @@
-﻿namespace Zoo.Animals.Consumables
-{
-    using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
+namespace Zoo.Animals.Consumables
+{
     public struct Food
     {
-        // TODO : Enter needed fields and methods. No properties!
-        int quantity;
-        
-        public Food(int inputQuantity)
+        public event EventHandler CriticalLimitReached; // the EventHandler        
+
+        void OnCriticalLimitReached(EventArgs e)
         {
-            this.quantity = inputQuantity;
-           
+            // proverka za zakacheni subscribers
+            if (this.CriticalLimitReached != null)
+            {
+                this.CriticalLimitReached(this, e);
+            }
         }
 
-        public void ConsumeAmount(int amount)
+        private FoodType typeOfFood;
+
+        private int foodAvailable;
+        private int foodLimitBeforeOrder;
+
+
+        // Constructors
+        public Food(FoodType type, int initialFood, int foodLimitBeforeOrder)
+            : this()
         {
-            
-            this.quantity -= amount;
-           
+            this.typeOfFood = type;
+            this.foodAvailable = initialFood;
+            this.foodLimitBeforeOrder = 10;
         }
 
-        public void ReplenishAmount(int amount)
+        // Methods
+        public override string ToString()
         {
-
-            this.quantity += amount;
-
+            return String.Format("{0} of {1} available", this.foodAvailable, this.typeOfFood);
         }
 
-        public  int GetQuantity ()
+        public void Deplete(int amount) // feeding animals shoud invoke also method Deplete()
         {
+            if (amount > foodAvailable)
+            {
+                Console.WriteLine(" Not enought food");
+            }
 
-            return this.quantity;
+            else
+            {
+                foodAvailable -= amount;
+            }
+
+            if (foodAvailable <= foodLimitBeforeOrder)
+            {
+                OnCriticalLimitReached(EventArgs.Empty);
+            }
+
         }
     }
 }

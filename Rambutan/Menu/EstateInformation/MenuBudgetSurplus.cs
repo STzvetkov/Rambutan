@@ -76,6 +76,5 @@ namespace Zoo.Menu.EstateInformation
         {
             get { throw new NoMenuException("No assigned menu."); }
         }
-
     }
 }
