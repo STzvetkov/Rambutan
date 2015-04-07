@@ -37,5 +37,20 @@
             Console.SetCursorPosition(col, row);
             Console.Write(data);
         }
+
+        protected void PrintHeader()
+        {
+
+            int shift = (Console.WindowWidth - 30) / 2;
+            Console.ForegroundColor = ConsoleColor.Green;
+
+            Print(1, shift, "     _oo     .-.        .-.    \n");
+            Print(2, shift,   "  >-(_  \\  c(O_O)c    c(O_O)c   \n");
+            Print(3, shift,   "    / _/ ,'.---.`,  ,'.---.`,   \n");
+            Print(4, shift,   "    / /  / /|_|_|\\ \\/ /|_|_|\\ \\ \n");
+            Print(5, shift,   "   / (   | \\_____/ || \\_____/ | \n");
+            Print(6, shift, "  (   `-.'. `---' .`'. `---' .` \n");
+            Print(7, shift,   "   `--.._) `-...-'    `-...-'   ");
+        }
     }
 }

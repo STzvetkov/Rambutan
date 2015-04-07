@@ -8,9 +8,14 @@
 
         public override void PrintMenu()
         {
-            Print(6, 10, "1. Change working schedules.");
-            Print(9, 10, "2. Change feeding schedules.");
-            Print(12, 10, "0. Back to Main menu.");
+            PrintHeader();
+            int shift = (Console.WindowWidth - 20) / 2;
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Print(12, shift, "1. Change working schedules.");
+            Print(15, shift, "2. Change feeding schedules.");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Print(18, shift, "0. Back to Main menu.");
+            Console.ForegroundColor = ConsoleColor.White;
 
         }
 

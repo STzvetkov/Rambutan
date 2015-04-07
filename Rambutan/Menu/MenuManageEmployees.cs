@@ -8,10 +8,15 @@
 
         public override void PrintMenu()
         {
-            Print(6, 10, "1. Register hired employee.");
-            Print(9, 10, "2. Register fired employee.");
-            Print(12, 10, "3. Manage salaries.");
-            Print(15, 10, "0. Back to Main menu.");
+            PrintHeader();
+            int shift = (Console.WindowWidth - 20) / 2;
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Print(12, shift, "1. Register hired employee.");
+            Print(15, shift, "2. Register fired employee.");
+            Print(18, shift, "3. Manage salaries.");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Print(21, shift, "0. Back to Main menu.");
+            Console.ForegroundColor = ConsoleColor.White;
         }
 
         public override void OptionZero()

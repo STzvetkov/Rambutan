@@ -7,13 +7,14 @@
     {
         public override void PrintMenu()
         {
-            int shift = (Console.WindowWidth - 15) / 2;
+            PrintHeader();
+            int shift = (Console.WindowWidth - 20) / 2;
             Console.ForegroundColor = ConsoleColor.Blue;
-            Print(6, shift, "1. Buy animal(s).");
-            Print(9, shift, "2. Sell animal(s).");
-            Print(12, shift, "3. Buy cages.");
+            Print(12, shift, "1. Buy animal(s).");
+            Print(15, shift, "2. Sell animal(s).");
+            Print(18, shift, "3. Buy cages.");
             Console.ForegroundColor = ConsoleColor.Red;
-            Print(15, shift, "0. Back to Main menu.");
+            Print(21, shift, "0. Back to Main menu.");
             Console.ForegroundColor = ConsoleColor.Blue;
 
         }
