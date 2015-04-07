@@ -191,6 +191,10 @@
         }
 
         // methods 
+        public void Eat(int quantity)
+        {
+            Console.WriteLine("Am Am");
+        }
 
         public override string ToString()
         {
