@@ -6,10 +6,15 @@
     public class MenuManageBudget : BaseMenuState
     {
         public override void PrintMenu()
-        {
-            Print(6, 10, "1. Register income.");
-            Print(9, 10, "2. Register expense.");
-            Print(12, 10, "0. Back to Main menu.");
+        {            
+            PrintHeader();
+            int shift = (Console.WindowWidth - 20) / 2;
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
+            Print(12, shift, "1. Register income.");
+            Print(15, shift, "2. Register expense.");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Print(18, shift, "0. Main menu.");
+            Console.ForegroundColor = ConsoleColor.White;
         }
 
         public override void OptionZero()
