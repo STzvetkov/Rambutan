@@ -1,6 +1,7 @@
 ﻿namespace Zoo.Employees
 {
     using System;
+    using System.Text;
 
     using Zoo.Interfaces;
 
@@ -44,9 +45,13 @@
             
         }
 
-        protected override string GetSpecifics()
+        public override string ToString()
         {
-            return string.Format("Payment rate: {0:C}/{1} \n Shift:{2} ",this.paymentRate,this.PaymentType, this.shift);
+            var result = new StringBuilder();
+            result.Append(base.ToString());
+            result.AppendLine(string.Format("Payment rate: {0:C}/{1} \n Shift:{2} ", this.paymentRate, this.PaymentType, this.shift));
+
+            return result.ToString();
         }
 
         public PaymentTypes PaymentType
