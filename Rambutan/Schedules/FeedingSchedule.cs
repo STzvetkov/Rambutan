@@ -50,18 +50,18 @@
             }
         }
 
-        public void AddFood(Food newFood)
-        {
-            this.food.Add(newFood);
-        }
+        //public void AddFood(Food newFood)
+        //{
+        //    this.food.Add(newFood);
+        //}
 
-        public ICollection<Food> FoodList
-        {
-            get
-            {
-                return this.food;
-            }
-        }
+        //public ICollection<Food> FoodList
+        //{
+        //    get
+        //    {
+        //        return this.food;
+        //    }
+        //}
 
         public override string ToString()
         {
@@ -74,12 +74,12 @@
                 schedule.AppendLine(string.Format("{0,7} - {2}", animal.Type, animal.AnimalID));
             }
            
-            schedule.AppendLine("Food: ");
-            foreach (var meal in food)
-            {
-                //TODO Add food name
-                schedule.AppendLine(string.Format("{0,7} - {1}", meal,meal.GetQuantity()));
-            }
+            //schedule.AppendLine("Food: ");
+            //foreach (var meal in food)
+            //{
+            //    //TODO Add food name
+            //    schedule.AppendLine(string.Format("{0,7} - {1}", ,meal.GetQuantity()));
+            //}
 
             return base.ToString() + schedule.ToString();
         }
