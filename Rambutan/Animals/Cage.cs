@@ -3,6 +3,8 @@
     using System;
     using System.Collections.Generic;
 
+    using Zoo.Interfaces;
+
     public enum HabitatType 
     { 
         Pool, 
@@ -10,7 +12,7 @@
         Steppe 
     }
 
-    public class Cage
+    public class Cage : ICage
     {
         private long cageID;
         private double width;
@@ -53,12 +55,6 @@
             }
             private set
             {
-                // no need from check, because HabitatType is enumeration
-                //if (value == null)
-                //{
-                //    throw new ArgumentNullException("The type cannot be nullable!");
-                //}
-
                 this.type = value;
             }
         }
