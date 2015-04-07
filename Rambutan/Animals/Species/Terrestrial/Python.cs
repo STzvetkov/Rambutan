@@ -11,9 +11,9 @@
         private FoodType typeOfFood;
 
 
-        public Python(){
+        //public Python(){
         
-        }
+        //}
         public Python(int quanty_of_food, long animalID, Employees.Gender gender, int age, string dietType, decimal price, DateTime arrivalDate, Cage cage, string healthStatus, Employees.Veterinarian examinedBy)
               : base(animalID, AnimalType.Python, gender,
            age,  dietType, 

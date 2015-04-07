@@ -1,33 +1,20 @@
 ﻿namespace Zoo.Animals
 {
     using System;
+
+    using Zoo.Animals.Consumables;
     using Zoo.Employees;
     using Zoo.Interfaces;
 
-    public enum AnimalType
+    public enum HealthStatus
     {
-        ClownFish,
-        Dolphin,
-        Eagle,
-        Hoodie,
-        Ostrich,
-        Penguin,
-        Bear,
-        Deer,
-        Fox,
-        Lion,
-        Monkey,
-        Python,
-        Rabbit
+        Healthy,
+        Sick
     }
-
-
 
     public abstract class Animal : IFeedable
     {
-        // abstract information/methods that all animals can have.
-
-        private long animalID;
+       private long animalID;
 
         private AnimalType type; // AnimalType enumeration
 
@@ -35,36 +22,21 @@
 
         private int age;
 
-        private string dietType;
+        private FoodType foodType;
 
         private decimal price;
 
-        //private double height;
+        //private DateTime arrivalDate;
 
-        //private double weight;
+        private Cage cage; // TODO: add number of cage (Animal don't need all information about the cage => ToString()) 
 
-        //private string color;
+        private HabitatType habitat;    // HabitatType enumeration      
 
-        //private string description;       
+        private HealthStatus healthStatus;
 
-        private DateTime arrivalDate;
-
-        private Cage cage;              // TODO: add number of cage (Animal don't need all information about the cage => ToString()) 
-
-        private HabitatType habitat;    // TODO: HabitatType enumeration      
-
-        private string healthStatus;
-
-        //private DateTime dateOfLastExamination;
-
-        private Veterinarian examinedBy;    // TODO: add name of veterinarian (Animal don't need all information about him => ToString()) 
+        private Veterinarian examinedBy; // TODO: add name of veterinarian (Animal don't need all information about him => ToString()) 
 
         // constructors
-
-        public Animal()
-        {
-
-        }
 
         public Animal(long animalID)
         {
@@ -75,16 +47,16 @@
             int age, string dietType, 
             decimal price,  
             DateTime arrivalDate, Cage cage, HabitatType habitat,
-            string healthStatus, Veterinarian examinedBy)
+            HealthStatus healthStatus, Veterinarian examinedBy)
             : this(animalID)
         {
             this.Type = type;
             this.Gender = gender;
             this.Age = age;
-            this.DietType = dietType;
+            this.FoodType = foodType;
             this.Price = price;
-            this.ArrivalDate = arrivalDate;
-            this.Cage = cage;
+            //this.ArrivalDate = arrivalDate;
+            this.Cage = cage; 
             this.Habitat = habitat;
             this.HealthStatus = healthStatus;
             this.ExaminedBy = examinedBy;
@@ -148,16 +120,16 @@
             }
         }
 
-        public string DietType
+        public FoodType FoodType
         {
             get
             {
-                return this.dietType;
+                return this.foodType;
             }
             set
             {
                 // TODO: Enter checks
-                this.dietType = value;
+                this.foodType = value;
             }
         }
 
@@ -174,18 +146,18 @@
             }
         }
 
-        public DateTime ArrivalDate
-        {
-            get
-            {
-                return this.arrivalDate;
-            }
-            set
-            {
-                // TODO: Enter checks
-                this.arrivalDate = value;
-            }
-        }
+        //public DateTime ArrivalDate
+        //{
+        //    get
+        //    {
+        //        return this.arrivalDate;
+        //    }
+        //    set
+        //    {
+        //        // TODO: Enter checks
+        //        this.arrivalDate = value;
+        //    }
+        //}
 
         public Cage Cage
         {
@@ -212,7 +184,7 @@
             }
         }
 
-        public string HealthStatus
+        public HealthStatus HealthStatus
         {
             get
             {
@@ -242,19 +214,19 @@
         public string toString()
         {
             // <test>int quanty_of_food, long animalID, Employees.Gender gender, int age,
-            //string dietType, decimal price, DateTime arrivalDate, Cage cage, string healthStatus, Employees.Veterinarian examinedBy
+            //string dietType, decimal price, DateTime arrivalDate, Cage cage, HealthStatus healthStatus, Employees.Veterinarian examinedBy
 
             string id = "ID is " + this.AnimalID;
 
             string gen = "Gender :" + this.Gender;
             string age = "Age :" + this.Age;
-            string diet = "Diet Type :" + this.DietType;
+            string diet = "Diet Type :" + this.FoodType;
             string price = "Price :" + this.Price;
-            string arriveTime = "Date of Arrival :" + this.ArrivalDate;
-            string cageNumber = "Cage number:" + this.Cage;
+            //string arriveTime = "Date of Arrival :" + this.ArrivalDate;
+            string cageNumber = "Cage number:" + this.Cage.CageID;// cageID
             string helt = "Healt Status:" + this.HealthStatus;
-            string vet = "Veterinarian :" + this.ExaminedBy;
-            return id + age + gen + diet + price + arriveTime + cageNumber + helt;
+            string vet = "Veterinarian :" + this.ExaminedBy.StaffID + this.examinedBy.FirstName + this.examinedBy.LastName;
+            return id + age + gen + diet + price + cageNumber + helt;
 
         }
        

@@ -16,9 +16,9 @@
         private FoodType typeOfFood;
 
        
-        public Ostrich(){
+        //public Ostrich(){
         
-        }
+        //}
         public Ostrich(int quanty_of_food, long animalID,Employees.Gender gender, int age, string dietType, decimal price, DateTime arrivalDate, Cage cage, HabitatType habitat, string healthStatus, Employees.Veterinarian examinedBy)
               : base(animalID, AnimalType.Ostrich, gender,
            age,  dietType, 

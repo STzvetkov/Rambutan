@@ -14,9 +14,9 @@
        
 
 
-        public Eagle(){
+        //public Eagle(){
         
-        }
+        //}
         public Eagle(int quanty_of_food, long animalID,Employees.Gender gender, int age, string dietType, decimal price, DateTime arrivalDate, Cage cage, HabitatType habitat, string healthStatus, Employees.Veterinarian examinedBy)
               : base(animalID, AnimalType.Eagle, gender,
            age,  dietType, 

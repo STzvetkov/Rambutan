@@ -9,9 +9,9 @@
     {
         private FoodType typeOfFood;
 
-        public Rabbit(){
+        //public Rabbit(){
         
-        }
+        //}
         public Rabbit(int quanty_of_food, long animalID, Employees.Gender gender, int age, string dietType, decimal price, DateTime arrivalDate, Cage cage, string healthStatus, Employees.Veterinarian examinedBy)
               : base(animalID, AnimalType.Rabbit, gender,
            age,  dietType, 
