@@ -5,46 +5,26 @@
     using Zoo.Interfaces;
     using Zoo.Employees;
     using Zoo.Animals.Consumables;
+    using Zoo.Common;
 
     public class Eagle : Flying, ICarnivore, IFeedable
     {
         private bool fly;
         private bool bird;
-        private FoodType typeOfFood;
-       
-
 
         //public Eagle(){
-        
+
         //}
-        public Eagle(long animalID,Employees.Gender gender, int age, string dietType, decimal price, DateTime arrivalDate, Cage cage, HabitatType habitat, string healthStatus, Employees.Veterinarian examinedBy)
-              : base(animalID, AnimalType.Eagle, gender,
-           age,  dietType, 
-             price,  
-             arrivalDate,  cage,  habitat,
-             healthStatus,  examinedBy)
+        public Eagle(long animalID, Gender gender, int age, decimal price, Cage cage, HabitatType habitat, HealthStatus healthStatus, Veterinarian examinedBy)
+            : base(animalID, AnimalSpeciesType.Eagle, gender, age, FoodType.Meat, price, cage, habitat, healthStatus, examinedBy)
         {
             this.fly = isFlyable();
             this.bird = isBird();
-            this.TypeOfFood = FoodType.Meat;
         }
 
-        
+
         // TODO : Implement needed methods and fields.
         // food: fish, other animals
-
-       
-        public FoodType TypeOfFood
-        {
-            get
-            {
-                return this.typeOfFood;
-            }
-            set
-            {
-                this.typeOfFood = value;
-            }
-        }
 
         public void Eat(int quantity)
         {
@@ -52,6 +32,6 @@
         }
 
         //Dolphine - Methods - for add
-       
+
     }
 }

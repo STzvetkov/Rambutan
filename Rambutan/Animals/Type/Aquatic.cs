@@ -3,6 +3,7 @@
     using System;
 
     using Zoo.Animals.Consumables;
+    using Zoo.Common;
     using Zoo.Employees;
 
     public abstract class Aquatic : Animal
@@ -11,7 +12,7 @@
         protected static HabitatType[] AvailableCageTypes = { HabitatType.Pool, HabitatType.Aquarium };
 
         public Aquatic(
-           long animalID, AnimalType type, Gender gender,
+           long animalID, AnimalSpeciesType type, Gender gender,
            int age, FoodType foodType,
            decimal price,
            Cage cage, HabitatType habitat,

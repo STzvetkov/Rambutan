@@ -5,48 +5,27 @@
     using Zoo.Interfaces;
     using Zoo.Employees;
     using Zoo.Animals.Consumables;
+    using Zoo.Common;
 
     public class Ostrich : Flightless, IOmnivore, IFeedable
     {
-       
+
         // food: plants, insects, lizards
         private bool fly;
         private bool bird;
         //shte se preraboti hranata sled kato se zavurshat vsichkite
-        private FoodType typeOfFood;
 
-       
         //public Ostrich(){
-        
+
         //}
-        public Ostrich(int quanty_of_food, long animalID,Employees.Gender gender, int age, string dietType, decimal price, DateTime arrivalDate, Cage cage, HabitatType habitat, string healthStatus, Employees.Veterinarian examinedBy)
-              : base(animalID, AnimalType.Ostrich, gender,
-           age,  dietType, 
-             price,  
-             arrivalDate,  cage,  habitat,
-             healthStatus,  examinedBy)
+        public Ostrich(long animalID, Gender gender, int age, decimal price, Cage cage, HabitatType habitat, HealthStatus healthStatus, Veterinarian examinedBy)
+            : base(animalID, AnimalSpeciesType.Ostrich, gender, age, FoodType.Mix, price, cage, habitat, healthStatus, examinedBy)
         {
             this.fly = isFlyable();
             this.bird = isBird();
-
-            this.TypeOfFood = FoodType.Mix;
         }
-      
-       
+
         // food: fish, other animals
-
-     
-        public FoodType TypeOfFood
-        {
-            get
-            {
-                return this.typeOfFood;
-            }
-            set
-            {
-                this.typeOfFood = value;
-            }
-        }
 
         public void Eat(int quantity)
         {
@@ -54,6 +33,6 @@
         }
 
         //Dolphine - Methods - for add
-       
+
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Zoo.Animals
 {
-    public enum AnimalType
+    public enum AnimalSpeciesType
     {
         ClownFish,
         Dolphin,

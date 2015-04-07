@@ -1,8 +1,8 @@
 ﻿namespace Zoo.Animals
 {
     using System;
-
     using Zoo.Animals.Consumables;
+    using Zoo.Common;
     using Zoo.Employees;
     using Zoo.Interfaces;
 
@@ -15,7 +15,7 @@
     public abstract class Animal : IFeedable
     {
         private long animalID;
-        private AnimalType type; // AnimalType enumeration
+        private AnimalSpeciesType type; // AnimalType enumeration
         private Gender gender;   // Gender enumeration
         private int age;
         private FoodType foodType;  // FoodType enumeration
@@ -33,7 +33,7 @@
         }
 
         public Animal(
-            long animalID, AnimalType type, Gender gender,
+            long animalID, AnimalSpeciesType type, Gender gender,
             int age, FoodType foodType,
             decimal price,
             Cage cage, HabitatType habitat,
@@ -70,7 +70,7 @@
             }
         }
 
-        public AnimalType Type
+        public AnimalSpeciesType Type
         {
             get
             {

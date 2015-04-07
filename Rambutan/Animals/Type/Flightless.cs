@@ -3,12 +3,13 @@
     using System;
 
     using Zoo.Animals.Consumables;
+    using Zoo.Common;
     using Zoo.Employees;
 
     public abstract class Flightless : Bird
     {
         public Flightless(
-         long animalID, AnimalType type, Gender gender,
+         long animalID, AnimalSpeciesType type, Gender gender,
          int age, FoodType foodType,
          decimal price,
          Cage cage, HabitatType habitat,
