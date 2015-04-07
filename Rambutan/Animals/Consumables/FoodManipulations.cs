@@ -15,31 +15,22 @@
 
         }
 
-        public static void OrderFood()
+        public static void FeedAnimals()
         {
-            var meatFood = new Food(FoodType.Meat, 101, 10);
-            var plantFood = new Food(FoodType.Plant, 10001, 1000);
+            var meatFood = new Food(FoodType.Meat, 101, 10);        // first order of meet
+            var plantFood = new Food(FoodType.Plant, 10001, 1000);  // first order of plants
 
-            Console.WriteLine("Ordering food for mammals");
-            meatFood.Deplete(10); // order allways 10  //TODO: substract in the budget
-            Console.WriteLine("Food Left: {0}", meatFood);
-
-
+            Console.WriteLine("Feeding Carnivorous");            
+            Console.WriteLine("Meat left: {0}", meatFood);
             meatFood.CriticalLimitReached += meatFood_CriticalLimitReached;
-
-            Console.WriteLine("All food for Mammals: {0}", meatFood);
-
-
-            Print(18, 12, "press 'a' key to feed animals");
-            //Console.WriteLine("press 'a' key to feed animals");
-            while (Console.ReadKey(true).KeyChar == 'a')
+            Print(6, 10, " 1. Feed carnivorous animals");           
+            while (Console.ReadKey(true).KeyChar == '1')
             {
-                Print(21, 12, "Feeding mammals");
+                Print(21, 12, "Feeding Carnivorous");
                 Print(22, 12, String.Format("Food Left: {0}", meatFood));
-
-                Console.WriteLine("Feeding mammals");
+                //Console.WriteLine("Feeding mammals");                
                 meatFood.Deplete(6); // allAnimals.Select(an=>an.Mammal.Count) accordint to the number of all animals at the moment
-                Console.WriteLine("Food Left: {0}", meatFood);
+                //Console.WriteLine("Food Left: {0}", meatFood);
             }
 
         }
