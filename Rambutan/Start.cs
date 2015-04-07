@@ -18,6 +18,8 @@
         public static BaseMenuState state;
         public static bool programIsRunning = true;
 
+        static IEnumerable<VersionAttribute> attr = typeof(ZooManagement).GetCustomAttributes<VersionAttribute>();
+
         static void Main()
         {
             //testing animals ,must add species.*
@@ -67,7 +69,6 @@
             Console.WindowWidth = 100;
             Console.BufferWidth = Console.WindowWidth;
 
-            var attr = typeof(ZooManagement).GetCustomAttributes<VersionAttribute>();
             string a = d.toString();
            
            
@@ -79,15 +80,21 @@
             {
                 Console.Clear();
                 state.PrintMenu();
-                
-                foreach (var attribute in attr)
-                {
-                    Print(43, 60, string.Join(", ", attribute.Component,attribute.Name,attribute.Version));
-                }
+
+                GetVersion();
+
                 ReadKey();
                 TakeChoice(cki);
             }
             #endregion
+        }
+
+        public static void GetVersion()
+        {
+            foreach (var attribute in attr)
+            {
+                Print(43, 60, string.Join(", ", attribute.Component, attribute.Name, attribute.Version));
+            }
         }
 
         #region MenuMethods
