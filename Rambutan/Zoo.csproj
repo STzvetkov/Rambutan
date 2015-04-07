@@ -70,10 +70,13 @@
     <Compile Include="BudgetInfo\TicketSales.cs" />
     <Compile Include="Common\Gender.cs" />
     <Compile Include="Employees\Position.cs" />
+    <Compile Include="Employees\Shift.cs" />
     <Compile Include="Exceptions\NoMenuException.cs" />
     <Compile Include="Common\VersionAttribute.cs" />
     <Compile Include="Employees\Director.cs" />
     <Compile Include="Exceptions\UnitNotFoundException.cs" />
+    <Compile Include="Interfaces\IAnimal.cs" />
+    <Compile Include="Interfaces\ICage.cs" />
     <Compile Include="Interfaces\IEmployee.cs" />
     <Compile Include="BudgetInfo\Budget.cs" />
     <Compile Include="Employees\Employee.cs" />

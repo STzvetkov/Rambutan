@@ -115,6 +115,7 @@
       <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Animals\Type\Aquatic.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="Zoo.Animals.Type.Bird" Collapsed="true">
     <Position X="7" Y="1.75" Width="1.5" />
@@ -122,6 +123,7 @@
       <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Animals\Type\Bird.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="Zoo.Animals.Type.Flightless" Collapsed="true">
     <Position X="5.5" Y="3.25" Width="1.5" />
@@ -129,6 +131,7 @@
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Animals\Type\Flightless.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="Zoo.Animals.Type.Flying" Collapsed="true">
     <Position X="9.75" Y="3.25" Width="1.5" />
@@ -136,6 +139,7 @@
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Animals\Type\Flying.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="Zoo.Animals.Type.Terrestrial" Collapsed="true">
     <Position X="17.75" Y="1.75" Width="1.5" />
@@ -143,6 +147,7 @@
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Animals\Type\Terrestrial.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="Zoo.Animals.Cage" Collapsed="true">
     <Position X="16.75" Y="7.25" Width="1.5" />
@@ -150,6 +155,7 @@
       <HashCode>EAABAAAABQBAAAQAQAAEAEAAACBBAAAgAYEEIBABAAA=</HashCode>
       <FileName>Animals\Cage.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="Zoo.BudgetInfo.Budget" Collapsed="true">
     <Position X="9" Y="10" Width="1.5" />
@@ -172,6 +178,7 @@
       <HashCode>EBAAAEAQAABAAACsCAAAqAgAAAAQAgACAAIACgAAAAg=</HashCode>
       <FileName>Employees\Employee.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="Zoo.Employees.Nutritionist" Collapsed="true">
     <Position X="1.5" Y="8" Width="1.5" />
@@ -376,13 +383,6 @@
       <FileName>Interfaces\IPayable.cs</FileName>
     </TypeIdentifier>
   </Enum>
-  <Enum Name="Zoo.Employees.Shift" Collapsed="true">
-    <Position X="12" Y="6.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAIAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Employees\ZooKeeper.cs</FileName>
-    </TypeIdentifier>
-  </Enum>
   <Enum Name="Zoo.Animals.Consumables.FoodType" Collapsed="true">
     <Position X="22.25" Y="7.25" Width="1.5" />
     <TypeIdentifier>
@@ -395,6 +395,13 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAIAAAIAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Animals\Consumables\FoodStorageType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Zoo.Employees.Shift" Collapsed="true">
+    <Position X="12" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Employees\Shift.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Font Name="Segoe UI" Size="9" />
