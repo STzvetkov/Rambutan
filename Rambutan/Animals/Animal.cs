@@ -6,6 +6,12 @@
     using Zoo.Employees;
     using Zoo.Interfaces;
 
+    public enum HealthStatus
+    {
+        Healthy,
+        Sick
+    }
+
     public abstract class Animal : IFeedable
     {
        private long animalID;
@@ -26,7 +32,7 @@
 
         private HabitatType habitat;    // HabitatType enumeration      
 
-        private string healthStatus;
+        private HealthStatus healthStatus;
 
         private Veterinarian examinedBy; // TODO: add name of veterinarian (Animal don't need all information about him => ToString()) 
 
@@ -41,7 +47,7 @@
             int age, string dietType, 
             decimal price,  
             DateTime arrivalDate, Cage cage, HabitatType habitat,
-            string healthStatus, Veterinarian examinedBy)
+            HealthStatus healthStatus, Veterinarian examinedBy)
             : this(animalID)
         {
             this.Type = type;
@@ -178,7 +184,7 @@
             }
         }
 
-        public string HealthStatus
+        public HealthStatus HealthStatus
         {
             get
             {
@@ -208,7 +214,7 @@
         public string toString()
         {
             // <test>int quanty_of_food, long animalID, Employees.Gender gender, int age,
-            //string dietType, decimal price, DateTime arrivalDate, Cage cage, string healthStatus, Employees.Veterinarian examinedBy
+            //string dietType, decimal price, DateTime arrivalDate, Cage cage, HealthStatus healthStatus, Employees.Veterinarian examinedBy
 
             string id = "ID is " + this.AnimalID;
 
