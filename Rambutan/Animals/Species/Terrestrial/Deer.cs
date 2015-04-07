@@ -11,9 +11,9 @@
         private FoodType deer_food;
 
 
-        public Deer(){
+        //public Deer(){
         
-        }
+        //}
         public Deer(int quanty_of_food, long animalID, Employees.Gender gender, int age, string dietType, decimal price, DateTime arrivalDate, Cage cage, string healthStatus, Employees.Veterinarian examinedBy)
               : base(animalID, AnimalType.Fox, gender,
            age,  dietType, 

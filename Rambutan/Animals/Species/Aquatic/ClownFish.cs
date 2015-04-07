@@ -11,9 +11,9 @@
     {
         private FoodType plancton;
 
-        public ClownFish(){
+        //public ClownFish(){
         
-        }
+        //}
         public ClownFish(int quanty_of_food, long animalID, Employees.Gender gender, int age, string dietType, decimal price, DateTime arrivalDate, Cage cage, string healthStatus, Employees.Veterinarian examinedBy)
               : base(animalID, AnimalType.ClownFish, gender,
            age,  dietType, 

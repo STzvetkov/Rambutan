@@ -12,9 +12,9 @@
         private FoodType meat;
 
 
-        public Fox(){
+        //public Fox(){
         
-        }
+        //}
         public Fox(int quanty_of_food, long animalID, Employees.Gender gender, int age, string dietType, decimal price, DateTime arrivalDate, Cage cage, string healthStatus, Employees.Veterinarian examinedBy)
               : base(animalID, AnimalType.Fox, gender,
            age,  dietType, 

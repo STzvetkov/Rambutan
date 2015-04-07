@@ -5,7 +5,7 @@
     public abstract class Bird : Animal
     {
         
-         public Bird() { }
+         //public Bird() { }
          public Bird(long animalID, AnimalType animalType, Employees.Gender gender, int age, string dietType, decimal price, DateTime arrivalDate, Cage cage, HabitatType habitat, string healthStatus, Employees.Veterinarian examinedBy)
              : base(animalID, animalType, gender,
            age,  dietType, 

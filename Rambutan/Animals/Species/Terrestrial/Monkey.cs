@@ -12,9 +12,9 @@
         private FoodType banans;
 
 
-        public Monkey(){
+        //public Monkey(){
         
-        }
+        //}
         public Monkey(int quanty_of_food, long animalID, Employees.Gender gender, int age, string dietType, decimal price, DateTime arrivalDate, Cage cage, string healthStatus, Employees.Veterinarian examinedBy)
               : base(animalID, AnimalType.Monkey, gender,
            age,  dietType, 
