@@ -3,7 +3,7 @@
   <Class Name="Zoo.Animals.Species.Aquatic.ClownFish" Collapsed="true">
     <Position X="0.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAA=</HashCode>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Animals\Species\Aquatic\ClownFish.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -16,7 +16,7 @@
       <Compartment Name="Methods" Collapsed="true" />
     </Compartments>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Animals\Species\Aquatic\Dolphin.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -24,7 +24,7 @@
   <Class Name="Zoo.Animals.Species.Bird.Eagle" Collapsed="true">
     <Position X="8.5" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAACAAAAAgAAAAAAAAQA=</HashCode>
+      <HashCode>AAAAAAAAEIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
       <FileName>Animals\Species\Bird\Eagle.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -32,7 +32,7 @@
   <Class Name="Zoo.Animals.Species.Bird.Hoodie" Collapsed="true">
     <Position X="10.75" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Animals\Species\Bird\Hoodie.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -40,7 +40,7 @@
   <Class Name="Zoo.Animals.Species.Bird.Ostrich" Collapsed="true">
     <Position X="4.25" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAACAAAAAgAAAAAAAAQA=</HashCode>
+      <HashCode>AAAAAAAAEIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
       <FileName>Animals\Species\Bird\Ostrich.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -48,7 +48,7 @@
   <Class Name="Zoo.Animals.Species.Bird.Penguin" Collapsed="true">
     <Position X="6.5" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAACAAAAAgAAAAAAAAQA=</HashCode>
+      <HashCode>AAAAAAAAEIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
       <FileName>Animals\Species\Bird\Penguin.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -56,7 +56,7 @@
   <Class Name="Zoo.Animals.Species.Terrestrial.Bear" Collapsed="true">
     <Position X="12.25" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAIAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Animals\Species\Terrestrial\Bear.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -64,7 +64,7 @@
   <Class Name="Zoo.Animals.Species.Terrestrial.Deer" Collapsed="true">
     <Position X="14.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <HashCode>AAAAAIAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Animals\Species\Terrestrial\Deer.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -72,7 +72,7 @@
   <Class Name="Zoo.Animals.Species.Terrestrial.Fox" Collapsed="true">
     <Position X="16.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAIAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Animals\Species\Terrestrial\Fox.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -80,7 +80,7 @@
   <Class Name="Zoo.Animals.Species.Terrestrial.Lion" Collapsed="true">
     <Position X="19" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAIAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Animals\Species\Terrestrial\Lion.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -88,7 +88,7 @@
   <Class Name="Zoo.Animals.Species.Terrestrial.Monkey" Collapsed="true">
     <Position X="21.25" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAA=</HashCode>
+      <HashCode>AAAAAIAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Animals\Species\Terrestrial\Monkey.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -96,7 +96,7 @@
   <Class Name="Zoo.Animals.Species.Terrestrial.Python" Collapsed="true">
     <Position X="23.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAIAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAIAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Animals\Species\Terrestrial\Python.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -104,7 +104,7 @@
   <Class Name="Zoo.Animals.Species.Terrestrial.Rabbit" Collapsed="true">
     <Position X="25.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <HashCode>AAAAAIAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Animals\Species\Terrestrial\Rabbit.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -214,14 +214,14 @@
   <Class Name="Zoo.Start" Collapsed="true">
     <Position X="15.5" Y="19.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAQEACEAAAABAAEEAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAACAAIAAAAAAAAAAQEACEAAAABAAEEAA=</HashCode>
       <FileName>Start.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Zoo.ZooManagement" Collapsed="true">
     <Position X="15.5" Y="18.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAABgAACAAAAAAAAAgAAAAAAAAQhAAAAIAAACIAYAAA=</HashCode>
+      <HashCode>AAABgAACAAAAAAAAAgAAAAAAAAQhAAAAIAAACIAYAgA=</HashCode>
       <FileName>ZooManagement.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -249,7 +249,7 @@
   <Class Name="Zoo.Animals.Animal" Collapsed="true">
     <Position X="7" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AQCBgAAAgQBARACAAEQAhAAAAAhBiAAAAYgIABEAAIA=</HashCode>
+      <HashCode>AQCBgAAAkQBAQACEAEAAgAAAAABBgAAAAYAAQAEAAMA=</HashCode>
       <FileName>Animals\Animal.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -257,7 +257,7 @@
   <Class Name="Zoo.Menu.BaseMenuState" Collapsed="true">
     <Position X="15.75" Y="13" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AsAAAAAAAAgAAAIAAAAAIQAAAYgEAAABAAAAAAEECAA=</HashCode>
+      <HashCode>AsAAAAAAAAgACAIAAAAAIQAAAYgEAAABAABAAAEECAA=</HashCode>
       <FileName>Menu\BaseMenuState.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -327,7 +327,7 @@
   <Class Name="Zoo.Animals.Consumables.FoodManipulations" Collapsed="true">
     <Position X="20.5" Y="8" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAIAAAAAEAAAAAAAAA=</HashCode>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAAAAAAIAAAAAEAAAAAEAAA=</HashCode>
       <FileName>Animals\Consumables\FoodManipulations.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -341,28 +341,28 @@
   <Interface Name="Zoo.Interfaces.ICarnivore" Collapsed="true">
     <Position X="23" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\ICarnivore.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="Zoo.Interfaces.IFeedable" Collapsed="true">
     <Position X="11.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\IFeedable.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="Zoo.Interfaces.IHerbivore" Collapsed="true">
     <Position X="21.25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\IHerbivore.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="Zoo.Interfaces.IOmnivore" Collapsed="true">
     <Position X="24.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\IOmnivore.cs</FileName>
     </TypeIdentifier>
   </Interface>
@@ -373,11 +373,11 @@
       <FileName>Interfaces\IPayable.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Enum Name="Zoo.Animals.AnimalType" Collapsed="true">
+  <Enum Name="Zoo.Animals.AnimalSpeciesType" Collapsed="true">
     <Position X="18.5" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAEAEAAAAAAAQIAAAIAAABAMIAAAAAAAICgAAAgAAAA=</HashCode>
-      <FileName>Animals\Animal.cs</FileName>
+      <FileName>Animals\AnimalType.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="Zoo.Animals.HabitatType" Collapsed="true">
@@ -385,13 +385,6 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAACACAAAAAAAAAAAACAAAAAAAAAAAAAA=</HashCode>
       <FileName>Animals\Cage.cs</FileName>
-    </TypeIdentifier>
-  </Enum>
-  <Enum Name="Zoo.Employees.Gender" Collapsed="true">
-    <Position X="10.25" Y="6.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
-      <FileName>Employees\Employee.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="Zoo.Interfaces.PaymentTypes" Collapsed="true">

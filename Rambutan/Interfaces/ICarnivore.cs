@@ -5,6 +5,5 @@
 
     public interface ICarnivore
     {
-        FoodType TypeOfFood { get; set; }
     }
 }

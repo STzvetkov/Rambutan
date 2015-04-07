@@ -69,6 +69,8 @@
     <Compile Include="BudgetInfo\Expense.cs" />
     <Compile Include="BudgetInfo\Income.cs" />
     <Compile Include="BudgetInfo\TicketSales.cs" />
+    <Compile Include="Common\Gender.cs" />
+    <Compile Include="Employees\Position.cs" />
     <Compile Include="Exceptions\NoMenuException.cs" />
     <Compile Include="Common\VersionAttribute.cs" />
     <Compile Include="Employees\Director.cs" />

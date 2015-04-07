@@ -5,6 +5,5 @@
 
     public interface IOmnivore
     {
-        FoodType TypeOfFood { get; set; }
     }
 }
