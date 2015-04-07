@@ -70,16 +70,5 @@ namespace Zoo.Menu.ManageBudget
         {
             get { return false; ; }
         }
-
-        public MenuManageBudget MenuManageBudget
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
     }
 }

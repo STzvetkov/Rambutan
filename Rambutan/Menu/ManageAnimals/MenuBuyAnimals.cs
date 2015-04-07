@@ -75,16 +75,5 @@ namespace Zoo.Menu.ManageAnimals
         {
             get { throw new NotImplementedException(); }
         }
-
-        public MenuManageAnimals MenuManageAnimals
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
     }
 }

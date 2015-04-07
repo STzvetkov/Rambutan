@@ -77,15 +77,5 @@ namespace Zoo.Menu.EstateInformation
             get { throw new NoMenuException("No assigned menu."); }
         }
 
-        public MenuEstateInformation MenuEstateInformation
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
     }
 }
