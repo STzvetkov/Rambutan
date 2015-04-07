@@ -79,6 +79,17 @@
             get { return false; }
         }
 
+        public MenuEstateInformation MenuEstateInformation
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
+
 
     }
 }

@@ -71,6 +71,17 @@
         {
             get { return false; ; }
         }
+
+        public Zoo.Menu.MainMenu MainMenu
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
        
     }
 }

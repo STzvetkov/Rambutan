@@ -70,5 +70,16 @@ namespace Zoo.Menu.ManageSchedules
         {
             get { return false; ; }
         }
+
+        public MenuManageSchedules MenuManageSchedules
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
     }
 }

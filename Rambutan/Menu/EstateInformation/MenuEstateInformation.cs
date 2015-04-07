@@ -87,5 +87,16 @@ namespace Zoo.Menu.EstateInformation
         {
             get { return true; }
         }
+
+        public Zoo.Menu.MainMenu MainMenu
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
     }
 }

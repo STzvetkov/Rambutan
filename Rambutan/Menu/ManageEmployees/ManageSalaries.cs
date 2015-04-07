@@ -74,5 +74,16 @@ namespace Zoo.Menu.ManageEmployees
         {
             get { return false; ; }
         }
+
+        public MenuManageEmployees MenuManageEmployees
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
     }
 }
