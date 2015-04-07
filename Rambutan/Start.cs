@@ -83,11 +83,6 @@
                 
                 foreach (var attribute in attr)
                 {
-                    Console.WriteLine(d.Price + "");
-                    d.changePriceTag(3002);
-                    Console.WriteLine(d.Price + "");
-                   
-                    Console.WriteLine( d.Cage.CageID+ "");
                     Print(43, 60, string.Join(", ", attribute.Component,attribute.Name,attribute.Version));
                 }
                 ReadKey();
