@@ -6,22 +6,22 @@
     using Zoo.Employees;
     using Zoo.Interfaces;
 
-    public enum AnimalType
-    {
-        ClownFish,
-        Dolphin,
-        Eagle,
-        Hoodie,
-        Ostrich,
-        Penguin,
-        Bear,
-        Deer,
-        Fox,
-        Lion,
-        Monkey,
-        Python,
-        Rabbit
-    }
+    //public enum AnimalType
+    //{
+    //    ClownFish,
+    //    Dolphin,
+    //    Eagle,
+    //    Hoodie,
+    //    Ostrich,
+    //    Penguin,
+    //    Bear,
+    //    Deer,
+    //    Fox,
+    //    Lion,
+    //    Monkey,
+    //    Python,
+    //    Rabbit
+    //}
 
     public abstract class Animal : IFeedable
     {

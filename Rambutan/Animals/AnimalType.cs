@@ -2,8 +2,18 @@
 {
     public enum AnimalType
     {
-        Meat,
-        Plant,
-        Mix
+        ClownFish,
+        Dolphin,
+        Eagle,
+        Hoodie,
+        Ostrich,
+        Penguin,
+        Bear,
+        Deer,
+        Fox,
+        Lion,
+        Monkey,
+        Python,
+        Rabbit
     }
 }
