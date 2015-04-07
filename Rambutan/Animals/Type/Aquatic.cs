@@ -5,8 +5,9 @@
     using Zoo.Animals.Consumables;
     using Zoo.Common;
     using Zoo.Employees;
+    using Zoo.Interfaces;
 
-    public abstract class Aquatic : Animal
+    public abstract class Aquatic : Animal, IAnimal
     {
         // TODO : Provide fields and methods that describe fish's behaviour and states.
         protected static HabitatType[] AvailableCageTypes = { HabitatType.Pool, HabitatType.Aquarium };

@@ -7,7 +7,7 @@
     using Zoo.Animals.Consumables;
     using Zoo.Common;
 
-    public class Ostrich : Flightless, IOmnivore, IFeedable
+    public class Ostrich : Flightless, IFeedable, IAnimal
     {
 
         // food: plants, insects, lizards

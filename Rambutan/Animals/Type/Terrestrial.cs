@@ -5,8 +5,9 @@
     using Zoo.Animals.Consumables;
     using Zoo.Common;
     using Zoo.Employees;
+    using Zoo.Interfaces;
 
-    public abstract class Terrestrial : Animal
+    public abstract class Terrestrial : Animal, IAnimal
     {
         public Terrestrial(
            long animalID, AnimalSpeciesType type, Gender gender,

@@ -7,7 +7,7 @@
     using Zoo.Animals.Consumables;
     using Zoo.Common;
 
-    public class Eagle : Flying, ICarnivore, IFeedable
+    public class Eagle : Flying, IFeedable, IAnimal
     {
         private bool fly;
         private bool bird;

@@ -7,7 +7,7 @@
     using Zoo.Animals.Consumables;
     using Zoo.Common;
 
-    public class Dolphin : Aquatic, ICarnivore, IFeedable
+    public class Dolphin : Aquatic, IFeedable, IAnimal
     {
 
         //public Dolphin(){

@@ -6,7 +6,7 @@
     using Zoo.Employees;
     using Zoo.Interfaces;
 
-    public abstract class Animal : IFeedable
+    public abstract class Animal : IAnimal,IFeedable
     {
         private long animalID;
         private AnimalSpeciesType type; // AnimalType enumeration

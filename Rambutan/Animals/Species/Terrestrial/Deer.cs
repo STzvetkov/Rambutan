@@ -8,7 +8,7 @@
     using Zoo.Animals.Consumables;
     using Zoo.Common;
 
-    public class Deer : Terrestrial, IHerbivore, IFeedable
+    public class Deer : Terrestrial, IFeedable, IAnimal
     {
         public int QuantityOfFoodNeededToFeed { get; private set; }
         //public Deer(){

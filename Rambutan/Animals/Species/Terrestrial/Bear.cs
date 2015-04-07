@@ -8,7 +8,7 @@
     using Zoo.Animals.Consumables;
     using Zoo.Common;
 
-    public class Bear : Terrestrial, IOmnivore, IFeedable, ICarnivore
+    public class Bear : Terrestrial, IFeedable, IAnimal
     {
         public int QuantityOfFoodNeededToFeed { get; private set; }
         // Add information about lions, implement Carnivore's and Animal's methods and fields.

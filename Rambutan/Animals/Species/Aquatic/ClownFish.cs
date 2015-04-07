@@ -9,7 +9,7 @@
     using Zoo.Common;
 
 
-    public class ClownFish : Aquatic, IOmnivore, IFeedable
+    public class ClownFish : Aquatic, IFeedable, IAnimal
     {
         //public ClownFish(){
 

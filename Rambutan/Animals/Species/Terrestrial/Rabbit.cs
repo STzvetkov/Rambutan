@@ -6,15 +6,15 @@
     using Zoo.Employees;
     using Zoo.Animals.Consumables;
     using Zoo.Common;
-    
-    public class Rabbit : Terrestrial, IHerbivore, IFeedable
+
+    public class Rabbit : Terrestrial, IFeedable, IAnimal
     {
         public int QuantityOfFoodNeededToFeed { get; private set; }
 
         //public Rabbit(){
 
         //}
-        public Rabbit(int quantityOfFoodNeededToFeed,long animalID, Gender gender, int age, decimal price, Cage cage, HealthStatus healthStatus, Veterinarian examinedBy)
+        public Rabbit(int quantityOfFoodNeededToFeed, long animalID, Gender gender, int age, decimal price, Cage cage, HealthStatus healthStatus, Veterinarian examinedBy)
             : base(animalID, AnimalSpeciesType.Rabbit, gender, age, FoodType.Plant, price, cage, HabitatType.Steppe, healthStatus, examinedBy)
         {
             this.QuantityOfFoodNeededToFeed = quantityOfFoodNeededToFeed;

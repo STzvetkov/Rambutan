@@ -8,7 +8,7 @@
     using Zoo.Animals.Consumables;
     using Zoo.Common;
 
-    public class Penguin : Flightless, ICarnivore, IFeedable
+    public class Penguin : Flightless, IFeedable, IAnimal
     {
         private bool fly;
         private bool bird;

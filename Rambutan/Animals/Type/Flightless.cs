@@ -5,8 +5,9 @@
     using Zoo.Animals.Consumables;
     using Zoo.Common;
     using Zoo.Employees;
+    using Zoo.Interfaces;
 
-    public abstract class Flightless : Bird
+    public abstract class Flightless : Bird, IAnimal
     {
         public Flightless(
          long animalID, AnimalSpeciesType type, Gender gender,

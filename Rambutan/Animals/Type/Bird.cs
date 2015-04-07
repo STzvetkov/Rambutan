@@ -5,8 +5,9 @@
     using Zoo.Animals.Consumables;
     using Zoo.Common;
     using Zoo.Employees;
+    using Zoo.Interfaces;
 
-    public abstract class Bird : Animal
+    public abstract class Bird : Animal, IAnimal
     {
         public Bird(
            long animalID, AnimalSpeciesType type, Gender gender,

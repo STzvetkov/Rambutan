@@ -8,13 +8,13 @@
     using Zoo.Common;
 
 
-    public class Lion : Terrestrial, ICarnivore, IFeedable
+    public class Lion : Terrestrial, IFeedable, IAnimal
     {
         public int QuantityOfFoodNeededToFeed { get; private set; }
         //public Lion(){
 
         //}
-        public Lion(int quantityOfFoodNeededToFeed,long animalID, Gender gender, int age, decimal price, Cage cage, HealthStatus healthStatus, Veterinarian examinedBy)
+        public Lion(int quantityOfFoodNeededToFeed, long animalID, Gender gender, int age, decimal price, Cage cage, HealthStatus healthStatus, Veterinarian examinedBy)
             : base(animalID, AnimalSpeciesType.Lion, gender, age, FoodType.Meat, price, cage, HabitatType.Steppe, healthStatus, examinedBy)
         {
             this.QuantityOfFoodNeededToFeed = quantityOfFoodNeededToFeed;

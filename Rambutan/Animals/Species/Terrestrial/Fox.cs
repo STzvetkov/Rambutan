@@ -9,13 +9,13 @@
     using Zoo.Common;
 
 
-    public class Fox : Terrestrial, ICarnivore, IFeedable
+    public class Fox : Terrestrial, IFeedable, IAnimal
     {
         public int QuantityOfFoodNeededToFeed { get; private set; }
         //public Fox(){
 
         //}
-        public Fox(int quantityOfFoodNeededToFeed,long animalID, Gender gender, int age, decimal price, Cage cage, HealthStatus healthStatus, Veterinarian examinedBy)
+        public Fox(int quantityOfFoodNeededToFeed, long animalID, Gender gender, int age, decimal price, Cage cage, HealthStatus healthStatus, Veterinarian examinedBy)
             : base(animalID, AnimalSpeciesType.Fox, gender, age, FoodType.Meat, price, cage, HabitatType.Steppe, healthStatus, examinedBy)
         {
             this.QuantityOfFoodNeededToFeed = quantityOfFoodNeededToFeed;

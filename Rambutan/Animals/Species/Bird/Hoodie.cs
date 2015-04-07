@@ -6,7 +6,7 @@
     using Zoo.Common;
     using Zoo.Interfaces;
 
-    public class Hoodie : Flying, IOmnivore, IFeedable
+    public class Hoodie : Flying, IFeedable, IAnimal
     {
         //kva e tazi ptica .... ? :D
         // TODO : Implement needed methods and fields.

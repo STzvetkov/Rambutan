@@ -7,13 +7,13 @@
     using Zoo.Animals.Consumables;
     using Zoo.Common;
 
-    public class Python : Terrestrial, ICarnivore, IFeedable
+    public class Python : Terrestrial, IFeedable, IAnimal
     {
         public int QuantityOfFoodNeededToFeed { get; private set; }
         //public Python(){
 
         //}
-        public Python(int quantityOfFoodNeededToFeed,long animalID, Gender gender, int age, decimal price, Cage cage, HealthStatus healthStatus, Veterinarian examinedBy)
+        public Python(int quantityOfFoodNeededToFeed, long animalID, Gender gender, int age, decimal price, Cage cage, HealthStatus healthStatus, Veterinarian examinedBy)
             : base(animalID, AnimalSpeciesType.Python, gender, age, FoodType.Meat, price, cage, HabitatType.Steppe, healthStatus, examinedBy)
         {
             this.QuantityOfFoodNeededToFeed = quantityOfFoodNeededToFeed;
