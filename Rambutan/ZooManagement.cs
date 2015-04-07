@@ -34,21 +34,21 @@ namespace Zoo
         
         public void HireEmployee(Employee employee)
         {
+
             this.StaffDB.Add(employee);
            
         }
 
         public void DischargeEmployee(long employeeID)
-        {
-            Employee employToBeDischarged = this.StaffDB.Find(x => x.StaffID == employeeID);
+        {            
             try
             {
+                Employee employToBeDischarged = this.StaffDB.Find(x => x.StaffID == employeeID);
                 this.StaffDB.Remove(employToBeDischarged);
             }
-            catch (EmployeeNotFoundException)
+            catch (Exception)
             {
-                
-                throw;
+               throw new UnitNotFoundException("There is no Employee with such ID!");
             }
            
         }
@@ -60,16 +60,16 @@ namespace Zoo
         }
 
         public void SellAnimal(long animalID)
-        {
-            Animal animalToBeSold = this.AnimalsDB.Find(x => x.AnimalID == animalID);
+        {            
             try
             {
+                Animal animalToBeSold = this.AnimalsDB.Find(x => x.AnimalID == animalID);
                 this.AnimalsDB.Remove(animalToBeSold);
                 Budget.Instance().AddIncome(animalToBeSold.Type.ToString(), animalToBeSold.Price);
             }
-            catch (AnimalNotFoundException)
+            catch (Exception)
             {
-                throw;
+                throw new UnitNotFoundException("There is no Animal with such ID!");
             }
         }
 
@@ -80,15 +80,15 @@ namespace Zoo
         }
 
         public void DemolishCage(long cageID)
-        {
-            Cage cageToBeDemolished = this.CagesDB.Find(x => x.CageID == cageID);
+        {            
             try
             {
+                Cage cageToBeDemolished = this.CagesDB.Find(x => x.CageID == cageID);
                 this.CagesDB.Remove(cageToBeDemolished);
             }
-            catch (CageNotFoundException)
+            catch (Exception)
             {
-                throw;
+                throw new UnitNotFoundException("There is no Cage with such ID!");
             }
         }
     }
