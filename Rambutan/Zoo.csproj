@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Animals\Animal.cs" />
     <Compile Include="Animals\Cage.cs" />
+    <Compile Include="Animals\Consumables\Food.cs" />
     <Compile Include="Animals\Species\Terrestrial\Bear.cs" />
     <Compile Include="Animals\Species\Aquatic\ClownFish.cs" />
     <Compile Include="Animals\Species\Terrestrial\Deer.cs" />
@@ -115,9 +116,7 @@
   <ItemGroup>
     <None Include="ClassDiagram.cd" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Animals\Consumables\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
