@@ -51,6 +51,7 @@
     <Compile Include="Animals\Consumables\FoodStorage.cs" />
     <Compile Include="Animals\Consumables\FoodStorageType.cs" />
     <Compile Include="Animals\Consumables\FoodType.cs" />
+    <Compile Include="Animals\HealthStatus.cs" />
     <Compile Include="Animals\Species\Terrestrial\Bear.cs" />
     <Compile Include="Animals\Species\Aquatic\ClownFish.cs" />
     <Compile Include="Animals\Species\Terrestrial\Deer.cs" />

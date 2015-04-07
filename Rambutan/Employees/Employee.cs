@@ -17,8 +17,6 @@
 
         private int staffID;
         private Position position;
-        //private string username;
-        //private string password;
 
         public Employee(string firstName, string lastName, Position position)
         {
@@ -27,7 +25,7 @@
             this.Position = position;
         }
 
-        public Employee(Employees.Position position)
+        public Employee(Position position)
         {
             this.Position = position;
         }
@@ -49,9 +47,7 @@ Postal number: {7}
 
 Staff ID: {8}
 Position: {9}
-
-{10}
-{11}",
+",
  this.firstName, this.lastName,
  this.gender,
  this.dateOfBirth,
@@ -59,16 +55,8 @@ Position: {9}
  this.contact,
  this.postalNumber,
  this.staffID,
- this.position,
- GetSpecifics(),
- new string('-',40)
-
+ this.position
 );
-        }
-
-        protected virtual string GetSpecifics()
-        {
-            return "No specifics.";
         }
 
         public string FirstName

@@ -6,12 +6,6 @@
     using Zoo.Employees;
     using Zoo.Interfaces;
 
-    public enum HealthStatus
-    {
-        Healthy,
-        Sick
-    }
-
     public abstract class Animal : IFeedable
     {
         private long animalID;
@@ -49,6 +43,12 @@
             this.Habitat = habitat;
             this.HealthStatus = healthStatus;
             this.ExaminedBy = examinedBy;
+        }
+
+        // methods 
+        public void Eat(int quantity)
+        {
+            Console.WriteLine("Am Am");
         }
 
         // properties 
@@ -180,12 +180,6 @@
             {
                 this.examinedBy = value;
             }
-        }
-
-        // methods 
-        public void Eat(int quantity)
-        {
-            Console.WriteLine("Am Am");
         }
 
         public override string ToString()
