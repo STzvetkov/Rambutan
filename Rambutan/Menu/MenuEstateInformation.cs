@@ -20,12 +20,16 @@ namespace Zoo.Menu.EstateInformation
 
         public override void PrintMenu()
         {
-            Print(6, 10, "1. Number of empty cages.");
-            Print(9, 10, "2. All animals.");
-            Print(12, 10, "3. All employees.");
-            Print(15, 10, "4. Food available.");
-            Print(18, 10, "5. Budget surplus.");
-            Print(21, 10, "0. Back to Main menu.");
+            int shift = (Console.WindowWidth - 15) / 2;
+            Console.ForegroundColor = ConsoleColor.Green;
+            Print(6, shift, "1. Number of empty cages.");
+            Print(9, shift, "2. All animals.");
+            Print(12, shift, "3. All employees.");
+            Print(15, shift, "4. Food available.");
+            Print(18, shift, "5. Budget surplus.");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Print(21, shift, "0. Back to Main menu.");
+            Console.ForegroundColor = ConsoleColor.White;
         }
 
         public override void OptionZero()

@@ -17,13 +17,22 @@
 
         public override void PrintMenu()
         {
-            Print(6, 10, "1. Current estate information.");
-            Print(9, 10, "2. Manage animals.");
-            Print(12, 10, "3. Manage employees.");
-            Print(15, 10, "4. Manage budget.");
-            Print(18, 10, "5. Manage schedules.");
-            Print(21, 10, "6. Manage food.");
-            Print(24, 10, "0. Exit.");
+            int shift = (Console.WindowWidth - 20) / 2;
+            Console.ForegroundColor = ConsoleColor.Green;
+            Print(6, shift, "1. Current estate information.");
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Print(9, shift, "2. Manage animals.");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Print(12, shift, "3. Manage employees.");
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
+            Print(15, shift, "4. Manage budget.");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Print(18, shift, "5. Manage schedules.");
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Print(21, shift, "6. Manage food.");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Print(24, shift, "0. Exit.");
+            Console.ForegroundColor = ConsoleColor.White;
 
         }
 
