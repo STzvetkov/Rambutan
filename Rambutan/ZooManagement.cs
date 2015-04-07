@@ -15,7 +15,7 @@ namespace Zoo
     [Version(VersionAttribute.Type.ZooManagementTool, "Rambutan Zoo", "1.0.0")]
     public static class ZooManagement
     {
-        public static ZooManagement()
+        static ZooManagement()
         {
             AnimalsDB = new List<Animal>();
             StaffDB = new List<Employee>();
