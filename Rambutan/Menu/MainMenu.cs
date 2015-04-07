@@ -25,7 +25,7 @@
             Print(15, shift, "2. Animals.");
             Console.ForegroundColor = ConsoleColor.Yellow;
             Print(18, shift, "3. Employees.");
-            Console.ForegroundColor = ConsoleColor.DarkBlue;
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
             Print(21, shift, "4. Budget.");
             Console.ForegroundColor = ConsoleColor.Cyan;
             Print(24, shift, "5. Schedules.");

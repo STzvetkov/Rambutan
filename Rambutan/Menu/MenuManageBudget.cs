@@ -9,7 +9,7 @@
         {            
             PrintHeader();
             int shift = (Console.WindowWidth - 20) / 2;
-            Console.ForegroundColor = ConsoleColor.DarkBlue;
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
             Print(12, shift, "1. Register income.");
             Print(15, shift, "2. Register expense.");
             Console.ForegroundColor = ConsoleColor.Red;
