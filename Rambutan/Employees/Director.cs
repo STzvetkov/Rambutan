@@ -1,9 +1,10 @@
 ﻿namespace Zoo.Employees
 {
     using System;
+
     using Zoo.Interfaces;
 
-    public class Director : Employee, IPayable
+    public class Director : Employee, IEmployee, IPayable
     {
         //Fields
         private double paymentRate;

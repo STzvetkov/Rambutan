@@ -5,7 +5,7 @@
 
     using Zoo.Interfaces;
 
-    public class Veterinarian : Employee, IPayable
+    public class Veterinarian : Employee, IEmployee, IPayable
     {
         private int animalsTreatedDaily;
         private PaymentTypes paymentType;
@@ -13,7 +13,7 @@
         private double workedTime;
 
         public Veterinarian()
-            :base(Position.Veterinarian)
+            : base(Position.Veterinarian)
         {
         }
 
@@ -46,7 +46,7 @@
 
             return result.ToString();
         }
-        
+
         public int AnimalsTreatedDaily
         {
             get { return this.animalsTreatedDaily; }

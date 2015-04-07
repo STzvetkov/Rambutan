@@ -5,13 +5,7 @@
 
     using Zoo.Interfaces;
 
-    public enum Shift
-    {
-        Day,
-        Night
-    }
-
-    public class ZooKeeper : Employee, IPayable
+    public class ZooKeeper : Employee, IEmployee, IPayable
     {
         private PaymentTypes paymentType;
         private double paymentRate;
@@ -19,7 +13,7 @@
         private Shift shift;
 
         public ZooKeeper()
-            :base(Position.ZooKeeper)
+            : base(Position.ZooKeeper)
         {
         }
 
@@ -42,7 +36,7 @@
             {
                 return (this.workedTime / normalWorkDay) * this.paymentRate;
             }
-            
+
         }
 
         public override string ToString()

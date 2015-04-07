@@ -1,9 +1,11 @@
 ﻿namespace Zoo.Employees
 {
     using System;
-    using Zoo.Common;
 
-    public abstract class Employee
+    using Zoo.Common;
+    using Zoo.Interfaces;
+
+    public abstract class Employee : IEmployee
     {
         private string firstName;
         private string lastName;
