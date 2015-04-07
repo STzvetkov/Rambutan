@@ -3,9 +3,11 @@
     using System;
     using System.Collections.Generic;
     using System.Text;
+
+    using Zoo.Interfaces;
     using Zoo.Schedules;
 
-    public class Schedule
+    public class Schedule : ISchedule
     {
         // TODO : Override ToString()
 
@@ -19,20 +21,23 @@
 
         private ICollection<string> time;
 
-        public string Name
+
+        public Schedule(string newName, string newTime)
         {
-            get
-            {
-                return this.name;
-            }
-            set
-            {
-                if (string.IsNullOrWhiteSpace(value))
-                {
-                    throw new ArgumentNullException("Name cannot be null or empty");
-                }
-                this.name = value;
-            }
+            this.time = new List<string>();
+            this.weekDays = new List<DayOfWeek>();
+            this.Name = newName;
+            this.Repeat = FrequencyType.Daily.ToString();
+            this.time.Add(newTime);
+        }
+
+        public Schedule(string newName, string newTime, string newRepeat)
+        {
+            this.time = new List<string>();
+            this.weekDays = new List<DayOfWeek>();
+            this.Name = newName;
+            this.Repeat = newRepeat;
+            this.time.Add(newTime);
         }
 
         public virtual void AddTime(string newTime)
@@ -59,7 +64,7 @@
                 }
                 if (!RepeatValidate(value))
                 {
-                    throw new ArgumentException("The input is not valid! Please enter Daily, Weekly or Once!");
+                    throw new ArgumentException("The input is not valid! Pleace enter Daily, Weekly or Once!");
                 }
                 if (value == FrequencyType.Daily.ToString())
                 {
@@ -110,24 +115,6 @@
             }
         }
 
-        public Schedule(string newName, string newTime)
-        {
-            this.time = new List<string>();
-            this.weekDays = new List<DayOfWeek>();
-            this.Name = newName;
-            this.Repeat = FrequencyType.Daily.ToString();
-            this.time.Add(newTime);
-        }
-
-        public Schedule(string newName, string newTime, string newRepeat)
-        {
-            this.time = new List<string>();
-            this.weekDays = new List<DayOfWeek>();
-            this.Name = newName;
-            this.Repeat = newRepeat;
-            this.time.Add(newTime);
-        }
-
         public bool RepeatValidate(string repeat)
         {
             foreach (FrequencyType day in Enum.GetValues(typeof(FrequencyType)))
@@ -138,6 +125,22 @@
                 }
             }
             return false;
+        }
+
+        public string Name
+        {
+            get
+            {
+                return this.name;
+            }
+            set
+            {
+                if (string.IsNullOrWhiteSpace(value))
+                {
+                    throw new ArgumentNullException("Name cannot be null or empty");
+                }
+                this.name = value;
+            }
         }
 
         public override string ToString()
