@@ -67,8 +67,6 @@
     <Compile Include="Animals\Species\Terrestrial\Rabbit.cs" />
     <Compile Include="Animals\Type\Flightless.cs" />
     <Compile Include="Animals\Type\Flying.cs" />
-    <Compile Include="BudgetInfo\Expense.cs" />
-    <Compile Include="BudgetInfo\Income.cs" />
     <Compile Include="BudgetInfo\TicketSales.cs" />
     <Compile Include="Common\Gender.cs" />
     <Compile Include="Employees\Position.cs" />
@@ -76,9 +74,7 @@
     <Compile Include="Common\VersionAttribute.cs" />
     <Compile Include="Employees\Director.cs" />
     <Compile Include="Exceptions\UnitNotFoundException.cs" />
-    <Compile Include="Interfaces\ICarnivore.cs" />
-    <Compile Include="Interfaces\IHerbivore.cs" />
-    <Compile Include="Interfaces\IOmnivore.cs" />
+    <Compile Include="Interfaces\IEmployee.cs" />
     <Compile Include="BudgetInfo\Budget.cs" />
     <Compile Include="Employees\Employee.cs" />
     <Compile Include="Employees\Nutritionist.cs" />

@@ -152,24 +152,10 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Zoo.BudgetInfo.Budget" Collapsed="true">
-    <Position X="10" Y="9.5" Width="1.5" />
+    <Position X="9" Y="10" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAQAAAAIAAAAABAAAAAAAADAAAAAxAAAAAAAAAA=</HashCode>
       <FileName>BudgetInfo\Budget.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Zoo.BudgetInfo.Expense" Collapsed="true">
-    <Position X="12" Y="9.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>BudgetInfo\Expense.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Zoo.BudgetInfo.Income" Collapsed="true">
-    <Position X="14" Y="9.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>BudgetInfo\Income.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Zoo.Employees.Director" Collapsed="true">
@@ -226,7 +212,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Zoo.Schedules.FeedingSchedule" Collapsed="true">
-    <Position X="5" Y="10.5" Width="1.5" />
+    <Position X="3.5" Y="11.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAECAAAAAAAIAEAAAAAAI=</HashCode>
       <FileName>Schedules\FeedingSchedule.cs</FileName>
@@ -234,7 +220,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Zoo.Schedules.Schedule" Collapsed="true">
-    <Position X="6.25" Y="9.25" Width="1.5" />
+    <Position X="4.75" Y="10" Width="1.5" />
     <TypeIdentifier>
       <HashCode>CAABAAAgAAAQAAAEAQAAAAQAAEAEAgAAAAIAAAAAAgA=</HashCode>
       <FileName>Schedules\Schedule.cs</FileName>
@@ -242,7 +228,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Zoo.Schedules.WorkingSchedule" Collapsed="true">
-    <Position X="7.25" Y="10.5" Width="1.5" />
+    <Position X="5.75" Y="11.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAQAAIAAAAAAIEIASIAAAgEDAAAAAAAIAEAAAAAAA=</HashCode>
       <FileName>Schedules\WorkingSchedule.cs</FileName>
@@ -307,14 +293,14 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Zoo.Exceptions.NoMenuException" Collapsed="true">
-    <Position X="18.5" Y="9.5" Width="1.5" />
+    <Position X="24.25" Y="7.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Exceptions\NoMenuException.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Zoo.Exceptions.UnitNotFoundException" Collapsed="true">
-    <Position X="16.75" Y="9.5" Width="1.5" />
+    <Position X="24.25" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Exceptions\UnitNotFoundException.cs</FileName>
@@ -341,13 +327,6 @@
       <FileName>Animals\Consumables\Food.cs</FileName>
     </TypeIdentifier>
   </Struct>
-  <Interface Name="Zoo.Interfaces.ICarnivore" Collapsed="true">
-    <Position X="23" Y="1.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Interfaces\ICarnivore.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
   <Interface Name="Zoo.Interfaces.IFeedable" Collapsed="true">
     <Position X="11.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
@@ -355,25 +334,25 @@
       <FileName>Interfaces\IFeedable.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="Zoo.Interfaces.IHerbivore" Collapsed="true">
-    <Position X="21.25" Y="1.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Interfaces\IHerbivore.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="Zoo.Interfaces.IOmnivore" Collapsed="true">
-    <Position X="24.75" Y="1.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Interfaces\IOmnivore.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
   <Interface Name="Zoo.Interfaces.IPayable" Collapsed="true">
-    <Position X="3.25" Y="6.75" Width="1.5" />
+    <Position X="3" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAABAAAAAAAAAAAAQAAAAAABAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Interfaces\IPayable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Zoo.Interfaces.IEmployee" Collapsed="true">
+    <Position X="4.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Interfaces\IEmployee.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Zoo.Interfaces.ISchedule" Collapsed="true">
+    <Position X="3" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAQAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\ISchedule.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Enum Name="Zoo.Animals.AnimalSpeciesType" Collapsed="true">
