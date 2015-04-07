@@ -10,14 +10,18 @@
         //kva e tazi ptica .... ? :D
         // TODO : Implement needed methods and fields.
         // food: seed, fruit, insects, lizards
-
         private FoodType typeOfFood;
 
-
-        public Hoodie()
+        public Hoodie(long animalID, Employees.Gender gender, int age, string dietType,
+            decimal price, DateTime arrivalDate, Cage cage, HabitatType habitat,
+            string healthStatus, Employees.Veterinarian examinedBy) : 
+            base(animalID, AnimalType.Eagle, gender,age, dietType,
+            price, arrivalDate, cage, habitat,
+            healthStatus, examinedBy)
         {
             this.TypeOfFood = FoodType.Mix;
         }
+
         public FoodType TypeOfFood
         {
             get
