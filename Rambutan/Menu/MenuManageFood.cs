@@ -25,6 +25,7 @@ namespace Zoo.Menu.ManageFood
 
         public override void OptionOne()
         {
+            Console.Clear();
             FoodManipulations.OrderFood();
         }
 
