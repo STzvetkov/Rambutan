@@ -87,5 +87,6 @@ namespace Zoo.Menu.EstateInformation
         {
             get { return true; }
         }
+
     }
 }

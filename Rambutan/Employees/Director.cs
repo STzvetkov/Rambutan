@@ -11,8 +11,6 @@
         private double privateBudget; // money for meetings, taxi, etc.   
 
 
-
-
         // Constructors
         public Director(string firstName, string lastName, double paymentRate)
             : base(firstName, lastName, Position.Director) // it is better to make it through an enumerator Position.Director or a class Positions

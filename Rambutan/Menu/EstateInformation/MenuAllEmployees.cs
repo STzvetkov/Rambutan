@@ -29,22 +29,22 @@ namespace Zoo.Menu.EstateInformation
 
         public override bool HasOptionTwo
         {
-            get { throw new NotImplementedException(); }
+            get { return false; }
         }
 
         public override bool HasOptionThree
         {
-            get { throw new NotImplementedException(); }
+            get { return false; }
         }
 
         public override bool HasOptionFour
         {
-            get { throw new NotImplementedException(); }
+            get { return false; }
         }
 
         public override bool HasOptionFive
         {
-            get { throw new NotImplementedException(); }
+            get { return false; }
         }
 
         public override bool HasOptionSix
@@ -76,5 +76,6 @@ namespace Zoo.Menu.EstateInformation
         {
             get { throw new NoMenuException("No assigned menu."); }
         }
+
     }
 }
