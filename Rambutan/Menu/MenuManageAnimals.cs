@@ -15,8 +15,7 @@
             Print(18, shift, "3. Buy cages.");
             Console.ForegroundColor = ConsoleColor.Red;
             Print(21, shift, "0. Back to Main menu.");
-            Console.ForegroundColor = ConsoleColor.Blue;
-
+            Console.ForegroundColor = ConsoleColor.White;
         }
 
         public override void OptionZero()
