@@ -23,7 +23,7 @@
             Print(15, 10, "4. Manage budget.");
             Print(18, 10, "5. Manage schedules.");
             Print(21, 10, "6. Manage food.");
-            Print(21, 10, "0. Exit.");
+            Print(24, 10, "0. Exit.");
 
         }
 
