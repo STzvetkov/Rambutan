@@ -25,7 +25,7 @@ namespace Zoo.Animals.Consumables
         private int foodLimitBeforeOrder;
 
 
-        // Constructors
+        // Constructors 
         public Food(FoodType type, int initialFood, int foodLimitBeforeOrder)
             : this()
         {

@@ -13,10 +13,10 @@
         private List<Food> storage;
 
         // Constructor
-        public FoodStorage(FoodStorageType type) 
+        public FoodStorage(FoodStorageType type)
         {
-            this.typeOfStorage = type;            
-            
+            this.typeOfStorage = type;
+
         }
 
         // Methods
