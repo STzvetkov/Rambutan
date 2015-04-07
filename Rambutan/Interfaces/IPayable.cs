@@ -6,7 +6,7 @@
     using System.Text;
     using System.Threading.Tasks;
 
-    public enum PaymentTypes 
+    public enum PaymentTypes
     {
         Monthly,
         Hourly
@@ -14,10 +14,11 @@
     public interface IPayable
     {
         double CalculatePayment(double hours);
-        
-        PaymentTypes PaymentType { get; set; }
-        double PaymentRate { get; set; }
 
-        double WorkedTime { get; set; }
+        PaymentTypes PaymentType { get; }
+
+        double PaymentRate { get; }
+
+        double WorkedTime { get; }
     }
 }
