@@ -21,16 +21,19 @@
         public override void OptionOne()
         {
             // TODO : Add method to buy animals.
+            throw new NotImplementedException();
         }
 
         public override void OptionTwo()
         {
             // TODO : Add method to sell animals.
+            throw new NotImplementedException();
         }
 
         public override void OptionThree()
         {
             // TODO : Add method to buy cages.
+            throw new NotImplementedException();
         }
 
         public override void OptionFour()

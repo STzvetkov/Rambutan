@@ -22,16 +22,19 @@
         public override void OptionOne()
         {
             // TODO : Add method to register hired employee.
+            throw new NotImplementedException();
         }
 
         public override void OptionTwo()
         {
             // TODO : Add method to register fired employee.
+            throw new NotImplementedException();
         }
 
         public override void OptionThree()
         {
             // TODO : Add method to manage salaries.
+            throw new NotImplementedException();
         }
 
         public override void OptionFour()

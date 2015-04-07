@@ -20,11 +20,13 @@
         public override void OptionOne()
         {
             // TODO : Add method to register income.
+            throw new NotImplementedException();
         }
 
         public override void OptionTwo()
         {
             // TODO : Add method to register expense.
+            throw new NotImplementedException();
         }
 
         public override void OptionThree()

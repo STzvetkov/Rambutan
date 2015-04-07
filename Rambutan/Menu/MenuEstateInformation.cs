@@ -36,26 +36,31 @@ namespace Zoo.Menu.EstateInformation
         public override void OptionOne()
         {
            // TODO : Fill with method to show empty cages.
+            throw new NotImplementedException();
         }
 
         public override void OptionTwo()
         {
             // TODO : Fill with method to show all animals.
+            throw new NotImplementedException();
         }
 
         public override void OptionThree()
         {
             // TODO : Fill with method to show all employees.
+            throw new NotImplementedException();
         }
 
         public override void OptionFour()
         {
             // TODO : Fill with method to show all food available.
+            throw new NotImplementedException();
         }
 
         public override void OptionFive()
         {
             // TODO : Fill with method to show budget surplus.
+            throw new NotImplementedException();
         }
 
         public override void OptionSix()
