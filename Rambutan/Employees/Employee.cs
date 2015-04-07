@@ -1,20 +1,7 @@
 ﻿namespace Zoo.Employees
 {
     using System;
-
-    public enum Gender
-    {
-        Male,
-        Female
-    }
-
-    public enum Position
-    {
-        Director,
-        Veterinarian,
-        Nutritionist,
-        ZooKeeper
-    }
+    using Zoo.Common;
 
     public abstract class Employee
     {
