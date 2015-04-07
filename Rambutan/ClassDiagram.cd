@@ -232,7 +232,6 @@
       <HashCode>CAABAAAgAAAQAAAEAQAAAAQAAEAEAgAAAAIAAAAAAgA=</HashCode>
       <FileName>Schedules\Schedule.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
   </Class>
   <Class Name="Zoo.Schedules.WorkingSchedule" Collapsed="true">
     <Position X="5.75" Y="11.25" Width="1.5" />
@@ -323,7 +322,7 @@
   <Class Name="Zoo.Animals.Consumables.FoodManipulations" Collapsed="true">
     <Position X="20.5" Y="8" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAIAAAAAAAAAAAAAAAAAAAAAAIAAAAAEAAAAAEAAA=</HashCode>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAAAAAAYAAAAAEAAAAAEAAA=</HashCode>
       <FileName>Animals\Consumables\FoodManipulations.cs</FileName>
     </TypeIdentifier>
   </Class>
