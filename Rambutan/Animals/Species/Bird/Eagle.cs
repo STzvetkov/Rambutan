@@ -10,8 +10,8 @@
     {
         private bool fly;
         private bool bird;
-       
-        private Food fish;
+
+        private FoodType fish;
 
 
         public Eagle(){
@@ -26,14 +26,14 @@
         {
             this.fly = isFlyable();
             this.bird = isBird();
-            this.Fish = new Food(quanty_of_food);
+            this.Fish = FoodType.Meat;
         }
 
         
         // TODO : Implement needed methods and fields.
         // food: fish, other animals
 
-        public Food Fish
+        public FoodType Fish
         {
             get
             {

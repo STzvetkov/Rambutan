@@ -9,7 +9,7 @@
 
     public class ClownFish : Aquatic, IOmnivore, IFeedable
     {
-      private Food plancton;
+        private FoodType plancton;
 
         public ClownFish(){
         
@@ -21,15 +21,15 @@
              arrivalDate,  cage,  HabitatType.Aquarium,
              healthStatus,  examinedBy)
         {
-          
-            this.Plancton = new Food(quanty_of_food);
+
+            this.Plancton = FoodType.Plant;
         }
 
         
         // TODO : Implement needed methods and fields.
         // food: fish, other animals
 
-        public Food Plancton
+        public FoodType Plancton
         {
             get
             {

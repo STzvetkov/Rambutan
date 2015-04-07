@@ -9,7 +9,7 @@
 
     public class Monkey : Terrestrial, IHerbivore, IFeedable
     {
-        private Food banans;
+        private FoodType banans;
 
 
         public Monkey(){
@@ -22,15 +22,15 @@
              arrivalDate,  cage,  HabitatType.Steppe,
              healthStatus,  examinedBy)
         {
-          
-            this.Banans = new Food(quanty_of_food);
+
+            this.Banans = FoodType.Plant;
         }
 
         
         // TODO : Implement needed methods and fields.
         // food: fish, other animals
 
-        public Food Banans
+        public FoodType Banans
         {
             get
             {

@@ -13,7 +13,7 @@
          private bool fly;
         private bool bird;
         //shte se preraboti hranata sled kato se zavurshat vsichkite
-        private Food fish;
+        private FoodType fish;
 
        
         public Ostrich(){
@@ -29,13 +29,13 @@
             this.fly = isFlyable();
             this.bird = isBird();
 
-            this.Fish = new Food(quanty_of_food);
+            this.Fish = FoodType.Meat;
         }
       
        
         // food: fish, other animals
 
-        public Food Fish
+        public FoodType Fish
         {
             get
             {

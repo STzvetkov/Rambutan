@@ -9,7 +9,7 @@
 
     public class Lion : Terrestrial, ICarnivore, IFeedable
     {
-        private Food meat;
+        private FoodType meat;
 
 
         public Lion(){
@@ -22,15 +22,15 @@
              arrivalDate,  cage,  HabitatType.Steppe,
              healthStatus,  examinedBy)
         {
-          
-            this.Meat = new Food(quanty_of_food);
+
+            this.Meat = FoodType.Meat;
         }
 
         
         // TODO : Implement needed methods and fields.
         // food: fish, other animals
 
-        public Food Meat
+        public FoodType Meat
         {
             get
             {

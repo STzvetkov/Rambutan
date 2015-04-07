@@ -7,7 +7,7 @@
     using Zoo.Animals.Consumables;
     public class Rabbit : Terrestrial, IHerbivore, IFeedable
     {
-         private Food carrots;
+         private FoodType carrots;
 
 
         public Rabbit(){
@@ -20,15 +20,15 @@
              arrivalDate,  cage,  HabitatType.Steppe,
              healthStatus,  examinedBy)
         {
-          
-            this.Carrots = new Food(quanty_of_food);
+
+            this.Carrots = FoodType.Plant;
         }
 
         
         // TODO : Implement needed methods and fields.
         // food: fish, other animals
 
-        public Food Carrots
+        public FoodType Carrots
         {
             get
             {

@@ -40,10 +40,10 @@
             Console.WriteLine(vet);
             // </test>
 
-            Food newF = new Food(1000);
+            //Food newF = new Food(1000);
 
-            newF.ConsumeAmount(500);
-            Console.WriteLine(newF.GetQuantity());
+            //newF.ConsumeAmount(500);
+            //Console.WriteLine(newF.GetQuantity());
 
             var schedule = new FeedingSchedule("Visit","11:15","Weekly");
             schedule.AddDay(DayOfWeek.Sunday);

@@ -8,7 +8,7 @@
 
     public class Deer : Terrestrial, IHerbivore, IFeedable
     {
-         private Food deer_food;
+        private FoodType deer_food;
 
 
         public Deer(){
@@ -21,15 +21,15 @@
              arrivalDate,  cage,  HabitatType.Steppe,
              healthStatus,  examinedBy)
         {
-          
-            this.Deer_food = new Food(quanty_of_food);
+
+            this.Deer_food = FoodType.Plant;
         }
 
         
         // TODO : Implement needed methods and fields.
         // food: fish, other animals
 
-        public Food Deer_food
+        public FoodType Deer_food
         {
             get
             {

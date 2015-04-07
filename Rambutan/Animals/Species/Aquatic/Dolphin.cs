@@ -8,9 +8,9 @@
 
     public class Dolphin : Aquatic, ICarnivore, IFeedable
     {
-       
-       
-        private Food fish;
+
+
+        private FoodType fish;
      
 
 
@@ -24,16 +24,16 @@
              arrivalDate,  cage,  HabitatType.Pool,
              healthStatus,  examinedBy)
         {
-          
-           
-            this.Fish = new Food(quanty_of_food);
+
+
+            this.Fish = FoodType.Meat;
         }
 
         
         // TODO : Implement needed methods and fields.
         // food: fish, other animals
-        
-        public Food Fish
+
+        public FoodType Fish
         {
             get
             {

@@ -9,7 +9,7 @@
     {
         // Add information about lions, implement Carnivore's and Animal's methods and fields.
         // food: seed, fruit, insects, fish and other animals
-           private Food meat;
+        private FoodType meat;
 
 
         public Bear(){
@@ -22,16 +22,16 @@
              arrivalDate,  cage,  HabitatType.Steppe,
              healthStatus,  examinedBy)
         {
-          
 
-            this.Meat = new Food(quanty_of_food);
+
+            this.Meat = FoodType.Meat;
         }
 
         
         // TODO : Implement needed methods and fields.
         // food: fish, other animals
 
-        public Food Meat
+        public FoodType Meat
         {
             get
             {
