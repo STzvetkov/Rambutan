@@ -19,8 +19,9 @@ namespace Zoo.Menu.ManageFood
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             PrintHeader();
             Print(12, shift, "1. Order food.");
+            Print(15, shift, "2. Feed animals.");
             Console.ForegroundColor = ConsoleColor.Red;
-            Print(15, shift, "0. Back to Main menu.");
+            Print(18, shift, "0. Back to Main menu.");
             Console.ForegroundColor = ConsoleColor.White;
         }
 
@@ -37,7 +38,8 @@ namespace Zoo.Menu.ManageFood
 
         public override void OptionTwo()
         {
-            throw new NoMenuException();
+            Console.Clear();
+            FoodManipulations.FeedAnimals();
         }
 
         public override void OptionThree()
@@ -67,7 +69,7 @@ namespace Zoo.Menu.ManageFood
 
         public override bool HasOptionTwo
         {
-            get { return false; }
+            get { return true; }
         }
 
         public override bool HasOptionThree

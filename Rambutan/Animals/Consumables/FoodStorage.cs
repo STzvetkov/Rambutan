@@ -18,7 +18,7 @@
         public FoodStorage(FoodStorageType type)
         {
             this.typeOfStorage = type;
-
+            this.storage = new List<Food>();
         }
 
         // Properties
