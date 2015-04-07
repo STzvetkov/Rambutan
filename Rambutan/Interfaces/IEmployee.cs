@@ -10,8 +10,8 @@ namespace Zoo.Interfaces
 {
     interface IEmployee
     {
-        public string FirstName { get; }
-        public string LastName { get; }
-        public Position Position { get; }
+        string FirstName { get; }
+        string LastName { get; }
+        Position Position { get; }
     }
 }

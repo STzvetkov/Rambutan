@@ -2,8 +2,8 @@
 {
     interface ICage
     {
-        public double Width { get; }
-        public double Height { get; }
-        public double Depth { get; }
+        double Width { get; }
+        double Height { get; }
+        double Depth { get; }
     }
 }
