@@ -62,10 +62,10 @@
             // test event
             //FeedingAnimalAndOrderingFood.CreateFood();
 
-            //Console.WindowHeight = 45;
-            //Console.BufferHeight = Console.WindowHeight;
-            //Console.WindowWidth = 100;
-            //Console.BufferWidth = Console.WindowWidth;
+            Console.WindowHeight = 45;
+            Console.BufferHeight = Console.WindowHeight;
+            Console.WindowWidth = 100;
+            Console.BufferWidth = Console.WindowWidth;
 
             var attr = typeof(ZooManagement).GetCustomAttributes<VersionAttribute>();
             string a = d.toString();
@@ -86,9 +86,6 @@
                 }
                 ReadKey();
                 TakeChoice(cki);
-
-
-
             }
             #endregion
         }
