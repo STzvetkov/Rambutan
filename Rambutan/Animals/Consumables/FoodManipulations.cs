@@ -8,7 +8,7 @@
 
     public class FoodManipulations
     {
-        public static void CreateStorage()
+        public static void OrderFood()
         {
             var meatStorage = new FoodStorage(FoodStorageType.Freezer);
             var plantStorage = new FoodStorage(FoodStorageType.Normal);
