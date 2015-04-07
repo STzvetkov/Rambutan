@@ -64,6 +64,7 @@
             // test event
             //FeedingAnimalAndOrderingFood.CreateFood();
 
+            Console.SetWindowSize(100, 45);
             Console.WindowHeight = 45;
             Console.BufferHeight = Console.WindowHeight;
             Console.WindowWidth = 100;
