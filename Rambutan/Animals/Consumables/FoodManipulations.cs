@@ -15,7 +15,7 @@
 
         }
 
-        public static void CreateFood()
+        public static void OrderFood()
         {
             var meatFood = new Food(FoodType.Meat, 101, 10);
             var plantFood = new Food(FoodType.Plant, 10001, 1000);
