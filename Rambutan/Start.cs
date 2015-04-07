@@ -22,55 +22,58 @@
 
         static void Main()
         {
-            //testing animals ,must add species.*
-            Cage c = new Cage(22, 300, 300, 300, HabitatType.Steppe);
-             Cage c2 = new Cage(21,300,300,300,HabitatType.Steppe);
-            Veterinarian v = new Veterinarian();
-            // <test>int quanty_of_food, long animalID, Employees.Gender gender, int age,
-            //string dietType, decimal price, DateTime arrivalDate, Cage cage, string healthStatus, Employees.Veterinarian examinedBy
-            Zoo.Animals.Species.Bird.Eagle d = new Zoo.Animals.Species.Bird.Eagle(200, 3, Gender.Female, 23, "Food", 10, DateTime.Today, c,HabitatType.Steppe, "fine", v);
-
-           
-            var nutr = new Nutritionist();
-            nutr.AnimalsFedDaily = 3;
-
-
-            var vet = new Veterinarian();
-            vet.AnimalsTreatedDaily = 4;
-
-            Console.WriteLine(nutr);
-            Console.WriteLine(vet);
-            // </test>
-
-            //Food newF = new Food(1000);
-
-            //newF.ConsumeAmount(500);
-            //Console.WriteLine(newF.GetQuantity());
-
-            var schedule = new FeedingSchedule("Visit","11:15","Weekly");
-            schedule.AddDay(DayOfWeek.Sunday);
-            schedule.AddDay(DayOfWeek.Tuesday);
-            schedule.AddDay(DayOfWeek.Monday);
-            schedule.AddTime("15:15");
-            schedule.AddTime("18:15");
-            schedule.AddTime("09:15");
-           
-            
-
-            Console.WriteLine(schedule);
-
-            //var schedule2 = new WorkingSchedule("cleaning","12:30");
-            
-            // test event
-            //FeedingAnimalAndOrderingFood.CreateFood();
-
             Console.SetWindowSize(100, 45);
             Console.WindowHeight = 45;
             Console.BufferHeight = Console.WindowHeight;
             Console.WindowWidth = 100;
             Console.BufferWidth = Console.WindowWidth;
 
-            string a = d.toString();
+
+            ////testing animals ,must add species.*
+            //Cage c = new Cage(22, 300, 300, 300, HabitatType.Steppe);
+            // Cage c2 = new Cage(21,300,300,300,HabitatType.Steppe);
+            //Veterinarian v = new Veterinarian();
+            //// <test>int quanty_of_food, long animalID, Employees.Gender gender, int age,
+            ////string dietType, decimal price, DateTime arrivalDate, Cage cage, string healthStatus, Employees.Veterinarian examinedBy
+            //Zoo.Animals.Species.Bird.Eagle d = new Zoo.Animals.Species.Bird.Eagle(200, 3, Gender.Female, 23, "Food", 10, DateTime.Today, c,HabitatType.Steppe, "fine", v);
+
+           
+            //var nutr = new Nutritionist();
+            //nutr.AnimalsFedDaily = 3;
+
+
+            //var vet = new Veterinarian();
+            //vet.AnimalsTreatedDaily = 4;
+
+            //Console.WriteLine(nutr);
+            //Console.WriteLine(vet);
+            //// </test>
+
+            ////Food newF = new Food(1000);
+
+            ////newF.ConsumeAmount(500);
+            ////Console.WriteLine(newF.GetQuantity());
+
+            //var schedule = new FeedingSchedule("Visit","11:15","Weekly");
+            //schedule.AddDay(DayOfWeek.Sunday);
+            //schedule.AddDay(DayOfWeek.Tuesday);
+            //schedule.AddDay(DayOfWeek.Monday);
+            //schedule.AddTime("15:15");
+            //schedule.AddTime("18:15");
+            //schedule.AddTime("09:15");
+           
+            
+
+            //Console.WriteLine(schedule);
+
+            //var schedule2 = new WorkingSchedule("cleaning","12:30");
+            
+            // test event
+            //FeedingAnimalAndOrderingFood.CreateFood();
+
+            //string a = d.toString();
+
+
            
            
             #region Menu
