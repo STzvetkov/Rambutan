@@ -7,6 +7,7 @@
     using Zoo.Menu.ManageEmployees;
     using Zoo.Menu.ManageBudget;
     using Zoo.Menu.ManageSchedules;
+    using Zoo.Menu.ManageFood;
 
     public class MainMenu : BaseMenuState
     {
@@ -36,29 +37,34 @@
         }
 
 
-        public override BaseMenuState OptionOne
+        public override void OptionOne()
         {
-            get { return new MenuEstateInformation(); }
+            Start.state = new MenuEstateInformation();
         }
 
-        public override BaseMenuState OptionTwo
+        public override void OptionTwo()
         {
-            get { return new MenuManageAnimals(); }
+            Start.state = new MenuManageAnimals();
         }
 
-        public override BaseMenuState OptionThree
+        public override void OptionThree()
         {
-            get { return new MenuManageEmployees(); }
+            Start.state = new MenuManageEmployees();
         }
 
-        public override BaseMenuState OptionFour
+        public override void OptionFour()
         {
-            get { return new MenuManageBudget(); }
+            Start.state = new MenuManageBudget();
         }
 
-        public override BaseMenuState OptionFive
+        public override void OptionFive()
         {
-            get { return new MenuManageSchedules(); }
+           Start.state =  new MenuManageSchedules(); 
+        }
+
+        public override void  OptionSix()
+        {
+            Start.state =  new MenuManageFood(); 
         }
 
         public override bool HasOptionOne
@@ -88,9 +94,7 @@
 
         public override bool HasOptionSix
         {
-            get { return false; }
+            get { return true; }
         }
-
-
     }
 }

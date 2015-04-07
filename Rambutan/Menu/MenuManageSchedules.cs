@@ -1,6 +1,7 @@
 ﻿namespace Zoo.Menu.ManageSchedules
 {
     using System;
+    using Zoo.Exceptions;
 
     public class MenuManageSchedules : BaseMenuState
     {
@@ -18,29 +19,34 @@
             Start.state = new MainMenu();
         }
 
-        public override BaseMenuState OptionOne
+        public override void OptionOne()
         {
-            get { return new ManageWorkingSchedule(); }
+            //TODO : Add method to change working schedules.
         }
 
-        public override BaseMenuState OptionTwo
+        public override void OptionTwo()
         {
-            get { return new ManageFeedingSchedule(); }
+            //TODO : Add method to change feeding schedules.
         }
 
-        public override BaseMenuState OptionThree
+        public override void OptionThree()
         {
-            get { throw new NotImplementedException(); }
+            throw new NoMenuException();
         }
 
-        public override BaseMenuState OptionFour
+        public override void OptionFour()
         {
-            get { throw new NotImplementedException(); }
+            throw new NoMenuException();
         }
 
-        public override BaseMenuState OptionFive
+        public override void OptionFive()
         {
-            get { throw new NotImplementedException(); }
+            throw new NoMenuException();
+        }
+
+        public override void OptionSix()
+        {
+            throw new NoMenuException();
         }
 
         public override bool HasOptionOne

@@ -1,6 +1,7 @@
 ﻿namespace Zoo.Menu.ManageEmployees
 {
     using System;
+    using Zoo.Exceptions;
 
     public class MenuManageEmployees : BaseMenuState
     {
@@ -18,29 +19,34 @@
             Start.state = new MainMenu();
         }
 
-        public override BaseMenuState OptionOne
+        public override void OptionOne()
         {
-            get { return new RegisterHiredEmployee(); }
+            // TODO : Add method to register hired employee.
         }
 
-        public override BaseMenuState OptionTwo
+        public override void OptionTwo()
         {
-            get { return new RegisterFiredEmployee(); }
+            // TODO : Add method to register fired employee.
         }
 
-        public override BaseMenuState OptionThree
+        public override void OptionThree()
         {
-            get { return new ManageSalaries(); }
+            // TODO : Add method to manage salaries.
         }
 
-        public override BaseMenuState OptionFour
+        public override void OptionFour()
         {
-            get { throw new NotImplementedException(); }
+            throw new NoMenuException();
         }
 
-        public override BaseMenuState OptionFive
+        public override void OptionFive()
         {
-            get { throw new NotImplementedException(); }
+            throw new NoMenuException();
+        }
+
+        public override void OptionSix()
+        {
+            throw new NoMenuException();
         }
 
         public override bool HasOptionOne

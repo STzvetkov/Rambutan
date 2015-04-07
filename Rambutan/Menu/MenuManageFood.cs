@@ -1,44 +1,56 @@
-﻿namespace Zoo.Menu.ManageBudget
+﻿
+namespace Zoo.Menu.ManageFood
 {
     using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
 
-    public class MenuManageBudget : BaseMenuState
+    using Zoo.Animals.Consumables;
+    using Zoo.Exceptions;
+
+    public class MenuManageFood : BaseMenuState
     {
         public override void PrintMenu()
         {
-            Print(6, 10, "1. Register income.");
-            Print(9, 10, "2. Register expense.");
+            Print(6, 10, "1. Order food.");
             Print(12, 10, "0. Back to Main menu.");
-
         }
 
         public override void OptionZero()
         {
             Start.state = new MainMenu();
         }
-        public override BaseMenuState OptionOne
+
+        public override void OptionOne()
         {
-            get { return new RegisterExpenses(); }
+            FoodManipulations.OrderFood();
         }
 
-        public override BaseMenuState OptionTwo
+        public override void OptionTwo()
         {
-            get { return new RegisterIncome(); }
+            throw new NoMenuException();
         }
 
-        public override BaseMenuState OptionThree
+        public override void OptionThree()
         {
-            get { throw new NotImplementedException(); }
+            throw new NoMenuException();
         }
 
-        public override BaseMenuState OptionFour
+        public override void OptionFour()
         {
-            get { throw new NotImplementedException(); }
+            throw new NoMenuException();
         }
 
-        public override BaseMenuState OptionFive
+        public override void OptionFive()
         {
-            get { throw new NotImplementedException(); }
+            throw new NoMenuException();
+        }
+
+        public override void OptionSix()
+        {
+            throw new NoMenuException();
         }
 
         public override bool HasOptionOne
@@ -48,7 +60,7 @@
 
         public override bool HasOptionTwo
         {
-            get { return true; }
+            get { return false; }
         }
 
         public override bool HasOptionThree

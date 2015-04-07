@@ -8,15 +8,17 @@
 
         public abstract void OptionZero();
 
-        public abstract BaseMenuState OptionOne { get; }
+        public abstract void OptionOne();
 
-        public abstract BaseMenuState OptionTwo { get; }
+        public abstract void OptionTwo();
 
-        public abstract BaseMenuState OptionThree { get; }
+        public abstract void OptionThree();
 
-        public abstract BaseMenuState OptionFour { get; }
+        public abstract void OptionFour();
 
-        public abstract BaseMenuState OptionFive { get; }
+        public abstract void OptionFive();
+
+        public abstract void OptionSix();
 
         public abstract bool HasOptionOne { get; }
 

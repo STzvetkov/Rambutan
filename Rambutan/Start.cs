@@ -72,8 +72,7 @@
            
            
             #region Menu
-            ChangeMenu(new MainMenu());
-
+            state = new MainMenu();
             Console.CursorVisible = false;
 
             while (programIsRunning)
@@ -122,14 +121,14 @@
                 case ConsoleKey.NumPad1:
                     if (state.HasOptionOne)
                     {
-                        ChangeMenu(state.OptionOne);
+                        state.OptionOne();
                     }
                     break;
                 case ConsoleKey.D2:
                 case ConsoleKey.NumPad2:
                     if (state.HasOptionTwo)
                     {
-                        ChangeMenu(state.OptionTwo);
+                       state.OptionTwo();
                     }
                     break;
 
@@ -137,7 +136,7 @@
                 case ConsoleKey.NumPad3:
                     if (state.HasOptionThree)
                     {
-                        ChangeMenu(state.OptionThree);
+                        state.OptionThree();
                     }
                     break;
 
@@ -145,12 +144,16 @@
                 case ConsoleKey.NumPad4:
                     if (state.HasOptionFour)
                     {
-                        ChangeMenu(state.OptionFour);
+                        state.OptionFour();
                     }
                     break;
 
                 case ConsoleKey.D5:
                 case ConsoleKey.NumPad5:
+                    if(state.HasOptionSix)
+                    {
+                        state.OptionSix();
+                    }
                     break;
 
                 case ConsoleKey.D6:
@@ -172,11 +175,6 @@
                 default:
                     break;
             }
-        }
-
-        private static void ChangeMenu(BaseMenuState menu)
-        {
-            state = menu;
         }
         #endregion
     }

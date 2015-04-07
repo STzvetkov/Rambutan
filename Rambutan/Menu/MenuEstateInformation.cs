@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Zoo.Exceptions;
 using Zoo.Menu.EstateInformation;
 
 namespace Zoo.Menu.EstateInformation
@@ -25,7 +26,6 @@ namespace Zoo.Menu.EstateInformation
             Print(15, 10, "4. Food available.");
             Print(18, 10, "5. Budget surplus.");
             Print(21, 10, "0. Back to Main menu.");
-
         }
 
         public override void OptionZero()
@@ -33,29 +33,34 @@ namespace Zoo.Menu.EstateInformation
             Start.state = new MainMenu();
         }
 
-        public override BaseMenuState OptionOne
+        public override void OptionOne()
         {
-            get { return new MenuNumberOfCages(); }
+           // TODO : Fill with method to show empty cages.
         }
 
-        public override BaseMenuState OptionTwo
+        public override void OptionTwo()
         {
-            get { return new MenuAllAnimals(); }
+            // TODO : Fill with method to show all animals.
         }
 
-        public override BaseMenuState OptionThree
+        public override void OptionThree()
         {
-            get { return new MenuAllEmployees(); }
+            // TODO : Fill with method to show all employees.
         }
 
-        public override BaseMenuState OptionFour
+        public override void OptionFour()
         {
-            get { return new MenuFoodAvailable(); }
+            // TODO : Fill with method to show all food available.
         }
 
-        public override BaseMenuState OptionFive
+        public override void OptionFive()
         {
-            get { return new MenuBudgetSurplus(); }
+            // TODO : Fill with method to show budget surplus.
+        }
+
+        public override void OptionSix()
+        {
+            throw new NoMenuException();
         }
 
         public override bool HasOptionOne
