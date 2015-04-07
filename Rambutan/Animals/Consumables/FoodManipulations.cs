@@ -8,14 +8,14 @@
 
     public class FoodManipulations
     {
-       public static void CreateStorage()
-        { 
+        public static void CreateStorage()
+        {
             var meatStorage = new FoodStorage(FoodStorageType.Freezer);
             var plantStorage = new FoodStorage(FoodStorageType.Normal);
-            
+
         }
 
-       public static void CreateFood()
+        public static void CreateFood()
         {
             var meatFood = new Food(FoodType.Meat, 101, 10);
             var plantFood = new Food(FoodType.Plant, 10001, 1000);
@@ -25,10 +25,10 @@
             Console.WriteLine("Food Left: {0}", meatFood);
 
 
-            meatFood.CriticalLimitReached += meatFood_CriticalLimitReached;            
+            meatFood.CriticalLimitReached += meatFood_CriticalLimitReached;
 
-            Console.WriteLine("All food for Mammals: {0}", meatFood);           
-          
+            Console.WriteLine("All food for Mammals: {0}", meatFood);
+
             Console.WriteLine("press 'a' key to feed animals");
             while (Console.ReadKey(true).KeyChar == 'a')
             {
@@ -36,8 +36,8 @@
                 meatFood.Deplete(6); // allAnimals.Select(an=>an.Mammal.Count) accordint to the number of all animals at the moment
                 Console.WriteLine("Food Left: {0}", meatFood);
             }
-            
-        }       
+
+        }
 
         static void meatFood_CriticalLimitReached(object sender, EventArgs e)
         {

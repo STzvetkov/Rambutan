@@ -46,6 +46,7 @@
     <Compile Include="Animals\Animal.cs" />
     <Compile Include="Animals\Cage.cs" />
     <Compile Include="Animals\Consumables\Food.cs" />
+    <Compile Include="Animals\Consumables\FoodManipulations.cs" />
     <Compile Include="Animals\Consumables\FoodStorage.cs" />
     <Compile Include="Animals\Consumables\FoodStorageType.cs" />
     <Compile Include="Animals\Consumables\FoodType.cs" />
