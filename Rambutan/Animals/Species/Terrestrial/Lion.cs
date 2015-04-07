@@ -9,7 +9,7 @@
 
     public class Lion : Terrestrial, ICarnivore, IFeedable
     {
-        private FoodType meat;
+        private FoodType typeOfFood;
 
 
         public Lion(){
@@ -23,23 +23,29 @@
              healthStatus,  examinedBy)
         {
 
-            this.Meat = FoodType.Meat;
+            this.TypeOfFood = FoodType.Meat;
         }
 
         
         // TODO : Implement needed methods and fields.
         // food: fish, other animals
 
-        public FoodType Meat
+      
+        public FoodType TypeOfFood
         {
             get
             {
-                return this.meat;
+                return this.typeOfFood;
             }
             set
             {
-                this.meat = value;
+                this.typeOfFood = value;
             }
+        }
+
+        public void Eat(int quantity)
+        {
+            Console.WriteLine("Am Aa");
         }
         //Dolphine - Methods - for add
        

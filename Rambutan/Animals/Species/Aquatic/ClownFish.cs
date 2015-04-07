@@ -9,7 +9,7 @@
 
     public class ClownFish : Aquatic, IOmnivore, IFeedable
     {
-        private FoodType plancton;
+        private FoodType typeOfFood;
 
         public ClownFish(){
         
@@ -22,26 +22,29 @@
              healthStatus,  examinedBy)
         {
 
-            this.Plancton = FoodType.Plant;
+            this.TypeOfFood = FoodType.Mix;
         }
 
         
         // TODO : Implement needed methods and fields.
         // food: fish, other animals
 
-        public FoodType Plancton
+        public FoodType TypeOfFood
         {
             get
             {
-                return this.plancton;
+                return this.typeOfFood;
             }
             set
             {
-                this.plancton = value;
+                this.typeOfFood = value;
             }
-
         }
-        
+
+        public void Eat(int quantity)
+        {
+            Console.WriteLine("Am Am");
+        }
         // food: algae, plankton, crustaceans
     }
 

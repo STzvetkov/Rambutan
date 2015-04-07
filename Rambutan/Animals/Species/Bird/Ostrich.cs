@@ -10,10 +10,10 @@
     {
        
         // food: plants, insects, lizards
-         private bool fly;
+        private bool fly;
         private bool bird;
         //shte se preraboti hranata sled kato se zavurshat vsichkite
-        private FoodType fish;
+        private FoodType typeOfFood;
 
        
         public Ostrich(){
@@ -29,22 +29,28 @@
             this.fly = isFlyable();
             this.bird = isBird();
 
-            this.Fish = FoodType.Meat;
+            this.TypeOfFood = FoodType.Mix;
         }
       
        
         // food: fish, other animals
 
-        public FoodType Fish
+     
+        public FoodType TypeOfFood
         {
             get
             {
-                return this.fish;
+                return this.typeOfFood;
             }
             set
             {
-                this.fish = value;
+                this.typeOfFood = value;
             }
+        }
+
+        public void Eat(int quantity)
+        {
+            Console.WriteLine("Am Am");
         }
 
         //Dolphine - Methods - for add

@@ -1,9 +1,10 @@
 ﻿namespace Zoo.Interfaces
 {
     using System;
+    using Zoo.Animals.Consumables;
 
     public interface ICarnivore
     {
-        // TODO : Enter abstract information/methods which all carnivores can have.
+     FoodType TypeOfFood { get; set; }
     }
 }

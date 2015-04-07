@@ -10,8 +10,8 @@
     {
         private bool fly;
         private bool bird;
-
-        private FoodType fish;
+        private FoodType typeOfFood;
+      
 
         // TODO : Implement all fields and methods needed.
         // food: small fish, crustaceans
@@ -29,7 +29,7 @@
         {
             this.fly = isFlyable();
             this.bird = isBird();
-            this.Fish = FoodType.Meat;
+            this.TypeOfFood = FoodType.Meat;
         }
 
         
@@ -38,17 +38,22 @@
         // TODO : Implement needed methods and fields.
         // food: fish, other animals
 
-        public FoodType Fish
+       
+        public FoodType TypeOfFood
         {
             get
             {
-                return this.fish;
+                return this.typeOfFood;
             }
             set
             {
-                this.fish = value;
+                this.typeOfFood = value;
             }
+        }
 
+        public void Eat(int quantity)
+        {
+            Console.WriteLine("Am Am");
         }
         //Dolphine - Methods - for add
        

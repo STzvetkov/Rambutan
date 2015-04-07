@@ -5,11 +5,11 @@
     using Zoo.Interfaces;
     using Zoo.Employees;
     using Zoo.Animals.Consumables;
-    public class Bear : Terrestrial, IOmnivore, IFeedable
+    public class Bear : Terrestrial, IOmnivore, IFeedable, ICarnivore
     {
         // Add information about lions, implement Carnivore's and Animal's methods and fields.
         // food: seed, fruit, insects, fish and other animals
-        private FoodType meat;
+        private FoodType typeOfFood;
 
 
         public Bear(){
@@ -24,25 +24,30 @@
         {
 
 
-            this.Meat = FoodType.Meat;
+            this.TypeOfFood = FoodType.Mix;
         }
 
         
         // TODO : Implement needed methods and fields.
-        // food: fish, other animals
+        // food: fish, other animals        
+        //Dolphine - Methods - for add
 
-        public FoodType Meat
+      
+        public FoodType TypeOfFood
         {
             get
             {
-                return this.meat;
+                return this.typeOfFood;
             }
             set
             {
-                this.meat = value;
+                this.typeOfFood = value;
             }
         }
-        //Dolphine - Methods - for add
-       
+
+        public void Eat(int quantity)
+        {
+            Console.WriteLine("Am Am");
+        }
     }
 }

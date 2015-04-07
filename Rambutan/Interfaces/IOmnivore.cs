@@ -1,9 +1,10 @@
 ﻿namespace Zoo.Interfaces
 {
     using System;
+    using Zoo.Animals.Consumables;
 
     public interface IOmnivore
     {
-        // TODO : Provide information and methods which all omnivores can have.
+        FoodType TypeOfFood { get; set; }
     }
 }

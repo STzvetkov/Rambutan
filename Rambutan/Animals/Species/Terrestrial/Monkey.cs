@@ -9,8 +9,8 @@
 
     public class Monkey : Terrestrial, IHerbivore, IFeedable
     {
-        private FoodType banans;
 
+        private FoodType typeOfFood;
 
         public Monkey(){
         
@@ -23,23 +23,29 @@
              healthStatus,  examinedBy)
         {
 
-            this.Banans = FoodType.Plant;
+            this.TypeOfFood = FoodType.Plant;
         }
 
         
         // TODO : Implement needed methods and fields.
         // food: fish, other animals
 
-        public FoodType Banans
+        
+        public FoodType TypeOfFood
         {
             get
             {
-                return this.banans;
+                return this.typeOfFood;
             }
             set
             {
-                this.banans = value;
+                this.typeOfFood = value;
             }
+        }
+
+        public void Eat(int quantity)
+        {
+            Console.WriteLine("Am Aa");
         }
 
         //Dolphine - Methods - for add

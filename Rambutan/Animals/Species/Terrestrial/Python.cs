@@ -8,7 +8,7 @@
 
     public class Python : Terrestrial, ICarnivore, IFeedable
     {
-         private FoodType mice;
+        private FoodType typeOfFood;
 
 
         public Python(){
@@ -22,23 +22,29 @@
              healthStatus,  examinedBy)
         {
 
-            this.Mice = FoodType.Meat;
+            this.TypeOfFood = FoodType.Meat;
         }
 
         
         // TODO : Implement needed methods and fields.
         // food: fish, other animals
 
-        public FoodType Mice
+        
+        public FoodType TypeOfFood
         {
             get
             {
-                return this.mice;
+                return this.typeOfFood;
             }
             set
             {
-                this.mice = value;
+                this.typeOfFood = value;
             }
+        }
+
+        public void Eat(int quantity)
+        {
+            Console.WriteLine("Am Aa");
         }
 
         //Dolphine - Methods - for add

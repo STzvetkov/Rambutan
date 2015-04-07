@@ -8,8 +8,8 @@
 
     public class Deer : Terrestrial, IHerbivore, IFeedable
     {
-        private FoodType deer_food;
 
+        private FoodType typeOfFood;
 
         public Deer(){
         
@@ -22,23 +22,29 @@
              healthStatus,  examinedBy)
         {
 
-            this.Deer_food = FoodType.Plant;
+            this.TypeOfFood = FoodType.Plant;
         }
 
         
         // TODO : Implement needed methods and fields.
         // food: fish, other animals
 
-        public FoodType Deer_food
+        
+        public FoodType TypeOfFood
         {
             get
             {
-                return this.deer_food;
+                return this.typeOfFood;
             }
             set
             {
-                this.deer_food = value;
+                this.typeOfFood = value;
             }
+        }
+
+        public void Eat(int quantity)
+        {
+            Console.WriteLine("Am Aa");
         }
         //Dolphine - Methods - for add
        
