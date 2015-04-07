@@ -2,6 +2,6 @@
 {
     public interface IFeedable
     {
-       void Eat(int quantity);
+        void Eat(int quantity);
     }
 }

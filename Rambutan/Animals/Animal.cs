@@ -61,7 +61,10 @@
             }
             set
             {
-                // enter checks
+                if (value == null)
+                {
+                    throw new NullReferenceException("AnimalID can not be null!");
+                }
                 if (value == 0)
                 {
                     throw new ArgumentException("AnimalID can not be zero!");
@@ -103,7 +106,10 @@
             }
             set
             {
-                // TODO: Enter checks
+                if (value == null)
+                {
+                    throw new NullReferenceException("Animal age cannot be null!");
+                }
                 this.age = value;
             }
         }
@@ -128,7 +134,10 @@
             }
             set
             {
-                // TODO: Enter checks
+                if (value == null)
+                {
+                    throw new NullReferenceException("Animal price cannot be null!");
+                }
                 this.price = value;
             }
         }
