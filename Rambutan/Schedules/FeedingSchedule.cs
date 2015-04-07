@@ -3,10 +3,12 @@
     using System;
     using System.Collections.Generic;
     using System.Text;
+
     using Zoo.Animals;
     using Zoo.Animals.Consumables;
+    using Zoo.Interfaces;
 
-    public class FeedingSchedule : Schedule
+    public class FeedingSchedule : Schedule, ISchedule
     {
         // TODO : Override ToString()
 

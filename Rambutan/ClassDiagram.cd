@@ -183,14 +183,14 @@
   <Class Name="Zoo.Employees.Employee" Collapsed="true">
     <Position X="6.5" Y="6.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>EBAAIEAQAABAAACsCAAAqAgAAAAQAgACAAIACgAAAAg=</HashCode>
+      <HashCode>EBAAAEAQAABAAACsCAAAqAgAAAAQAgACAAIACgAAAAg=</HashCode>
       <FileName>Employees\Employee.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Zoo.Employees.Nutritionist" Collapsed="true">
     <Position X="1.5" Y="8" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>QAAAIABAAAAAABAAAAAQAAAAAABAACAEAAAgBAAAAAA=</HashCode>
+      <HashCode>QAAAAABAAAAAABAEAAAQAAAAAABAACAEAAAgBAAAAAA=</HashCode>
       <FileName>Employees\Nutritionist.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -198,7 +198,7 @@
   <Class Name="Zoo.Employees.Veterinarian" Collapsed="true">
     <Position X="4" Y="8" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>QAAAIABAAAAAABAQAAAQEAAAAABAAAAEAAAABAAAAAA=</HashCode>
+      <HashCode>QAAAAABAAAAAABAUAAAQEAAAAABAAAAEAAAABAAAAAA=</HashCode>
       <FileName>Employees\Veterinarian.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -206,7 +206,7 @@
   <Class Name="Zoo.Employees.ZooKeeper" Collapsed="true">
     <Position X="6.5" Y="8" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>QAAAIABACAAAABgAAAAQAAAAAABAAAAEAAAABAAAAAA=</HashCode>
+      <HashCode>QAAAAABACAAAABgEAAAQAAAAAABAAAAEAAAABAAAAAA=</HashCode>
       <FileName>Employees\ZooKeeper.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -231,6 +231,7 @@
       <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAECAAAAAAAIAEAAAAAAI=</HashCode>
       <FileName>Schedules\FeedingSchedule.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="Zoo.Schedules.Schedule" Collapsed="true">
     <Position X="6.25" Y="9.25" Width="1.5" />
@@ -238,6 +239,7 @@
       <HashCode>CAABAAAgAAAQAAAEAQAAAAQAAEAEAgAAAAIAAAAAAgA=</HashCode>
       <FileName>Schedules\Schedule.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="Zoo.Schedules.WorkingSchedule" Collapsed="true">
     <Position X="7.25" Y="10.5" Width="1.5" />
@@ -245,6 +247,7 @@
       <HashCode>AAAAQAAIAAAAAAIEIASIAAAgEDAAAAAAAIAEAAAAAAA=</HashCode>
       <FileName>Schedules\WorkingSchedule.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="Zoo.Animals.Animal" Collapsed="true">
     <Position X="7" Y="0.5" Width="1.5" />
@@ -341,7 +344,7 @@
   <Interface Name="Zoo.Interfaces.ICarnivore" Collapsed="true">
     <Position X="23" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\ICarnivore.cs</FileName>
     </TypeIdentifier>
   </Interface>
@@ -355,14 +358,14 @@
   <Interface Name="Zoo.Interfaces.IHerbivore" Collapsed="true">
     <Position X="21.25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\IHerbivore.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="Zoo.Interfaces.IOmnivore" Collapsed="true">
     <Position X="24.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\IOmnivore.cs</FileName>
     </TypeIdentifier>
   </Interface>

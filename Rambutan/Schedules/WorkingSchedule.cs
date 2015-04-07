@@ -1,12 +1,14 @@
 ﻿namespace Zoo.Schedules
 {
     using System;
-    using Zoo.Employees;
-    using Zoo.Animals;
     using System.Collections.Generic;
     using System.Text;
 
-    public class WorkingSchedule : Schedule
+    using Zoo.Interfaces;
+    using Zoo.Employees;
+    using Zoo.Animals;
+
+    public class WorkingSchedule : Schedule, ISchedule
     {
         // TODO : Override ToString()
 
