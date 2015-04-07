@@ -147,14 +147,18 @@
 
                 case ConsoleKey.D5:
                 case ConsoleKey.NumPad5:
-                    if(state.HasOptionSix)
+                    if(state.HasOptionFive)
                     {
-                        state.OptionSix();
+                        state.OptionFive();
                     }
                     break;
 
                 case ConsoleKey.D6:
                 case ConsoleKey.NumPad6:
+                    if (state.HasOptionSix)
+                    {
+                        state.OptionSix();
+                    }
                     break;
 
                 case ConsoleKey.D7:

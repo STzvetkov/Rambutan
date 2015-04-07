@@ -15,7 +15,7 @@ namespace Zoo.Menu.ManageFood
         public override void PrintMenu()
         {
             Print(6, 10, "1. Order food.");
-            Print(12, 10, "0. Back to Main menu.");
+            Print(9, 10, "0. Back to Main menu.");
         }
 
         public override void OptionZero()

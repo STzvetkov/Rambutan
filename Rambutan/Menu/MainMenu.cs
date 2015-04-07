@@ -22,6 +22,7 @@
             Print(12, 10, "3. Manage employees.");
             Print(15, 10, "4. Manage budget.");
             Print(18, 10, "5. Manage schedules.");
+            Print(21, 10, "6. Manage food.");
             Print(21, 10, "0. Exit.");
 
         }
@@ -59,12 +60,12 @@
 
         public override void OptionFive()
         {
-           Start.state =  new MenuManageSchedules(); 
+            Start.state = new MenuManageSchedules();
         }
 
-        public override void  OptionSix()
+        public override void OptionSix()
         {
-            Start.state =  new MenuManageFood(); 
+            Start.state = new MenuManageFood();
         }
 
         public override bool HasOptionOne
