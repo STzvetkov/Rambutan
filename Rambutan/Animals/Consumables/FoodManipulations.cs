@@ -29,9 +29,14 @@
 
             Console.WriteLine("All food for Mammals: {0}", meatFood);
 
-            Console.WriteLine("press 'a' key to feed animals");
+
+            Print(18, 12, "press 'a' key to feed animals");
+            //Console.WriteLine("press 'a' key to feed animals");
             while (Console.ReadKey(true).KeyChar == 'a')
             {
+                Print(21, 12, "Feeding mammals");
+                Print(22, 12, String.Format("Food Left: {0}", meatFood));
+
                 Console.WriteLine("Feeding mammals");
                 meatFood.Deplete(6); // allAnimals.Select(an=>an.Mammal.Count) accordint to the number of all animals at the moment
                 Console.WriteLine("Food Left: {0}", meatFood);
@@ -42,6 +47,12 @@
         static void meatFood_CriticalLimitReached(object sender, EventArgs e)
         {
             Console.WriteLine("If you dont order Meat right now. The Carnivorous will die from hunger");
+        }
+
+        private static void Print(int row, int col, object data)
+        {
+            Console.SetCursorPosition(col, row);
+            Console.Write(data);
         }
     }
 }
