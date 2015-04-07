@@ -46,11 +46,19 @@
 
             Print(1, shift, "     _oo     .-.        .-.    \n");
             Print(2, shift,   "  >-(_  \\  c(O_O)c    c(O_O)c   \n");
-            Print(3, shift,   "    / _/ ,'.---.`,  ,'.---.`,   \n");
+            Print(3, shift,   "     / _/ ,'.---.`,  ,'.---.`,   \n");
             Print(4, shift,   "    / /  / /|_|_|\\ \\/ /|_|_|\\ \\ \n");
             Print(5, shift,   "   / (   | \\_____/ || \\_____/ | \n");
             Print(6, shift, "  (   `-.'. `---' .`'. `---' .` \n");
             Print(7, shift,   "   `--.._) `-...-'    `-...-'   ");
+        }
+
+        protected void ClearDetailsScreen()
+        {
+            for (int i = 12; i < 36; i++)
+            {
+                Print(i, (Console.WindowWidth / 2 +20), "                                                ");
+            }
         }
     }
 }

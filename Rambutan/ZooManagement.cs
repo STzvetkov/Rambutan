@@ -13,38 +13,38 @@ using Zoo.Animals.Consumables;
 namespace Zoo
 {
     [Version(VersionAttribute.Type.ZooManagementTool, "Rambutan Zoo", "1.0.0")]
-    public class ZooManagement
+    public static class ZooManagement
     {
-        public ZooManagement()
+        public static ZooManagement()
         {
-            this.AnimalsDB = new List<Animal>();
-            this.StaffDB = new List<Employee>();
-            this.CagesDB = new List<Cage>();
+            AnimalsDB = new List<Animal>();
+            StaffDB = new List<Employee>();
+            CagesDB = new List<Cage>();
         }
 
         // Stores all employees
-        public List<Employee> StaffDB { get; private set; }
+        public static List<Employee> StaffDB { get; private set; }
 
         // Stores all animals in the zoo
-        public List<Animal> AnimalsDB { get; private set; }
+        public static List<Animal> AnimalsDB { get; private set; }
 
         // Stores all cages
-        public List<Cage> CagesDB { get; private set; }
+        public static List<Cage> CagesDB { get; private set; }
 
         // Stores all food storages
-        public List<FoodStorage> FoodStoragesDB { get; private set; }
+        public static List<FoodStorage> FoodStoragesDB { get; private set; }
 
-        public void HireEmployee(Employee employee)
+        public static void HireEmployee(Employee employee)
         {
-            this.StaffDB.Add(employee);
+            StaffDB.Add(employee);
         }
 
-        public void DischargeEmployee(long employeeID)
+        public static void DischargeEmployee(long employeeID)
         {
             try
             {
-                Employee employToBeDischarged = this.StaffDB.Find(x => x.StaffID == employeeID);
-                this.StaffDB.Remove(employToBeDischarged);
+                Employee employToBeDischarged = StaffDB.Find(x => x.StaffID == employeeID);
+                StaffDB.Remove(employToBeDischarged);
             }
             catch (Exception)
             {
@@ -52,22 +52,22 @@ namespace Zoo
             }
         }
 
-        public void BuyAnimal(Animal animal)
+        public static void BuyAnimal(Animal animal)
         {
             if (animal == null)
             {
                 throw new NullReferenceException("There is no animal provided!");
             }
-            this.AnimalsDB.Add(animal);
+            AnimalsDB.Add(animal);
             Budget.Instance().AddExpense(animal.Type.ToString(), animal.Price);
         }
 
-        public void SellAnimal(long animalID)
+        public static void SellAnimal(long animalID)
         {
             try
             {
-                Animal animalToBeSold = this.AnimalsDB.Find(x => x.AnimalID == animalID);
-                this.AnimalsDB.Remove(animalToBeSold);
+                Animal animalToBeSold = AnimalsDB.Find(x => x.AnimalID == animalID);
+                AnimalsDB.Remove(animalToBeSold);
                 Budget.Instance().AddIncome(animalToBeSold.Type.ToString(), animalToBeSold.Price);
             }
             catch (Exception)
@@ -76,18 +76,18 @@ namespace Zoo
             }
         }
 
-        public void BuildCage(Cage cage)
+        public static void BuildCage(Cage cage)
         {
-            this.CagesDB.Add(cage);
+            CagesDB.Add(cage);
             Budget.Instance().AddExpense(cage.Type.ToString(), cage.Price);
         }
 
-        public void DemolishCage(long cageID)
+        public static void DemolishCage(long cageID)
         {
             try
             {
-                Cage cageToBeDemolished = this.CagesDB.Find(x => x.CageID == cageID);
-                this.CagesDB.Remove(cageToBeDemolished);
+                Cage cageToBeDemolished = CagesDB.Find(x => x.CageID == cageID);
+                CagesDB.Remove(cageToBeDemolished);
             }
             catch (Exception)
             {
@@ -95,22 +95,31 @@ namespace Zoo
             }
         }
 
-        public void BuyFoodStorge(FoodStorage foodStorage)
+        public static int CountCagesByTypeAndOccupation(HabitatType cageType, int numberAnimals)
+        {
+            var querySelectedCages =
+                                    from cage in CagesDB
+                                    where cage.Type == cageType && cage.AnimalsInCage.Count == numberAnimals
+                                    select cage;
+            return querySelectedCages.Count();
+        }
+
+        public static void BuyFoodStorge(FoodStorage foodStorage)
         {
             if (foodStorage == null)
             {
                 throw new NullReferenceException("There is no food storage provided!");
             }
-            this.FoodStoragesDB.Add(foodStorage);
+            FoodStoragesDB.Add(foodStorage);
             Budget.Instance().AddExpense(foodStorage.Type.ToString(), foodStorage.Price);
         }
 
-        public void DiscardFoodStorage(long storageID)
+        public static void DiscardFoodStorage(long storageID)
         {
             try
             {
-                FoodStorage storageToBeDiscarded = this.FoodStoragesDB.Find(x => x.StorageID == storageID);
-                this.FoodStoragesDB.Remove(storageToBeDiscarded);
+                FoodStorage storageToBeDiscarded = FoodStoragesDB.Find(x => x.StorageID == storageID);
+                FoodStoragesDB.Remove(storageToBeDiscarded);
             }
             catch (Exception)
             {
