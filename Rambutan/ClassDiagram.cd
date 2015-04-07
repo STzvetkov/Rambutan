@@ -232,6 +232,7 @@
       <HashCode>CAABAAAgAAAQAAAEAQAAAAQAAEAEAgAAAAIAAAAAAgA=</HashCode>
       <FileName>Schedules\Schedule.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="Zoo.Schedules.WorkingSchedule" Collapsed="true">
     <Position X="5.75" Y="11.25" Width="1.5" />
