@@ -53,27 +53,17 @@
 
         public override void OptionThree()
         {
+            ZooManagement.BudgetInfo.ShowIncome();
             
-            foreach (KeyValuePair<string, decimal> pair in ZooManagement.BudgetInfo.ShowIncome())
-            {
-                Console.WriteLine("{0}, {1}",
-                pair.Key,
-                pair.Value);
-            }
 
             
         }
 
         public override void OptionFour()
         {
-
+            ZooManagement.BudgetInfo.ShowExpense();
             
-            foreach (KeyValuePair<string, decimal> pair in ZooManagement.BudgetInfo.ShowExpense())
-            {
-                Console.WriteLine("{0}, {1}",
-                pair.Key,
-                pair.Value);
-            }
+            
 
             
         }

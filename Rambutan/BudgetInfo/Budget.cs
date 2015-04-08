@@ -98,16 +98,64 @@ namespace Zoo.BudgetInfo
         }
 
 
-        public Dictionary<string, decimal> ShowExpense()
+        public void ShowExpense()
         {
+            bool isUsingTheShowExpenseMenu = true;
+            while (isUsingTheShowExpenseMenu)
+            {
+                //Console.Clear();
 
-            return expenseDictionary;
+                foreach (KeyValuePair<string, decimal> pair in expenseDictionary)
+                {
+                    Console.WriteLine("{0}, {1}",
+                    pair.Key,
+                    pair.Value);
+                }
+
+                Console.WriteLine("Press 0 to get back!");
+                ConsoleKeyInfo userInput = Console.ReadKey();
+
+                
+
+
+                //Console.WriteLine("Feeding mammals"); 
+                //Console.WriteLine("Food Left: {0}", meatFood);
+
+                if (userInput.Key == ConsoleKey.D0)
+                {
+                    isUsingTheShowExpenseMenu = false;
+                }
+            }
         }
 
-        public Dictionary<string, decimal> ShowIncome()
+        public void ShowIncome()
         {
 
-            return incomeDictionary;
+            bool isUsingTheShowExpenseMenu = true;
+            while (isUsingTheShowExpenseMenu)
+            {
+                //Console.Clear();
+
+                foreach (KeyValuePair<string, decimal> pair in incomeDictionary)
+                {
+                    Console.WriteLine("Income name {0}, income value {1}",
+                    pair.Key,
+                    pair.Value);
+                }
+
+                Console.WriteLine("Press 0 to get back!");
+                ConsoleKeyInfo userInput = Console.ReadKey();
+
+
+
+
+                
+
+                if (userInput.Key == ConsoleKey.D0)
+                {
+                    isUsingTheShowExpenseMenu = false;
+                }
+            }
         }
 
         public static Budget Instance
