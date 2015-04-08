@@ -21,11 +21,17 @@
 
         // constructors
 
+        public Animal()
+        { }
         public Animal(long animalID)
         {
             this.AnimalID = animalID;
         }
 
+        public Animal(string[] dataInit)
+        {
+
+        }
         public Animal(
             long animalID, AnimalSpeciesType type, Gender gender,
             int age, FoodType foodType,

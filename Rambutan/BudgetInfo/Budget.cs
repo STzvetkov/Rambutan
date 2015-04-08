@@ -11,7 +11,7 @@ namespace Zoo.BudgetInfo
         private Dictionary<string, decimal> expenseDictionary = new Dictionary<string, decimal>();
         private Dictionary<string, decimal> incomeDictionary = new Dictionary<string, decimal>();
         
-        public Budget()
+        private Budget()
         {
         }
 
