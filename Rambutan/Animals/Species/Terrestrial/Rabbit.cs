@@ -11,11 +11,13 @@
     {
         public int QuantityOfFoodNeededToFeed { get; private set; }
 
-        //public Rabbit(){
+        public Rabbit(Object[] dataInit)
+            : base(dataInit)
+        {
+        }
 
-        //}
-        public Rabbit(int quantityOfFoodNeededToFeed, long animalID, Gender gender, int age, decimal price, long cageID, HealthStatus healthStatus, Veterinarian examinedBy)
-            : base(animalID, AnimalSpeciesType.Rabbit, gender, age, FoodType.Plant, price, cageID, HabitatType.Steppe, healthStatus, examinedBy)
+        public Rabbit(int quantityOfFoodNeededToFeed, long animalID, Gender gender, int age, decimal price, long cageID, HealthStatus healthStatus)
+            : base(animalID, AnimalSpeciesType.Rabbit, gender, age, FoodType.Plant, price, cageID, HabitatType.Steppe, healthStatus)
         {
             this.QuantityOfFoodNeededToFeed = quantityOfFoodNeededToFeed;
         }

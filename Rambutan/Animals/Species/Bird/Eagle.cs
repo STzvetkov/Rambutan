@@ -12,11 +12,12 @@
         private bool fly;
         private bool bird;
 
-        //public Eagle(){
-
-        //}
-        public Eagle(long animalID, Gender gender, int age, decimal price, long cageID, HabitatType habitat, HealthStatus healthStatus, Veterinarian examinedBy)
-            : base(animalID, AnimalSpeciesType.Eagle, gender, age, FoodType.Meat, price, cageID, habitat, healthStatus, examinedBy)
+        public Eagle(Object[] dataInit)
+            : base(dataInit)
+        {
+        }
+        public Eagle(long animalID, Gender gender, int age, decimal price, long cageID, HabitatType habitat, HealthStatus healthStatus)
+            : base(animalID, AnimalSpeciesType.Eagle, gender, age, FoodType.Meat, price, cageID, habitat, healthStatus)
         {
             this.fly = isFlyable();
             this.bird = isBird();

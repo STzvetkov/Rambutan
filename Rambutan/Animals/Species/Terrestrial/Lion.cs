@@ -11,11 +11,14 @@
     public class Lion : Terrestrial, IFeedable, IAnimal
     {
         public int QuantityOfFoodNeededToFeed { get; private set; }
-        //public Lion(){
 
-        //}
-        public Lion(int quantityOfFoodNeededToFeed, long animalID, Gender gender, int age, decimal price, long cageID, HealthStatus healthStatus, Veterinarian examinedBy)
-            : base(animalID, AnimalSpeciesType.Lion, gender, age, FoodType.Meat, price, cageID, HabitatType.Steppe, healthStatus, examinedBy)
+        public Lion(Object[] dataInit)
+            : base(dataInit)
+        {
+        }
+
+        public Lion(int quantityOfFoodNeededToFeed, long animalID, Gender gender, int age, decimal price, long cageID, HealthStatus healthStatus)
+            : base(animalID, AnimalSpeciesType.Lion, gender, age, FoodType.Meat, price, cageID, HabitatType.Steppe, healthStatus)
         {
             this.QuantityOfFoodNeededToFeed = quantityOfFoodNeededToFeed;
         }

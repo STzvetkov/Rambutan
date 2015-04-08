@@ -12,11 +12,14 @@
     public class Fox : Terrestrial, IFeedable, IAnimal
     {
         public int QuantityOfFoodNeededToFeed { get; private set; }
-        //public Fox(){
 
-        //}
-        public Fox(int quantityOfFoodNeededToFeed, long animalID, Gender gender, int age, decimal price, long cageID, HealthStatus healthStatus, Veterinarian examinedBy)
-            : base(animalID, AnimalSpeciesType.Fox, gender, age, FoodType.Meat, price, cageID, HabitatType.Steppe, healthStatus, examinedBy)
+        public Fox(Object[] dataInit)
+            : base(dataInit)
+        {
+        }
+
+        public Fox(int quantityOfFoodNeededToFeed, long animalID, Gender gender, int age, decimal price, long cageID, HealthStatus healthStatus)
+            : base(animalID, AnimalSpeciesType.Fox, gender, age, FoodType.Meat, price, cageID, HabitatType.Steppe, healthStatus)
         {
             this.QuantityOfFoodNeededToFeed = quantityOfFoodNeededToFeed;
         }

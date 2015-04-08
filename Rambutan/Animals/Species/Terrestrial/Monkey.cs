@@ -11,11 +11,14 @@
     public class Monkey : Terrestrial, IFeedable, IAnimal
     {
         public int QuantityOfFoodNeededToFeed { get; private set; }
-        //public Monkey(){
 
-        //}
-        public Monkey(int quantityOfFoodNeededToFeed, long animalID, Gender gender, int age, decimal price, long cageID, HealthStatus healthStatus, Veterinarian examinedBy)
-            : base(animalID, AnimalSpeciesType.Monkey, gender, age, FoodType.Plant, price, cageID, HabitatType.Steppe, healthStatus, examinedBy)
+        public Monkey(Object[] dataInit)
+            : base(dataInit)
+        {
+        }
+
+        public Monkey(int quantityOfFoodNeededToFeed, long animalID, Gender gender, int age, decimal price, long cageID, HealthStatus healthStatus)
+            : base(animalID, AnimalSpeciesType.Monkey, gender, age, FoodType.Plant, price, cageID, HabitatType.Steppe, healthStatus)
         {
             this.QuantityOfFoodNeededToFeed = quantityOfFoodNeededToFeed;
         }

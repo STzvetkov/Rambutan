@@ -9,15 +9,15 @@
 
     public abstract class Terrestrial : Animal, IAnimal
     {
-        public Terrestrial(
-           long animalID, AnimalSpeciesType type, Gender gender,
-           int age, FoodType foodType,
-           decimal price,
-           long cageID, HabitatType habitat,
-           HealthStatus healthStatus, Veterinarian examinedBy)
-            : base(animalID, type, gender, age, foodType, price, cageID, habitat, healthStatus, examinedBy)
+        public Terrestrial(Object[] dataInit)
+            : base(dataInit)
         {
+        }
 
+        public Terrestrial(long animalID, AnimalSpeciesType type, Gender gender, int age, FoodType foodType,
+                           decimal price, long cageID, HabitatType habitat, HealthStatus healthStatus)
+            : base(animalID, type, gender, age, foodType, price, cageID, habitat, healthStatus)
+        {
         }
     }
 }

@@ -16,12 +16,13 @@
         // TODO : Implement all fields and methods needed.
         // food: small fish, crustaceans
 
+        public Penguin(Object[] dataInit)
+            : base(dataInit)
+        {
+        }
 
-        //public Penguin(){
-
-        //}
-        public Penguin(long animalID, Gender gender, int age, decimal price, long cageID, HabitatType habitat, HealthStatus healthStatus, Veterinarian examinedBy)
-            : base(animalID, AnimalSpeciesType.Penguin, gender, age, FoodType.Meat, price, cageID, habitat, healthStatus, examinedBy)
+        public Penguin(long animalID, Gender gender, int age, decimal price, long cageID, HabitatType habitat, HealthStatus healthStatus)
+            : base(animalID, AnimalSpeciesType.Penguin, gender, age, FoodType.Meat, price, cageID, habitat, healthStatus)
         {
             this.fly = isFlyable();
             this.bird = isBird();

@@ -11,11 +11,14 @@
     public class Deer : Terrestrial, IFeedable, IAnimal
     {
         public int QuantityOfFoodNeededToFeed { get; private set; }
-        //public Deer(){
 
-        //}
-        public Deer(int quantityOfFoodNeededToFeed, long animalID, Gender gender, int age, decimal price, long cageID, HealthStatus healthStatus, Veterinarian examinedBy)
-            : base(animalID, AnimalSpeciesType.Fox, gender, age, FoodType.Plant, price, cageID, HabitatType.Steppe, healthStatus, examinedBy)
+        public Deer(Object[] dataInit)
+            : base(dataInit)
+        {
+        }
+
+        public Deer(int quantityOfFoodNeededToFeed, long animalID, Gender gender, int age, decimal price, long cageID, HealthStatus healthStatus)
+            : base(animalID, AnimalSpeciesType.Fox, gender, age, FoodType.Plant, price, cageID, HabitatType.Steppe, healthStatus)
         {
             this.QuantityOfFoodNeededToFeed = quantityOfFoodNeededToFeed;
         }
