@@ -28,14 +28,14 @@
             this.AnimalID = animalID;
         }
 
-        public Animal(string[] dataInit)
+        public Animal(Object[] dataInit)
         {
-            this.AnimalID = long.Parse(dataInit[0]);
-            this.Type = GetAnimalType(dataInit[1]);
-            this.Gender = GetGender(dataInit[2]);
-            this.Age = int.Parse(dataInit[3]);
-            this.FoodType = GetFoodType(dataInit[4]);
-            this.Price = decimal.Parse(dataInit[5]);
+            this.AnimalID = long.Parse(dataInit[0].ToString());
+            this.Type = GetAnimalType(dataInit[1].ToString());
+            this.Gender = GetGender(dataInit[2].ToString());
+            this.Age = int.Parse(dataInit[3].ToString());
+            this.FoodType = GetFoodType(dataInit[4].ToString());
+            this.Price = decimal.Parse(dataInit[5].ToString());
             
         }
 
@@ -63,38 +63,15 @@
         {
         }
 
-        private AnimalSpeciesType GetAnimalType(string input)
+        private AnimalSpeciesType GetAnimalType(string inputStrType)
         {
-            switch (input)
+            try
             {
-                case "Rabbit":
-                    return AnimalSpeciesType.Rabbit;
-                case "Bear":
-                    return AnimalSpeciesType.Bear;
-                case "ClownFish":
-                    return AnimalSpeciesType.ClownFish;
-                case "Deer":
-                    return AnimalSpeciesType.Deer;
-                case "Dolphin":
-                    return AnimalSpeciesType.Dolphin;
-                case "Eagle":
-                    return AnimalSpeciesType.Eagle;
-                case "Fox":
-                    return AnimalSpeciesType.Fox;
-                case "Hoodie":
-                    return AnimalSpeciesType.Hoodie;
-                case "Lion":
-                    return AnimalSpeciesType.Lion;
-                case "Monkey":
-                    return AnimalSpeciesType.Monkey;
-                case "Ostrich":
-                    return AnimalSpeciesType.Ostrich;
-                case "Penguin":
-                    return AnimalSpeciesType.Penguin;
-                case "Python":
-                    return AnimalSpeciesType.Python;
-                default:
-                    throw new ArgumentException("AnimalSpeciesType", "Invalid AnimalSpeciesType!");
+                return (AnimalSpeciesType)Enum.Parse(typeof(AnimalSpeciesType), inputStrType, true);
+            }
+            catch (Exception)
+            {
+                throw new ArgumentException("AnimalSpeciesType", "Invalid AnimalSpeciesType!");
             }
         }
 
