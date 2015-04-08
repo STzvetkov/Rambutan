@@ -45,41 +45,39 @@ namespace Zoo
         }
 
         // Load DB from files 
-        /*private static void LoadData()
+        private static void LoadData()
         {
             string[] fileEntries = Directory.GetFiles(FolderName);
             string[] fileData;
             string[] objectData;
+            Object[] args = new Object[20];
             foreach (string fullFileName in fileEntries)
             {
                 fileData = File.ReadAllLines(fullFileName);
                 string dbName = System.IO.Path.GetFileName(fullFileName).Replace(".txt", "");
-                switch (dbName)
-                {
-                    case "animals":
-
-                        Animal animal = (Animal)Activator.CreateInstance(Type.GetType(reportClass));
-                        
-                   
-                
                 foreach (var record in fileData)
                 {
                     objectData = record.Split('#');
-                    switch (objectData[0])
-	{
-                        case "clownfish":
-                             Animal animal =  new ClownFish(objectData);
-                             //public Hoodie(long animalID, Gender gender, int age, decimal price, Cage cage, HabitatType habitat, HealthStatus healthStatus, Employees.Veterinarian examinedBy) :
-            //base(animalID, AnimalSpeciesType.Eagle, gender, age, FoodType.Mix, price, cage, habitat, healthStatus, examinedBy)
+                    for (int i = 1; i < objectData.Length; i++)
+                    {
+                        args[i - 1] = objectData[i];
+                    }
+                    switch (dbName)
+                    {
+                        case "animals":
+                            Animal animal = (Animal)Activator.CreateInstance(Type.GetType(objectData[0]), args);
+                            //BuyAnimal
                             break;
-		default:
- break;
-                             default:
-	}
-                    //object item = Activator.CreateInstance(Type.GetType(objectData[0]),);
+                        case "budget":
+                            // Budget budget = (Animal)Activator.CreateInstance(Type.GetType(objectData[0]),args);
+                            break;
+                        default:
+                            break;
+                        //object item = Activator.CreateInstance(Type.GetType(objectData[0]),);
+                    }
                 }
             }
-        }*/
+        }
 
         // Budget info
         public static Budget BudgetInfo { get; set; }
@@ -108,6 +106,14 @@ namespace Zoo
             /*var sortedEmployees = from employee in EmployeeDB
             where ;*/
             return "";
+        }
+        public static int CountEmployeesByPosition(Position position)
+        {
+            var querySelectedAnimals =
+                                      from employee in staffDB
+                                      where employee.Position == position
+                                      select employee;
+            return querySelectedAnimals.Count();
         }
 
         // Animals management
@@ -196,14 +202,6 @@ namespace Zoo
                                       select animal;
             return querySelectedAnimals.Count();
         }
-
-        public static int CountEmployeesByType(Position position)
-        {
-            var querySelectedAnimals =
-                                      from employee in staffDB
-                                      where employee.Position == position
-                                      select employee;
-            return querySelectedAnimals.Count();
-        }
+        
     }
 }

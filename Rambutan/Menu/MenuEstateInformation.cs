@@ -80,7 +80,7 @@ namespace Zoo.Menu.EstateInformation
             {
                 Print(15 + currentRow, (Console.WindowWidth / 2 + 20),
                     String.Format("{0,-15}  {1,7}",
-                        position, ZooManagement.CountEmployeesByType(position)));
+                        position, ZooManagement.CountEmployeesByPosition(position)));
                 currentRow++;
             }
             Console.ReadKey();
