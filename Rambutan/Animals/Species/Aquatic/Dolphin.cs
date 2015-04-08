@@ -22,7 +22,7 @@
         // TODO : Implement needed methods and fields.
         // food: fish, other animals
 
-        public void Eat(int quantity)
+        public override void Eat(int quantity)
         {
             Console.WriteLine("Am Am");
         }

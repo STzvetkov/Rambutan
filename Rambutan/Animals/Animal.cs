@@ -46,9 +46,8 @@
         }
 
         // methods 
-        public void Eat(int quantity)
+        public virtual void Eat(int quantity)
         {
-            Console.WriteLine("Am Am");
         }
 
         // properties 

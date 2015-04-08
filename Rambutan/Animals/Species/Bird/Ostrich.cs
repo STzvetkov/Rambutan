@@ -27,7 +27,7 @@
 
         // food: fish, other animals
 
-        public void Eat(int quantity)
+        public override void Eat(int quantity)
         {
             Console.WriteLine("Am Am");
         }

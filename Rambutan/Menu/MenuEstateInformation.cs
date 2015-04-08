@@ -72,7 +72,18 @@ namespace Zoo.Menu.EstateInformation
         public override void OptionThree()
         {
             // TODO : Fill with method to show all employees.
-            throw new NotImplementedException();
+            ClearDetailsScreen();
+            Print(12, (Console.WindowWidth / 2 + 30), "Employees");
+            Print(15, (Console.WindowWidth / 2 + 20), "Animal type  //  Specimen");
+            int currentRow = 1;
+            foreach (AnimalSpeciesType animalType in Enum.GetValues(typeof(AnimalSpeciesType)))
+            {
+                Print(15 + currentRow, (Console.WindowWidth / 2 + 20),
+                    String.Format("{0,-15}  {1,7}",
+                        animalType, ZooManagement.CountAnimalsByType(animalType)));
+                currentRow++;
+            }
+            Console.ReadKey();
         }
 
         public override void OptionFour()

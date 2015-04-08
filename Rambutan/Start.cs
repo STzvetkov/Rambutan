@@ -74,7 +74,7 @@
             //string a = d.toString();
 
 
-           
+            ZooManagement.Init();
            
             #region Menu
             state = new MainMenu();

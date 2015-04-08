@@ -20,8 +20,11 @@ namespace Zoo
             AnimalsDB = new List<Animal>();
             StaffDB = new List<Employee>();
             CagesDB = new List<Cage>();
+            BudgetInfo = Budget.Instance;
         }
 
+        public static void Init()
+        { }
         // Stores all employees
         public static List<Employee> StaffDB { get; private set; }
 
@@ -33,6 +36,9 @@ namespace Zoo
 
         // Stores all food storages
         public static List<FoodStorage> FoodStoragesDB { get; private set; }
+
+        // Budget info
+        public static Budget BudgetInfo { get; set; }
 
         // Employees management
         public static void HireEmployee(Employee employee)
@@ -53,6 +59,14 @@ namespace Zoo
             }
         }
 
+        public static string ExtractEmployeeBasicInfo()
+        {
+            /*var sortedEmployees = from employee in EmployeeDB
+                                  where ;*/
+            return "";
+
+        }
+
         // Animals management
         public static void BuyAnimal(Animal animal)
         {
@@ -61,7 +75,7 @@ namespace Zoo
                 throw new NullReferenceException("There is no animal provided!");
             }
             AnimalsDB.Add(animal);
-            Budget.Instance.AddExpense(animal.Type.ToString(), animal.Price);
+            BudgetInfo.AddExpense(animal.Type.ToString(), animal.Price);
         }
 
         public static void SellAnimal(long animalID)
@@ -70,7 +84,7 @@ namespace Zoo
             {
                 Animal animalToBeSold = AnimalsDB.Find(x => x.AnimalID == animalID);
                 AnimalsDB.Remove(animalToBeSold);
-                Budget.Instance.AddIncome(animalToBeSold.Type.ToString(), animalToBeSold.Price);
+                BudgetInfo.AddIncome(animalToBeSold.Type.ToString(), animalToBeSold.Price);
             }
             catch (Exception)
             {
@@ -115,7 +129,7 @@ namespace Zoo
                 throw new NullReferenceException("There is no food storage provided!");
             }
             FoodStoragesDB.Add(foodStorage);
-            Budget.Instance.AddExpense(foodStorage.Type.ToString(), foodStorage.Price);
+            BudgetInfo.AddExpense(foodStorage.Type.ToString(), foodStorage.Price);
         }
 
         public static void DiscardFoodStorage(long storageID)
