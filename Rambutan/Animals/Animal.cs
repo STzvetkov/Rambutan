@@ -75,31 +75,27 @@
             }
         }
 
-        private Gender GetGender(string input)
+        private Gender GetGender(string inputStrType)
         {
-            switch (input)
+            try
             {
-                case "Male":
-                    return Gender.Male;
-                case "Female":
-                    return Gender.Female;
-                default:
-                    throw new ArgumentException("Gender", "Invalid Gender!");
+                return (Gender)Enum.Parse(typeof(Gender), inputStrType, true);
+            }
+            catch (Exception)
+            {
+                throw new ArgumentException("Gender", "Invalid Gender!");
             }
         }
 
-        private FoodType GetFoodType(string input)
+        private FoodType GetFoodType(string inputStrType)
         {
-            switch (input)
+            try
             {
-                case "Meat":
-                    return FoodType.Meat;
-                case "Plant":
-                    return FoodType.Plant;
-                case "Mix":
-                    return FoodType.Mix;
-                default:
-                    throw new ArgumentException("FoodType", "Invalid FoodType!");
+                return (FoodType)Enum.Parse(typeof(FoodType), inputStrType, true);
+            }
+            catch (Exception)
+            {
+                throw new ArgumentException("FoodType", "Invalid FoodType!");
             }
         }
 
