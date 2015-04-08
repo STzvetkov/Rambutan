@@ -18,8 +18,8 @@
         {
 
         }
-        public ClownFish(int quanty_of_food, long animalID, Gender gender, int age, decimal price, Cage cage, HealthStatus healthStatus, Veterinarian examinedBy)
-            : base(animalID, AnimalSpeciesType.ClownFish, gender, age, FoodType.Mix, price, cage, HabitatType.Aquarium, healthStatus, examinedBy)
+        public ClownFish(int quanty_of_food, long animalID, Gender gender, int age, decimal price, long cageID, HealthStatus healthStatus, Veterinarian examinedBy)
+            : base(animalID, AnimalSpeciesType.ClownFish, gender, age, FoodType.Mix, price, cageID, HabitatType.Aquarium, healthStatus, examinedBy)
         {
         }
 

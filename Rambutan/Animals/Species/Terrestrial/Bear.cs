@@ -17,8 +17,8 @@
         //public Bear(){
 
         //}
-        public Bear(int quantityOfFoodNeededToFeed, long animalID, Gender gender, int age, decimal price, Cage cage, HealthStatus healthStatus, Veterinarian examinedBy)
-            : base(animalID, AnimalSpeciesType.Lion, gender, age, FoodType.Mix, price, cage, HabitatType.Steppe, healthStatus, examinedBy)
+        public Bear(int quantityOfFoodNeededToFeed, long animalID, Gender gender, int age, decimal price, long cageID, HealthStatus healthStatus, Veterinarian examinedBy)
+            : base(animalID, AnimalSpeciesType.Lion, gender, age, FoodType.Mix, price, cageID, HabitatType.Steppe, healthStatus, examinedBy)
         {
             this.QuantityOfFoodNeededToFeed = quantityOfFoodNeededToFeed;
         }

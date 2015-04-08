@@ -13,9 +13,9 @@
          long animalID, AnimalSpeciesType type, Gender gender,
          int age, FoodType foodType,
          decimal price,
-         Cage cage, HabitatType habitat,
+         long cageID, HabitatType habitat,
          HealthStatus healthStatus, Veterinarian examinedBy)
-            : base(animalID, type, gender, age, foodType, price, cage, habitat, healthStatus, examinedBy)
+            : base(animalID, type, gender, age, foodType, price, cageID, habitat, healthStatus, examinedBy)
         {
 
         }
