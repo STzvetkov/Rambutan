@@ -6,7 +6,7 @@
     using Zoo.Employees;
     using Zoo.Interfaces;
 
-    public abstract class Animal : IAnimal,IFeedable
+    public abstract class Animal : IAnimal, IFeedable
     {
         private long animalID;
         private AnimalSpeciesType type; // AnimalType enumeration
@@ -22,7 +22,9 @@
         // constructors
 
         public Animal()
-        { }
+        {
+        }
+
         public Animal(long animalID)
         {
             this.AnimalID = animalID;
@@ -36,8 +38,15 @@
             this.Age = int.Parse(dataInit[3]);
             this.FoodType = GetFoodType(dataInit[4]);
             this.Price = decimal.Parse(dataInit[5]);
-            
+            this.cageID = long.Parse(dataInit[6]);
+            this.Habitat = GetHabitatType(dataInit[7]);
+            this.HealthStatus = GetHealthStatus(dataInit[8]);
+            this.ExaminedBy = new Veterinarian(dataInit[9],dataInit[10]);
         }
+
+
+
+
 
         public Animal(
             long animalID, AnimalSpeciesType type, Gender gender,
@@ -123,6 +132,34 @@
                     return FoodType.Mix;
                 default:
                     throw new ArgumentException("FoodType", "Invalid FoodType!");
+            }
+        }
+
+        private HabitatType GetHabitatType(string input)
+        {
+            switch (input)
+            {
+                case "Aquarium":
+                    return HabitatType.Aquarium;
+                case "Pool":
+                    return HabitatType.Pool;
+                case "Steppe":
+                    return HabitatType.Steppe;
+                default:
+                    throw new ArgumentException("HabitatType", "Invalid HabitatType!");
+            }
+        }
+
+        private HealthStatus GetHealthStatus(string input)
+        {
+            switch (input)
+            {
+                case "Healthy":
+                    return HealthStatus.Healthy;
+                case "Sick":
+                    return HealthStatus.Sick;
+                default:
+                    throw new ArgumentException("HealthStatus", "Invalid HealthStatus!")
             }
         }
 
