@@ -25,9 +25,8 @@ namespace Zoo.Menu.EstateInformation
             Print(15, shift, "2. All animals.");
             Print(18, shift, "3. All employees.");
             Print(21, shift, "4. Food available.");
-            Print(24, shift, "5. Budget surplus.");
             Console.ForegroundColor = ConsoleColor.Red;
-            Print(27, shift, "0. Main menu.");
+            Print(24, shift, "0. Main menu.");
             Console.ForegroundColor = ConsoleColor.White;
         }
 
@@ -90,7 +89,7 @@ namespace Zoo.Menu.EstateInformation
         public override void OptionFour()
         {
             // TODO : Fill with method to show all food available.
-            throw new NotImplementedException();
+            throw new NoMenuException();
         }
 
         public override void OptionFive()
@@ -132,7 +131,7 @@ namespace Zoo.Menu.EstateInformation
         {
             get
             {
-                return true;
+                return false;
             }
         }
 
