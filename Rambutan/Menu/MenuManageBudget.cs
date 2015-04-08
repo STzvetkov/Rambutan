@@ -33,9 +33,9 @@
             string incomeName = Console.ReadLine();
             Console.WriteLine("Please write the amount of income you want to register for {0}", incomeName);
             decimal incomeSum = decimal.Parse(Console.ReadLine());
-            BudgetInfo.Budget.Instance().AddIncome(incomeName, incomeSum);
+            BudgetInfo.Budget.Instance.AddIncome(incomeName, incomeSum);
 
-            //throw new NotImplementedException();
+            
         }
 
         public override void OptionTwo()
@@ -44,7 +44,7 @@
             string expenseName = Console.ReadLine();
             Console.WriteLine("Please write the amount of expenses you want to register for {0}", expenseName);
             decimal expenseSum = decimal.Parse(Console.ReadLine());
-            BudgetInfo.Budget.Instance().AddExpense(expenseName, expenseSum);
+            BudgetInfo.Budget.Instance.AddExpense(expenseName, expenseSum);
 
 
 
@@ -52,7 +52,7 @@
 
         public override void OptionThree()
         {
-            Dictionary<string, decimal> incomeDictionary = Budget.Instance().ShowIncome();
+            Dictionary<string, decimal> incomeDictionary = Budget.Instance.ShowIncome();
             foreach (KeyValuePair<string, decimal> pair in incomeDictionary)
             {
                 Console.WriteLine("{0}, {1}",
@@ -64,7 +64,7 @@
         public override void OptionFour()
         {
 
-            Dictionary<string, decimal> expenseDictionary = Budget.Instance().ShowExpense();
+            Dictionary<string, decimal> expenseDictionary = Budget.Instance.ShowExpense();
             foreach (KeyValuePair<string, decimal> pair in expenseDictionary)
             {
                 Console.WriteLine("{0}, {1}",
@@ -75,7 +75,8 @@
 
         public override void OptionFive()
         {
-            Console.WriteLine("The net budget is " + BudgetInfo.Budget.Instance().NetBudget());
+            
+            Console.WriteLine("The net budget is " + BudgetInfo.Budget.Instance.NetBudget());
         }
 
         public override void OptionSix()
@@ -95,17 +96,17 @@
 
         public override bool HasOptionThree
         {
-            get { return false; }
+            get { return true; }
         }
 
         public override bool HasOptionFour
         {
-            get { return false; }
+            get { return true; }
         }
 
         public override bool HasOptionFive
         {
-            get { return false; }
+            get { return true; }
         }
 
         public override bool HasOptionSix

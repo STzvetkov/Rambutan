@@ -61,7 +61,7 @@ namespace Zoo
                 throw new NullReferenceException("There is no animal provided!");
             }
             AnimalsDB.Add(animal);
-            Budget.Instance().AddExpense(animal.Type.ToString(), animal.Price);
+            Budget.Instance.AddExpense(animal.Type.ToString(), animal.Price);
         }
 
         public static void SellAnimal(long animalID)
@@ -70,7 +70,7 @@ namespace Zoo
             {
                 Animal animalToBeSold = AnimalsDB.Find(x => x.AnimalID == animalID);
                 AnimalsDB.Remove(animalToBeSold);
-                Budget.Instance().AddIncome(animalToBeSold.Type.ToString(), animalToBeSold.Price);
+                Budget.Instance.AddIncome(animalToBeSold.Type.ToString(), animalToBeSold.Price);
             }
             catch (Exception)
             {
@@ -82,7 +82,7 @@ namespace Zoo
         public static void BuildCage(Cage cage)
         {
             CagesDB.Add(cage);
-            Budget.Instance().AddExpense(cage.Type.ToString(), cage.Price);
+            Budget.Instance.AddExpense(cage.Type.ToString(), cage.Price);
         }
 
         public static void DemolishCage(long cageID)
@@ -115,7 +115,7 @@ namespace Zoo
                 throw new NullReferenceException("There is no food storage provided!");
             }
             FoodStoragesDB.Add(foodStorage);
-            Budget.Instance().AddExpense(foodStorage.Type.ToString(), foodStorage.Price);
+            Budget.Instance.AddExpense(foodStorage.Type.ToString(), foodStorage.Price);
         }
 
         public static void DiscardFoodStorage(long storageID)

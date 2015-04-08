@@ -21,6 +21,8 @@ namespace Zoo.BudgetInfo
             {
                 throw new ArgumentException("Income should be a positive number!");
             }
+
+          
             
             try
             {
@@ -108,14 +110,16 @@ namespace Zoo.BudgetInfo
             return incomeDictionary;
         }
 
-        public static Budget Instance()
+        public static Budget Instance
         {
-            if (instance == null)
+            get
             {
-                instance = new Budget();
+                
+                    if (instance == null)
+                        instance = new Budget();
+                    return instance;
+                
             }
-
-            return instance;
         }
     }
 }

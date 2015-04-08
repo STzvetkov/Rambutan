@@ -42,7 +42,7 @@ namespace Zoo.BudgetInfo
 
             //visitors * ticket price + type of visitor
             decimal dailyTicketSales = (visitors * visitorsReducedPercentage * ticketReduced) + (visitors * visitorsAdultPercentage * ticketAdult);
-            BudgetInfo.Budget.Instance().AddIncome("Tickets" + date, dailyTicketSales);
+            BudgetInfo.Budget.Instance.AddIncome("Tickets" + date, dailyTicketSales);
         }
 
         
