@@ -89,7 +89,6 @@
     <Compile Include="Animals\Type\Terrestrial.cs" />
     <Compile Include="Interfaces\IPayable.cs" />
     <Compile Include="Interfaces\ISchedule.cs" />
-    <Compile Include="Interfaces\PaymentTypes.cs" />
     <Compile Include="Menu\BaseMenuState.cs" />
     <Compile Include="Menu\MainMenu.cs" />
     <Compile Include="Menu\MenuEstateInformation.cs" />
