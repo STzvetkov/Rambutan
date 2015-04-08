@@ -4,6 +4,7 @@
     using Zoo.Exceptions;
     using System.Collections.Generic;
     using Zoo.BudgetInfo;
+    
 
     public class MenuManageBudget : BaseMenuState
     {
@@ -33,7 +34,7 @@
             string incomeName = Console.ReadLine();
             Console.WriteLine("Please write the amount of income you want to register for {0}", incomeName);
             decimal incomeSum = decimal.Parse(Console.ReadLine());
-            BudgetInfo.Budget.Instance.AddIncome(incomeName, incomeSum);
+            ZooManagement.BudgetInfo.AddIncome(incomeName, incomeSum);
 
             
         }
@@ -44,7 +45,7 @@
             string expenseName = Console.ReadLine();
             Console.WriteLine("Please write the amount of expenses you want to register for {0}", expenseName);
             decimal expenseSum = decimal.Parse(Console.ReadLine());
-            BudgetInfo.Budget.Instance.AddExpense(expenseName, expenseSum);
+            ZooManagement.BudgetInfo.AddExpense(expenseName, expenseSum);
 
 
 
@@ -52,31 +53,36 @@
 
         public override void OptionThree()
         {
-            Dictionary<string, decimal> incomeDictionary = Budget.Instance.ShowIncome();
-            foreach (KeyValuePair<string, decimal> pair in incomeDictionary)
+            
+            foreach (KeyValuePair<string, decimal> pair in ZooManagement.BudgetInfo.ShowIncome())
             {
                 Console.WriteLine("{0}, {1}",
                 pair.Key,
                 pair.Value);
             }
+
+            
         }
 
         public override void OptionFour()
         {
 
-            Dictionary<string, decimal> expenseDictionary = Budget.Instance.ShowExpense();
-            foreach (KeyValuePair<string, decimal> pair in expenseDictionary)
+            
+            foreach (KeyValuePair<string, decimal> pair in ZooManagement.BudgetInfo.ShowExpense())
             {
                 Console.WriteLine("{0}, {1}",
                 pair.Key,
                 pair.Value);
             }
+
+            
         }
 
         public override void OptionFive()
         {
+            //int n = int.Parse(Console.ReadLine());
             
-            Console.WriteLine("The net budget is " + BudgetInfo.Budget.Instance.NetBudget());
+            Console.WriteLine("The net budget is " + ZooManagement.BudgetInfo.NetBudget());
         }
 
         public override void OptionSix()
