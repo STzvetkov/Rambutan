@@ -17,6 +17,7 @@
         public Bear(Object[] dataInit)
             : base(dataInit)
         {
+            this.QuantityOfFoodNeededToFeed = int.Parse(dataInit[11].ToString());
         }
 
         public Bear(int quantityOfFoodNeededToFeed, long animalID, Gender gender, int age, decimal price, long cageID, HealthStatus healthStatus)

@@ -9,11 +9,10 @@
 
     public class Python : Terrestrial, IFeedable, IAnimal
     {
-        public int QuantityOfFoodNeededToFeed { get; private set; }
-
         public Python(Object[] dataInit)
             : base(dataInit)
         {
+            this.QuantityOfFoodNeededToFeed = int.Parse(dataInit[11].ToString());
         }
 
         public Python(int quantityOfFoodNeededToFeed, long animalID, Gender gender, int age, decimal price, long cageID, HealthStatus healthStatus)
@@ -22,6 +21,7 @@
             this.QuantityOfFoodNeededToFeed = quantityOfFoodNeededToFeed;
         }
 
+        public int QuantityOfFoodNeededToFeed { get; private set; }
 
         // TODO : Implement needed methods and fields.
         // food: fish, other animals

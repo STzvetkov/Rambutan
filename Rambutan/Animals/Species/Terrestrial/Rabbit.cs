@@ -9,11 +9,10 @@
 
     public class Rabbit : Terrestrial, IFeedable, IAnimal
     {
-        public int QuantityOfFoodNeededToFeed { get; private set; }
-
         public Rabbit(Object[] dataInit)
             : base(dataInit)
         {
+            this.QuantityOfFoodNeededToFeed = int.Parse(dataInit[11].ToString());
         }
 
         public Rabbit(int quantityOfFoodNeededToFeed, long animalID, Gender gender, int age, decimal price, long cageID, HealthStatus healthStatus)
@@ -24,8 +23,7 @@
 
         // TODO : Implement needed methods and fields.
         // food: fish, other animals
-
-
+        public int QuantityOfFoodNeededToFeed { get; private set; }
         public override void Eat(int quantity)
         {
             Console.WriteLine("Am Aa");
