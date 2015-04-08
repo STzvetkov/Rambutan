@@ -2,6 +2,7 @@ namespace Zoo.BudgetInfo
 {
     using System;
     using System.Collections.Generic;
+    using Zoo.Menu;
 
     public class Budget
     {
@@ -80,8 +81,14 @@ namespace Zoo.BudgetInfo
             }
         }
 
-        public decimal NetBudget()
+        public void NetBudget()
         {
+
+            
+            bool isUsingTheShowExpenseMenu = true;
+            while (isUsingTheShowExpenseMenu)
+            {
+            
             netBudget = 0.0M;
 
             foreach (var item in expenseDictionary)
@@ -94,7 +101,22 @@ namespace Zoo.BudgetInfo
                 netBudget += item.Value;
             }
 
-            return netBudget;
+            Console.WriteLine("The net budget is: {0}", netBudget);
+
+            Console.WriteLine("Press 0 to get back!");
+            ConsoleKeyInfo userInput = Console.ReadKey();
+
+
+
+
+            //Console.WriteLine("Feeding mammals"); 
+            //Console.WriteLine("Food Left: {0}", meatFood);
+
+            if (userInput.Key == ConsoleKey.D0)
+            {
+                isUsingTheShowExpenseMenu = false;
+            }
+            }
         }
 
 

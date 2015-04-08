@@ -71,8 +71,8 @@
         public override void OptionFive()
         {
             //int n = int.Parse(Console.ReadLine());
-            
-            Console.WriteLine("The net budget is " + ZooManagement.BudgetInfo.NetBudget());
+
+            ZooManagement.BudgetInfo.NetBudget();
         }
 
         public override void OptionSix()
