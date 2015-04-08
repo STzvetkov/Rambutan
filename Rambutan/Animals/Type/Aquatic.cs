@@ -12,6 +12,8 @@
         // TODO : Provide fields and methods that describe fish's behaviour and states.
         protected static HabitatType[] AvailableCageTypes = { HabitatType.Pool, HabitatType.Aquarium };
 
+        public Aquatic()
+        { }
         public Aquatic(
            long animalID, AnimalSpeciesType type, Gender gender,
            int age, FoodType foodType,

@@ -1,41 +1,85 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 using Zoo.Animals;
 using Zoo.Employees;
 using Zoo.BudgetInfo;
 using Zoo.Common;
 using Zoo.Exceptions;
 using Zoo.Animals.Consumables;
+using Zoo.Animals.Species.Aquatic;
+using Zoo.Animals.Species.Bird;
+using Zoo.Animals.Species.Terrestrial;
 
 namespace Zoo
 {
     [Version(VersionAttribute.Type.ZooManagementTool, "Rambutan Zoo", "1.0.0")]
     public static class ZooManagement
     {
+        public const string FolderName = @"../../DB/";
+
+        // Stores all employees
+        private static List<Employee> staffDB;
+
+        // Stores all animals in the zoo
+        public static List<Animal> animalsDB;
+
+        // Stores all cages
+        public static List<Cage> cagesDB;
+
+        // Stores all food storages
+        public static List<FoodStorage> foodStoragesDB;
+
         static ZooManagement()
         {
-            AnimalsDB = new List<Animal>();
-            StaffDB = new List<Employee>();
-            CagesDB = new List<Cage>();
+            animalsDB = new List<Animal>();
+            staffDB = new List<Employee>();
+            cagesDB = new List<Cage>();
+            foodStoragesDB = new List<FoodStorage>();
             BudgetInfo = Budget.Instance;
         }
 
         public static void Init()
-        { }
-        // Stores all employees
-        public static List<Employee> StaffDB { get; private set; }
+        {
+        }
 
-        // Stores all animals in the zoo
-        public static List<Animal> AnimalsDB { get; private set; }
+        // Load DB from files 
+        /*private static void LoadData()
+        {
+            string[] fileEntries = Directory.GetFiles(FolderName);
+            string[] fileData;
+            string[] objectData;
+            foreach (string fullFileName in fileEntries)
+            {
+                fileData = File.ReadAllLines(fullFileName);
+                string dbName = System.IO.Path.GetFileName(fullFileName).Replace(".txt", "");
+                switch (dbName)
+                {
+                    case "animals":
 
-        // Stores all cages
-        public static List<Cage> CagesDB { get; private set; }
-
-        // Stores all food storages
-        public static List<FoodStorage> FoodStoragesDB { get; private set; }
+                        Animal animal = (Animal)Activator.CreateInstance(Type.GetType(reportClass));
+                        
+                   
+                
+                foreach (var record in fileData)
+                {
+                    objectData = record.Split('#');
+                    switch (objectData[0])
+	{
+                        case "clownfish":
+                             Animal animal =  new ClownFish(objectData);
+                             //public Hoodie(long animalID, Gender gender, int age, decimal price, Cage cage, HabitatType habitat, HealthStatus healthStatus, Employees.Veterinarian examinedBy) :
+            //base(animalID, AnimalSpeciesType.Eagle, gender, age, FoodType.Mix, price, cage, habitat, healthStatus, examinedBy)
+                            break;
+		default:
+ break;
+                             default:
+	}
+                    //object item = Activator.CreateInstance(Type.GetType(objectData[0]),);
+                }
+            }
+        }*/
 
         // Budget info
         public static Budget BudgetInfo { get; set; }
@@ -43,15 +87,15 @@ namespace Zoo
         // Employees management
         public static void HireEmployee(Employee employee)
         {
-            StaffDB.Add(employee);
+            staffDB.Add(employee);
         }
 
         public static void DischargeEmployee(long employeeID)
         {
             try
             {
-                Employee employToBeDischarged = StaffDB.Find(x => x.StaffID == employeeID);
-                StaffDB.Remove(employToBeDischarged);
+                Employee employToBeDischarged = staffDB.Find(x => x.StaffID == employeeID);
+                staffDB.Remove(employToBeDischarged);
             }
             catch (Exception)
             {
@@ -62,9 +106,8 @@ namespace Zoo
         public static string ExtractEmployeeBasicInfo()
         {
             /*var sortedEmployees = from employee in EmployeeDB
-                                  where ;*/
+            where ;*/
             return "";
-
         }
 
         // Animals management
@@ -74,7 +117,7 @@ namespace Zoo
             {
                 throw new NullReferenceException("There is no animal provided!");
             }
-            AnimalsDB.Add(animal);
+            animalsDB.Add(animal);
             BudgetInfo.AddExpense(animal.Type.ToString(), animal.Price);
         }
 
@@ -82,8 +125,8 @@ namespace Zoo
         {
             try
             {
-                Animal animalToBeSold = AnimalsDB.Find(x => x.AnimalID == animalID);
-                AnimalsDB.Remove(animalToBeSold);
+                Animal animalToBeSold = animalsDB.Find(x => x.AnimalID == animalID);
+                animalsDB.Remove(animalToBeSold);
                 BudgetInfo.AddIncome(animalToBeSold.Type.ToString(), animalToBeSold.Price);
             }
             catch (Exception)
@@ -95,7 +138,7 @@ namespace Zoo
         // Cages management
         public static void BuildCage(Cage cage)
         {
-            CagesDB.Add(cage);
+            cagesDB.Add(cage);
             Budget.Instance.AddExpense(cage.Type.ToString(), cage.Price);
         }
 
@@ -103,8 +146,8 @@ namespace Zoo
         {
             try
             {
-                Cage cageToBeDemolished = CagesDB.Find(x => x.CageID == cageID);
-                CagesDB.Remove(cageToBeDemolished);
+                Cage cageToBeDemolished = cagesDB.Find(x => x.CageID == cageID);
+                cagesDB.Remove(cageToBeDemolished);
             }
             catch (Exception)
             {
@@ -115,7 +158,7 @@ namespace Zoo
         public static int CountCagesByTypeAndOccupation(HabitatType cageType, int numberAnimals)
         {
             var querySelectedCages =
-                                    from cage in CagesDB
+                                    from cage in cagesDB
                                     where cage.Type == cageType && cage.AnimalsInCage.Count == numberAnimals
                                     select cage;
             return querySelectedCages.Count();
@@ -128,7 +171,7 @@ namespace Zoo
             {
                 throw new NullReferenceException("There is no food storage provided!");
             }
-            FoodStoragesDB.Add(foodStorage);
+            foodStoragesDB.Add(foodStorage);
             BudgetInfo.AddExpense(foodStorage.Type.ToString(), foodStorage.Price);
         }
 
@@ -136,8 +179,8 @@ namespace Zoo
         {
             try
             {
-                FoodStorage storageToBeDiscarded = FoodStoragesDB.Find(x => x.StorageID == storageID);
-                FoodStoragesDB.Remove(storageToBeDiscarded);
+                FoodStorage storageToBeDiscarded = foodStoragesDB.Find(x => x.StorageID == storageID);
+                foodStoragesDB.Remove(storageToBeDiscarded);
             }
             catch (Exception)
             {
@@ -148,7 +191,7 @@ namespace Zoo
         public static int CountAnimalsByType(AnimalSpeciesType animalType)
         {
             var querySelectedAnimals =
-                                      from animal in AnimalsDB
+                                      from animal in animalsDB
                                       where animal.Type == animalType
                                       select animal;
             return querySelectedAnimals.Count();

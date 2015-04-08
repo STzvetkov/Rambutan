@@ -17,7 +17,7 @@
             Print(15, shift, "2. Register expense.");
             Print(18, shift, "3. Show all income.");
             Print(21, shift, "4. Show all expenses.");
-            Print(24, shift, "5. Net Budget (Income - Expenses)");
+            Print(24, shift, "5. Net Budget (Income-Expenses)");
             Console.ForegroundColor = ConsoleColor.Red;
             Print(27, shift, "0. Main menu.");
             Console.ForegroundColor = ConsoleColor.White;
@@ -55,7 +55,7 @@
         {
             ClearDetailsScreen();
             Print(12, (Console.WindowWidth / 2 + 30), "Incomes");
-            Print(15, (Console.WindowWidth / 2 + 20), "Income type  //  Amount");
+            Print(15, (Console.WindowWidth / 2 + 20), "Income type   //   Amount");
             int currentRow = 1;
             foreach (string income in ZooManagement.BudgetInfo.ShowIncome())
             {
@@ -69,7 +69,7 @@
         {
             ClearDetailsScreen();
             Print(12, (Console.WindowWidth / 2 + 30), "Incomes");
-            Print(15, (Console.WindowWidth / 2 + 20), "Income type  //  Amount");
+            Print(15, (Console.WindowWidth / 2 + 20), "Income type   //   Amount");
             int currentRow = 1;
             foreach (string expense in ZooManagement.BudgetInfo.ShowExpense())
             {

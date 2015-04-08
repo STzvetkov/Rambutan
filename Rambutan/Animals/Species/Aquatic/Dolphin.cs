@@ -10,9 +10,13 @@
     public class Dolphin : Aquatic, IFeedable, IAnimal
     {
 
-        //public Dolphin(){
+        public Dolphin(){
 
-        //}
+        }
+        public Dolphin(string[] dataInit)
+        {
+
+        }
         public Dolphin(int quanty_of_food, long animalID, Gender gender, int age, decimal price, Cage cage, HealthStatus healthStatus, Veterinarian examinedBy)
             : base(animalID, AnimalSpeciesType.Dolphin, gender, age, FoodType.Meat, price, cage, HabitatType.Pool, healthStatus, examinedBy)
         {
