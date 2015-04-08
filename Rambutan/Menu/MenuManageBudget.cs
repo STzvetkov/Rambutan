@@ -30,25 +30,26 @@
 
         public override void OptionOne()
         {
-            Console.WriteLine("Please write the name of the income you want to register e.g \"Sponsorship\"");
-            string incomeName = Console.ReadLine();
-            Console.WriteLine("Please write the amount of income you want to register for {0}", incomeName);
+            ClearDetailsScreen();
+            Print(12, (Console.WindowWidth / 2 + 20), "Enter income's type:");
+            Print(15, (Console.WindowWidth / 2 + 20), "     ");
+            string expenseName = Console.ReadLine();
+            Print(18, (Console.WindowWidth / 2 + 20), "Enter income's amount:");
+            Print(21, (Console.WindowWidth / 2 + 20), "     ");
             decimal incomeSum = decimal.Parse(Console.ReadLine());
-            ZooManagement.BudgetInfo.AddIncome(incomeName, incomeSum);
-
-            
+            ZooManagement.BudgetInfo.AddExpense(expenseName, incomeSum);
         }
 
         public override void OptionTwo()
-        {
-            Console.WriteLine("Please write the name of the expenses you want to register e.g \"Wedding for the Tiger\"");
+        {            
+            ClearDetailsScreen();
+            Print(12, (Console.WindowWidth / 2 + 20), "Enter expense's type:");
+            Print(15, (Console.WindowWidth / 2 + 20), "        ");
             string expenseName = Console.ReadLine();
-            Console.WriteLine("Please write the amount of expenses you want to register for {0}", expenseName);
+            Print(18, (Console.WindowWidth / 2 + 30), "Enter expense's amount:");
+            Print(21, (Console.WindowWidth / 2 + 20), "        ");
             decimal expenseSum = decimal.Parse(Console.ReadLine());
             ZooManagement.BudgetInfo.AddExpense(expenseName, expenseSum);
-
-
-
         }
 
         public override void OptionThree()

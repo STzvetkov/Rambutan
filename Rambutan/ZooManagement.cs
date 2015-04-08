@@ -90,6 +90,55 @@ namespace Zoo
             }
         }
 
+        /*private static void SaveData()
+        {
+            string[] fileEntries = Directory.GetFiles(FolderName);
+            string[] fileData;
+            string[] objectData;
+            Object[] args = new Object[20];
+            string recordStr = "";
+            foreach (string fullFileName in fileEntries)
+            {
+                fileData = File.ReadAllLines(fullFileName);
+                string dbName = System.IO.Path.GetFileName(fullFileName).Replace(".txt", "");
+               
+                    switch (dbName)
+                    {
+                        case "animals":
+                             foreach (var animal in animalsDB)
+                {
+                                 recordStr = animal.ConvertToDb;
+                    objectData = record.Split('#');
+                    for (int i = 1; i < objectData.Length; i++)
+                    {
+                        args[i - 1] = objectData[i];
+                    }
+
+                            Animal animal = (Animal)Activator.CreateInstance(Type.GetType(objectData[0]), args);
+                            AcquireAnimal(animal);
+                            break;
+                        case "budget":
+                            BudgetInfo = (Budget)Activator.CreateInstance(Type.GetType(objectData[0]), args);
+                            break;
+                        case "cages":
+                            Cage cage = (Cage)Activator.CreateInstance(Type.GetType(objectData[0]), args);
+                            cagesDB.Add(cage);
+                            break;
+                        case "employees":
+                            Employee employee = (Employee)Activator.CreateInstance(Type.GetType(objectData[0]), args);
+                            staffDB.Add(employee);
+                            break;
+                        case "food":
+                            FoodStorage food = (FoodStorage)Activator.CreateInstance(Type.GetType(objectData[0]), args);
+                            foodStoragesDB.Add(food);
+                            break;
+                        default:
+                            break;
+                    }
+                
+            }
+        }*/
+
         // Budget info
         public static Budget BudgetInfo { get; set; }
 
