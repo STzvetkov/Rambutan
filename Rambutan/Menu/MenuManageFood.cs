@@ -14,12 +14,13 @@ namespace Zoo.Menu.ManageFood
     {
         public override void PrintMenu()
         {
-
-            int shift = (Console.WindowWidth - 20) / 2;
-            Console.ForegroundColor = ConsoleColor.DarkYellow;
             PrintHeader();
+            int shift = (Console.WindowWidth - 20) / 2;
+
+            Console.ForegroundColor = ConsoleColor.DarkYellow;            
             Print(12, shift, "1. Order food.");
             Print(15, shift, "2. Feed animals.");
+
             Console.ForegroundColor = ConsoleColor.Red;
             Print(18, shift, "0. Back to Main menu.");
             Console.ForegroundColor = ConsoleColor.White;
@@ -38,7 +39,6 @@ namespace Zoo.Menu.ManageFood
 
         public override void OptionTwo()
         {
-            Console.Clear();
             FoodManipulations.FeedAnimals();
         }
 

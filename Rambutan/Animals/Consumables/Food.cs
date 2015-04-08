@@ -12,7 +12,7 @@ namespace Zoo.Animals.Consumables
 
         void OnCriticalLimitReached(EventArgs e)
         {
-            // proverka za zakacheni subscribers
+            // Check if there are subscribers
             if (this.CriticalLimitReached != null)
             {
                 this.CriticalLimitReached(this, e);
@@ -37,7 +37,7 @@ namespace Zoo.Animals.Consumables
         // Methods
         public override string ToString()
         {
-            return String.Format("{0} of {1} available", this.foodAvailable, this.typeOfFood);
+            return String.Format("{0} units of {1} available", this.foodAvailable, this.typeOfFood);
         }
 
         public void Deplete(int amount) // feeding animals shoud invoke also method Deplete()
