@@ -13,7 +13,6 @@ namespace Zoo.BudgetInfo
         
         public Budget()
         {
-
         }
 
         public void AddIncome(string incomeName, decimal incomeSum)
@@ -22,12 +21,9 @@ namespace Zoo.BudgetInfo
             {
                 throw new ArgumentException("Income should be a positive number!");
             }
-
-          
             
             try
             {
-                
                 incomeDictionary.Add(incomeName, incomeSum);
             }
             catch (Exception)
@@ -36,13 +32,10 @@ namespace Zoo.BudgetInfo
             }
         }
 
-
         public void RemoveIncome(string incomeName)
         {
             try
             {
-
-
                 incomeDictionary.Remove(incomeName);
             }
             catch (Exception)
@@ -52,9 +45,9 @@ namespace Zoo.BudgetInfo
         }
 
 
+
         public void AddExpense(string expenseName, decimal expenseSum)
         {
-
             if (expenseSum <= 0)
             {
                 throw new ArgumentException("Expenses should be a positive number!");
@@ -83,62 +76,25 @@ namespace Zoo.BudgetInfo
 
         public void NetBudget()
         {
-
-            
             bool isUsingTheShowExpenseMenu = true;
             while (isUsingTheShowExpenseMenu)
             {
-            
-            netBudget = 0.0M;
+                netBudget = 0.0M;
 
-            foreach (var item in expenseDictionary)
-            {
-                netBudget -= item.Value;
-            }
-
-            foreach (var item in incomeDictionary)
-            {
-                netBudget += item.Value;
-            }
-
-            Console.WriteLine("The net budget is: {0}", netBudget);
-
-            Console.WriteLine("Press 0 to get back!");
-            ConsoleKeyInfo userInput = Console.ReadKey();
-
-
-
-
-            //Console.WriteLine("Feeding mammals"); 
-            //Console.WriteLine("Food Left: {0}", meatFood);
-
-            if (userInput.Key == ConsoleKey.D0)
-            {
-                isUsingTheShowExpenseMenu = false;
-            }
-            }
-        }
-
-
-        public void ShowExpense()
-        {
-            bool isUsingTheShowExpenseMenu = true;
-            while (isUsingTheShowExpenseMenu)
-            {
-                //Console.Clear();
-
-                foreach (KeyValuePair<string, decimal> pair in expenseDictionary)
+                foreach (var item in expenseDictionary)
                 {
-                    Console.WriteLine("{0}, {1}",
-                    pair.Key,
-                    pair.Value);
+                    netBudget -= item.Value;
                 }
+
+                foreach (var item in incomeDictionary)
+                {
+                    netBudget += item.Value;
+                }
+
+                Console.WriteLine("The net budget is: {0}", netBudget);
 
                 Console.WriteLine("Press 0 to get back!");
                 ConsoleKeyInfo userInput = Console.ReadKey();
-
-                
-
 
                 //Console.WriteLine("Feeding mammals"); 
                 //Console.WriteLine("Food Left: {0}", meatFood);
@@ -150,47 +106,38 @@ namespace Zoo.BudgetInfo
             }
         }
 
-        public void ShowIncome()
+        public List<string> ShowExpense()
         {
-
-            bool isUsingTheShowExpenseMenu = true;
-            while (isUsingTheShowExpenseMenu)
+            List<string> output = new List<string>();
+            foreach (KeyValuePair<string, decimal> pair in expenseDictionary)
             {
-                //Console.Clear();
-
-                foreach (KeyValuePair<string, decimal> pair in incomeDictionary)
-                {
-                    Console.WriteLine("Income name {0}, income value {1}",
+                output.Add(String.Format("{0,-15} {1,8}",
                     pair.Key,
-                    pair.Value);
-                }
-
-                Console.WriteLine("Press 0 to get back!");
-                ConsoleKeyInfo userInput = Console.ReadKey();
-
-
-
-
-                
-
-                if (userInput.Key == ConsoleKey.D0)
-                {
-                    isUsingTheShowExpenseMenu = false;
-                }
+                    pair.Value));
             }
+            return output;
+        }
+
+        public List<string> ShowIncome()
+        {
+            List<string> output = new List<string>();
+            foreach (KeyValuePair<string, decimal> pair in incomeDictionary)
+            {
+                output.Add(String.Format("{0,-15} {1,8}",
+                    pair.Key,
+                    pair.Value));
+            }
+            return output;
         }
 
         public static Budget Instance
         {
             get
             {
-                
-                    if (instance == null)
-                        instance = new Budget();
-                    return instance;
-                
+                if (instance == null)
+                    instance = new Budget();
+                return instance;
             }
         }
     }
 }
-

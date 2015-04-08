@@ -53,19 +53,30 @@
 
         public override void OptionThree()
         {
-            ZooManagement.BudgetInfo.ShowIncome();
-            
-
-            
+            ClearDetailsScreen();
+            Print(12, (Console.WindowWidth / 2 + 30), "Incomes");
+            Print(15, (Console.WindowWidth / 2 + 20), "Income type  //  Amount");
+            int currentRow = 1;
+            foreach (string income in ZooManagement.BudgetInfo.ShowIncome())
+            {
+                Print(15 + currentRow, (Console.WindowWidth / 2 + 20),income);
+                currentRow++;
+            }
+            Console.ReadKey();            
         }
 
         public override void OptionFour()
         {
-            ZooManagement.BudgetInfo.ShowExpense();
-            
-            
-
-            
+            ClearDetailsScreen();
+            Print(12, (Console.WindowWidth / 2 + 30), "Incomes");
+            Print(15, (Console.WindowWidth / 2 + 20), "Income type  //  Amount");
+            int currentRow = 1;
+            foreach (string expense in ZooManagement.BudgetInfo.ShowExpense())
+            {
+                Print(15 + currentRow, (Console.WindowWidth / 2 + 20), expense);
+                currentRow++;
+            }
+            Console.ReadKey();  
         }
 
         public override void OptionFive()
