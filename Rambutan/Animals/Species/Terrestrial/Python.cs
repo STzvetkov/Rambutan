@@ -13,8 +13,8 @@
         //public Python(){
 
         //}
-        public Python(int quantityOfFoodNeededToFeed, long animalID, Gender gender, int age, decimal price, Cage cage, HealthStatus healthStatus, Veterinarian examinedBy)
-            : base(animalID, AnimalSpeciesType.Python, gender, age, FoodType.Meat, price, cage, HabitatType.Steppe, healthStatus, examinedBy)
+        public Python(int quantityOfFoodNeededToFeed, long animalID, Gender gender, int age, decimal price, long cageID, HealthStatus healthStatus, Veterinarian examinedBy)
+            : base(animalID, AnimalSpeciesType.Python, gender, age, FoodType.Meat, price, cageID, HabitatType.Steppe, healthStatus, examinedBy)
         {
             this.QuantityOfFoodNeededToFeed = quantityOfFoodNeededToFeed;
         }

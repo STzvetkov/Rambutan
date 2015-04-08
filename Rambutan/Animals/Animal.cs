@@ -14,7 +14,7 @@
         private int age;
         private FoodType foodType;  // FoodType enumeration
         private decimal price;
-        private Cage cage;
+        private long cageID;
         private HabitatType habitat;    // HabitatType enumeration   
         private HealthStatus healthStatus;  // HealthStatus enumeration
         private Veterinarian examinedBy;
@@ -30,13 +30,20 @@
 
         public Animal(string[] dataInit)
         {
-
+            this.AnimalID = long.Parse(dataInit[0]);
+            this.Type = GetAnimalType(dataInit[1]);
+            this.Gender = GetGender(dataInit[2]);
+            this.Age = int.Parse(dataInit[3]);
+            this.FoodType = GetFoodType(dataInit[4]);
+            this.Price = decimal.Parse(dataInit[5]);
+            
         }
+
         public Animal(
             long animalID, AnimalSpeciesType type, Gender gender,
             int age, FoodType foodType,
             decimal price,
-            Cage cage, HabitatType habitat,
+            long cageID, HabitatType habitat,
             HealthStatus healthStatus, Veterinarian examinedBy)
             : this(animalID)
         {
@@ -45,7 +52,7 @@
             this.Age = age;
             this.FoodType = foodType;
             this.Price = price;
-            this.Cage = cage;
+            this.CageID = cageID;
             this.Habitat = habitat;
             this.HealthStatus = healthStatus;
             this.ExaminedBy = examinedBy;
@@ -54,6 +61,69 @@
         // methods 
         public virtual void Eat(int quantity)
         {
+        }
+
+        private AnimalSpeciesType GetAnimalType(string input)
+        {
+            switch (input)
+            {
+                case "Rabbit":
+                    return AnimalSpeciesType.Rabbit;
+                case "Bear":
+                    return AnimalSpeciesType.Bear;
+                case "ClownFish":
+                    return AnimalSpeciesType.ClownFish;
+                case "Deer":
+                    return AnimalSpeciesType.Deer;
+                case "Dolphin":
+                    return AnimalSpeciesType.Dolphin;
+                case "Eagle":
+                    return AnimalSpeciesType.Eagle;
+                case "Fox":
+                    return AnimalSpeciesType.Fox;
+                case "Hoodie":
+                    return AnimalSpeciesType.Hoodie;
+                case "Lion":
+                    return AnimalSpeciesType.Lion;
+                case "Monkey":
+                    return AnimalSpeciesType.Monkey;
+                case "Ostrich":
+                    return AnimalSpeciesType.Ostrich;
+                case "Penguin":
+                    return AnimalSpeciesType.Penguin;
+                case "Python":
+                    return AnimalSpeciesType.Python;
+                default:
+                    throw new ArgumentException("AnimalSpeciesType", "Invalid AnimalSpeciesType!");
+            }
+        }
+
+        private Gender GetGender(string input)
+        {
+            switch (input)
+            {
+                case "Male":
+                    return Gender.Male;
+                case "Female":
+                    return Gender.Female;
+                default:
+                    throw new ArgumentException("Gender", "Invalid Gender!");
+            }
+        }
+
+        private FoodType GetFoodType(string input)
+        {
+            switch (input)
+            {
+                case "Meat":
+                    return FoodType.Meat;
+                case "Plant":
+                    return FoodType.Plant;
+                case "Mix":
+                    return FoodType.Mix;
+                default:
+                    throw new ArgumentException("FoodType", "Invalid FoodType!");
+            }
         }
 
         // properties 
@@ -139,15 +209,15 @@
             }
         }
 
-        public Cage Cage
+        public long CageID
         {
             get
             {
-                return this.cage;
+                return this.cageID;
             }
             set
             {
-                this.cage = value;
+                this.cageID = value;
             }
         }
 
@@ -206,7 +276,7 @@ ExaminedBy: {9}",
             this.Age,
             this.FoodType,
             this.Price,
-            this.Cage,
+            this.CageID,
             this.Habitat,
             this.HealthStatus,
             this.ExaminedBy,

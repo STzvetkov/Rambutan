@@ -14,8 +14,8 @@
         //public Monkey(){
 
         //}
-        public Monkey(int quantityOfFoodNeededToFeed, long animalID, Gender gender, int age, decimal price, Cage cage, HealthStatus healthStatus, Veterinarian examinedBy)
-            : base(animalID, AnimalSpeciesType.Monkey, gender, age, FoodType.Plant, price, cage, HabitatType.Steppe, healthStatus, examinedBy)
+        public Monkey(int quantityOfFoodNeededToFeed, long animalID, Gender gender, int age, decimal price, long cageID, HealthStatus healthStatus, Veterinarian examinedBy)
+            : base(animalID, AnimalSpeciesType.Monkey, gender, age, FoodType.Plant, price, cageID, HabitatType.Steppe, healthStatus, examinedBy)
         {
             this.QuantityOfFoodNeededToFeed = quantityOfFoodNeededToFeed;
         }

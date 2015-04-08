@@ -18,8 +18,8 @@
         //public Ostrich(){
 
         //}
-        public Ostrich(long animalID, Gender gender, int age, decimal price, Cage cage, HabitatType habitat, HealthStatus healthStatus, Veterinarian examinedBy)
-            : base(animalID, AnimalSpeciesType.Ostrich, gender, age, FoodType.Mix, price, cage, habitat, healthStatus, examinedBy)
+        public Ostrich(long animalID, Gender gender, int age, decimal price, long cageID, HabitatType habitat, HealthStatus healthStatus, Veterinarian examinedBy)
+            : base(animalID, AnimalSpeciesType.Ostrich, gender, age, FoodType.Mix, price, cageID, habitat, healthStatus, examinedBy)
         {
             this.fly = isFlyable();
             this.bird = isBird();

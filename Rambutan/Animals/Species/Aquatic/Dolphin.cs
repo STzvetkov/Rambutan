@@ -17,8 +17,8 @@
         {
 
         }
-        public Dolphin(int quanty_of_food, long animalID, Gender gender, int age, decimal price, Cage cage, HealthStatus healthStatus, Veterinarian examinedBy)
-            : base(animalID, AnimalSpeciesType.Dolphin, gender, age, FoodType.Meat, price, cage, HabitatType.Pool, healthStatus, examinedBy)
+        public Dolphin(int quanty_of_food, long animalID, Gender gender, int age, decimal price, long cageID, HealthStatus healthStatus, Veterinarian examinedBy)
+            : base(animalID, AnimalSpeciesType.Dolphin, gender, age, FoodType.Meat, price, cageID, HabitatType.Pool, healthStatus, examinedBy)
         {
         }
 
