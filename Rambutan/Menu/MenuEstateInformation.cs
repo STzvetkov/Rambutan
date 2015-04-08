@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Zoo.Exceptions;
 using Zoo.Menu.EstateInformation;
 using Zoo.Animals;
+using Zoo.Employees;
 
 namespace Zoo.Menu.EstateInformation
 {
@@ -74,13 +75,13 @@ namespace Zoo.Menu.EstateInformation
             // TODO : Fill with method to show all employees.
             ClearDetailsScreen();
             Print(12, (Console.WindowWidth / 2 + 30), "Employees");
-            Print(15, (Console.WindowWidth / 2 + 20), "Animal type  //  Specimen");
+            Print(15, (Console.WindowWidth / 2 + 20), "Position     //    Count");
             int currentRow = 1;
-            foreach (AnimalSpeciesType animalType in Enum.GetValues(typeof(AnimalSpeciesType)))
+            foreach (Position position in Enum.GetValues(typeof(Position)))
             {
                 Print(15 + currentRow, (Console.WindowWidth / 2 + 20),
                     String.Format("{0,-15}  {1,7}",
-                        animalType, ZooManagement.CountAnimalsByType(animalType)));
+                        position, ZooManagement.CountEmployeesByType(position)));
                 currentRow++;
             }
             Console.ReadKey();

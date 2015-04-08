@@ -153,5 +153,14 @@ namespace Zoo
                                       select animal;
             return querySelectedAnimals.Count();
         }
+
+        public static int CountEmployeesByType(Position position)
+        {
+            var querySelectedAnimals =
+                                      from employee in StaffDB
+                                      where employee.Position == position
+                                      select employee;
+            return querySelectedAnimals.Count();
+        }
     }
 }
