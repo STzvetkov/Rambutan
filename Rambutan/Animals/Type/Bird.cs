@@ -9,13 +9,14 @@
 
     public abstract class Bird : Animal, IAnimal
     {
-        public Bird(
-           long animalID, AnimalSpeciesType type, Gender gender,
-           int age, FoodType foodType,
-           decimal price,
-           long cageID, HabitatType habitat,
-           HealthStatus healthStatus, Veterinarian examinedBy)
-            : base(animalID, type, gender, age, foodType, price, cageID, habitat, healthStatus, examinedBy)
+        public Bird(Object[] dataInit)
+            : base(dataInit)
+        {
+        }
+
+        public Bird(long animalID, AnimalSpeciesType type, Gender gender, int age, FoodType foodType, 
+                    decimal price, long cageID, HabitatType habitat, HealthStatus healthStatus)
+            : base(animalID, type, gender, age, foodType, price, cageID, habitat, healthStatus)
         {
 
         }

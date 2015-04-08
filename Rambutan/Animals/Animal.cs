@@ -35,8 +35,7 @@
             this.Gender = GetGender(dataInit[2].ToString());
             this.Age = int.Parse(dataInit[3].ToString());
             this.FoodType = GetFoodType(dataInit[4].ToString());
-            this.Price = decimal.Parse(dataInit[5].ToString());
-            
+            this.Price = decimal.Parse(dataInit[5].ToString());     
         }
 
         public Animal(
@@ -44,7 +43,7 @@
             int age, FoodType foodType,
             decimal price,
             long cageID, HabitatType habitat,
-            HealthStatus healthStatus, Veterinarian examinedBy)
+            HealthStatus healthStatus)
             : this(animalID)
         {
             this.Type = type;
@@ -55,7 +54,6 @@
             this.CageID = cageID;
             this.Habitat = habitat;
             this.HealthStatus = healthStatus;
-            this.ExaminedBy = examinedBy;
         }
 
         // methods 

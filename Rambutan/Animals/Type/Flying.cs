@@ -9,15 +9,15 @@
 
     public abstract class Flying : Bird, IAnimal
     {
-        public Flying(
-           long animalID, AnimalSpeciesType type, Gender gender,
-           int age, FoodType foodType,
-           decimal price,
-           long cageID, HabitatType habitat,
-           HealthStatus healthStatus, Veterinarian examinedBy)
-            : base(animalID, type, gender, age, foodType, price, cageID, habitat, healthStatus, examinedBy)
+        public Flying(Object[] dataInit)
+            : base(dataInit)
         {
+        }
 
+        public Flying(long animalID, AnimalSpeciesType type, Gender gender, int age, FoodType foodType,
+                      decimal price, long cageID, HabitatType habitat, HealthStatus healthStatus)
+            : base(animalID, type, gender, age, foodType, price, cageID, habitat, healthStatus)
+        {
         }
 
         public bool isFlyable()

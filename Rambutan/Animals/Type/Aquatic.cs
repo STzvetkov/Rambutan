@@ -13,16 +13,17 @@
         protected static HabitatType[] AvailableCageTypes = { HabitatType.Pool, HabitatType.Aquarium };
 
         public Aquatic()
-        { }
-        public Aquatic(
-           long animalID, AnimalSpeciesType type, Gender gender,
-           int age, FoodType foodType,
-           decimal price,
-           long cageID, HabitatType habitat,
-           HealthStatus healthStatus, Veterinarian examinedBy)
-            : base(animalID, type, gender, age, foodType, price, cageID, habitat, healthStatus, examinedBy)
         {
+        }
 
+        public Aquatic(Object[] dataInit)
+            : base(dataInit)
+        {
+        }
+        public Aquatic(long animalID, AnimalSpeciesType type, Gender gender, int age, FoodType foodType,
+                       decimal price, long cageID, HabitatType habitat, HealthStatus healthStatus)
+            : base(animalID, type, gender, age, foodType, price, cageID, habitat, healthStatus)
+        {
         }
     }
 }

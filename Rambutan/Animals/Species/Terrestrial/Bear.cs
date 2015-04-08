@@ -14,11 +14,13 @@
         // Add information about lions, implement Carnivore's and Animal's methods and fields.
         // food: seed, fruit, insects, fish and other animals
 
-        //public Bear(){
+        public Bear(Object[] dataInit)
+            : base(dataInit)
+        {
+        }
 
-        //}
-        public Bear(int quantityOfFoodNeededToFeed, long animalID, Gender gender, int age, decimal price, long cageID, HealthStatus healthStatus, Veterinarian examinedBy)
-            : base(animalID, AnimalSpeciesType.Lion, gender, age, FoodType.Mix, price, cageID, HabitatType.Steppe, healthStatus, examinedBy)
+        public Bear(int quantityOfFoodNeededToFeed, long animalID, Gender gender, int age, decimal price, long cageID, HealthStatus healthStatus)
+            : base(animalID, AnimalSpeciesType.Lion, gender, age, FoodType.Mix, price, cageID, HabitatType.Steppe, healthStatus)
         {
             this.QuantityOfFoodNeededToFeed = quantityOfFoodNeededToFeed;
         }

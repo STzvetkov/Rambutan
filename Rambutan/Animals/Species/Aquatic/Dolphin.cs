@@ -13,12 +13,13 @@
         public Dolphin(){
 
         }
-        public Dolphin(string[] dataInit)
+        public Dolphin(Object[] dataInit)
+            : base(dataInit)
         {
-
         }
-        public Dolphin(int quanty_of_food, long animalID, Gender gender, int age, decimal price, long cageID, HealthStatus healthStatus, Veterinarian examinedBy)
-            : base(animalID, AnimalSpeciesType.Dolphin, gender, age, FoodType.Meat, price, cageID, HabitatType.Pool, healthStatus, examinedBy)
+
+        public Dolphin(int quanty_of_food, long animalID, Gender gender, int age, decimal price, long cageID, HealthStatus healthStatus)
+            : base(animalID, AnimalSpeciesType.Dolphin, gender, age, FoodType.Meat, price, cageID, HabitatType.Pool, healthStatus)
         {
         }
 
