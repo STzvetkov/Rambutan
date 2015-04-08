@@ -200,7 +200,7 @@ namespace Zoo
         public static int CountEmployeesByType(Position position)
         {
             var querySelectedAnimals =
-                                      from employee in StaffDB
+                                      from employee in staffDB
                                       where employee.Position == position
                                       select employee;
             return querySelectedAnimals.Count();
