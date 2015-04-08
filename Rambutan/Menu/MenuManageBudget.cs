@@ -33,11 +33,11 @@
             ClearDetailsScreen();
             Print(12, (Console.WindowWidth / 2 + 20), "Enter income's type:");
             Print(15, (Console.WindowWidth / 2 + 20), "     ");
-            string expenseName = Console.ReadLine();
+            string incomeName = Console.ReadLine();
             Print(18, (Console.WindowWidth / 2 + 20), "Enter income's amount:");
             Print(21, (Console.WindowWidth / 2 + 20), "     ");
             decimal incomeSum = decimal.Parse(Console.ReadLine());
-            ZooManagement.BudgetInfo.AddExpense(expenseName, incomeSum);
+            ZooManagement.BudgetInfo.AddIncome(incomeName, incomeSum);
         }
 
         public override void OptionTwo()
@@ -46,7 +46,7 @@
             Print(12, (Console.WindowWidth / 2 + 20), "Enter expense's type:");
             Print(15, (Console.WindowWidth / 2 + 20), "        ");
             string expenseName = Console.ReadLine();
-            Print(18, (Console.WindowWidth / 2 + 30), "Enter expense's amount:");
+            Print(18, (Console.WindowWidth / 2 + 20), "Enter expense's amount:");
             Print(21, (Console.WindowWidth / 2 + 20), "        ");
             decimal expenseSum = decimal.Parse(Console.ReadLine());
             ZooManagement.BudgetInfo.AddExpense(expenseName, expenseSum);
@@ -84,7 +84,10 @@
         {
             //int n = int.Parse(Console.ReadLine());
 
-            ZooManagement.BudgetInfo.NetBudget();
+            ClearDetailsScreen();
+            Print(12, (Console.WindowWidth / 2 + 20), "Net Budget");
+            Print(15, (Console.WindowWidth / 2 + 25), ZooManagement.BudgetInfo.NetBudget());
+            Console.ReadKey();
         }
 
         public override void OptionSix()

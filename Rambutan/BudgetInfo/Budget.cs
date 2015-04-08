@@ -74,12 +74,9 @@ namespace Zoo.BudgetInfo
             }
         }
 
-        public void NetBudget()
+        public decimal NetBudget()
         {
-            bool isUsingTheShowExpenseMenu = true;
-            while (isUsingTheShowExpenseMenu)
-            {
-                netBudget = 0.0M;
+               netBudget = 0M;
 
                 foreach (var item in expenseDictionary)
                 {
@@ -91,19 +88,8 @@ namespace Zoo.BudgetInfo
                     netBudget += item.Value;
                 }
 
-                Console.WriteLine("The net budget is: {0}", netBudget);
+                return netBudget;
 
-                Console.WriteLine("Press 0 to get back!");
-                ConsoleKeyInfo userInput = Console.ReadKey();
-
-                //Console.WriteLine("Feeding mammals"); 
-                //Console.WriteLine("Food Left: {0}", meatFood);
-
-                if (userInput.Key == ConsoleKey.D0)
-                {
-                    isUsingTheShowExpenseMenu = false;
-                }
-            }
         }
 
         public List<string> ShowExpense()
