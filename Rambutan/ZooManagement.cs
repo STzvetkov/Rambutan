@@ -66,14 +66,25 @@ namespace Zoo
                     {
                         case "animals":
                             Animal animal = (Animal)Activator.CreateInstance(Type.GetType(objectData[0]), args);
-                            //BuyAnimal
+                            AcquireAnimal(animal);
                             break;
                         case "budget":
-                            // Budget budget = (Animal)Activator.CreateInstance(Type.GetType(objectData[0]),args);
+                            BudgetInfo = (Budget)Activator.CreateInstance(Type.GetType(objectData[0]), args);
+                            break;
+                        case "cages":
+                            Cage cage = (Cage)Activator.CreateInstance(Type.GetType(objectData[0]), args);
+                            cagesDB.Add(cage);
+                            break;
+                        case "employees":
+                            Employee employee = (Employee)Activator.CreateInstance(Type.GetType(objectData[0]), args);
+                            staffDB.Add(employee);
+                            break;
+                        case "food":
+                            FoodStorage food = (FoodStorage)Activator.CreateInstance(Type.GetType(objectData[0]), args);
+                            foodStoragesDB.Add(food);
                             break;
                         default:
                             break;
-                        //object item = Activator.CreateInstance(Type.GetType(objectData[0]),);
                     }
                 }
             }
@@ -107,6 +118,7 @@ namespace Zoo
             where ;*/
             return "";
         }
+
         public static int CountEmployeesByPosition(Position position)
         {
             var querySelectedAnimals =
@@ -117,13 +129,18 @@ namespace Zoo
         }
 
         // Animals management
-        public static void BuyAnimal(Animal animal)
+        public static void AcquireAnimal(Animal animal)
         {
             if (animal == null)
             {
                 throw new NullReferenceException("There is no animal provided!");
             }
             animalsDB.Add(animal);
+        }
+
+        public static void BuyAnimal(Animal animal)
+        {
+            AcquireAnimal(animal);
             BudgetInfo.AddExpense(animal.Type.ToString(), animal.Price);
         }
 
@@ -202,6 +219,5 @@ namespace Zoo
                                       select animal;
             return querySelectedAnimals.Count();
         }
-        
     }
 }
