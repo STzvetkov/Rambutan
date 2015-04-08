@@ -34,6 +34,7 @@ namespace Zoo
         // Stores all food storages
         public static List<FoodStorage> FoodStoragesDB { get; private set; }
 
+        // Employees management
         public static void HireEmployee(Employee employee)
         {
             StaffDB.Add(employee);
@@ -52,6 +53,7 @@ namespace Zoo
             }
         }
 
+        // Animals management
         public static void BuyAnimal(Animal animal)
         {
             if (animal == null)
@@ -76,6 +78,7 @@ namespace Zoo
             }
         }
 
+        // Cages management
         public static void BuildCage(Cage cage)
         {
             CagesDB.Add(cage);
@@ -104,6 +107,7 @@ namespace Zoo
             return querySelectedCages.Count();
         }
 
+        // Food storages management
         public static void BuyFoodStorge(FoodStorage foodStorage)
         {
             if (foodStorage == null)
@@ -125,6 +129,15 @@ namespace Zoo
             {
                 throw new UnitNotFoundException("There is no food storage with such ID!");
             }
+        }
+
+        public static int CountAnimalsByType(AnimalSpeciesType animalType)
+        {
+            var querySelectedAnimals =
+                                      from animal in AnimalsDB
+                                      where animal.Type == animalType
+                                      select animal;
+            return querySelectedAnimals.Count();
         }
     }
 }

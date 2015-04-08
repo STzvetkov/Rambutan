@@ -39,21 +39,34 @@ namespace Zoo.Menu.EstateInformation
         {
             // TODO : Fill with method to show empty cages.
             ClearDetailsScreen();
-            Print(12, (Console.WindowWidth / 2 + 20), "Empy cages:");
+            Print(12, (Console.WindowWidth / 2 + 30), "Empy cages");
+            Print(15, (Console.WindowWidth / 2 + 20), "Cage type    //  Available");
             int currentRow = 1;
             foreach (HabitatType habitat in Enum.GetValues(typeof(HabitatType)))
             { 
-                Print(12 + currentRow * 3, (Console.WindowWidth / 2 + 20),
-                    String.Format("Cage typpe; {0}   //  Available: {1}",
+                Print(15 + currentRow * 3, (Console.WindowWidth / 2 + 20),
+                    String.Format("{0,-15}  {1,5}",
                         habitat, ZooManagement.CountCagesByTypeAndOccupation(habitat, 0)));
                 currentRow++;
             }
+            Console.ReadKey();
         }
 
         public override void OptionTwo()
         {
             // TODO : Fill with method to show all animals.
-            throw new NotImplementedException();
+            ClearDetailsScreen();
+            Print(12, (Console.WindowWidth / 2 + 30), "Animals");
+            Print(15, (Console.WindowWidth / 2 + 20), "Animal type  //  Specimen");
+            int currentRow = 1;
+            foreach (AnimalSpeciesType animalType in Enum.GetValues(typeof(AnimalSpeciesType)))
+            {
+                Print(15 + currentRow, (Console.WindowWidth / 2 + 20),
+                    String.Format("{0,-15}  {1,7}",
+                        animalType, ZooManagement.CountAnimalsByType(animalType)));
+                currentRow++;
+            }
+            Console.ReadKey();
         }
 
         public override void OptionThree()
