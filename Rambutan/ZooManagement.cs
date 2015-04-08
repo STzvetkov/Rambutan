@@ -42,6 +42,7 @@ namespace Zoo
 
         public static void Init()
         {
+            LoadData();
         }
 
         // Load DB from files 
@@ -68,7 +69,7 @@ namespace Zoo
                             Animal animal = (Animal)Activator.CreateInstance(Type.GetType(objectData[0]), args);
                             AcquireAnimal(animal);
                             break;
-                        /*case "budget":
+                        case "budget":
                             BudgetInfo = (Budget)Activator.CreateInstance(Type.GetType(objectData[0]), args);
                             break;
                         case "cages":
@@ -82,7 +83,7 @@ namespace Zoo
                         case "food":
                             FoodStorage food = (FoodStorage)Activator.CreateInstance(Type.GetType(objectData[0]), args);
                             foodStoragesDB.Add(food);
-                            break;*/
+                            break;
                         default:
                             break;
                     }
