@@ -7,8 +7,8 @@ namespace Zoo.BudgetInfo
     {
         private static Budget instance;
         private decimal netBudget;
-        private readonly Dictionary<string, decimal> expenseDictionary = new Dictionary<string, decimal>();
-        private readonly Dictionary<string, decimal> incomeDictionary = new Dictionary<string, decimal>();
+        private Dictionary<string, decimal> expenseDictionary = new Dictionary<string, decimal>();
+        private Dictionary<string, decimal> incomeDictionary = new Dictionary<string, decimal>();
         
         public Budget()
         {
@@ -17,8 +17,14 @@ namespace Zoo.BudgetInfo
 
         public void AddIncome(string incomeName, decimal incomeSum)
         {
+            if (incomeSum <= 0)
+            {
+                throw new ArgumentException("Income should be a positive number!");
+            }
+            
             try
             {
+                
                 incomeDictionary.Add(incomeName, incomeSum);
             }
             catch (Exception)
@@ -32,6 +38,8 @@ namespace Zoo.BudgetInfo
         {
             try
             {
+
+
                 incomeDictionary.Remove(incomeName);
             }
             catch (Exception)
@@ -43,6 +51,11 @@ namespace Zoo.BudgetInfo
 
         public void AddExpense(string expenseName, decimal expenseSum)
         {
+
+            if (expenseSum <= 0)
+            {
+                throw new ArgumentException("Expenses should be a positive number!");
+            }
             try
             {
                 expenseDictionary.Add(expenseName, expenseSum);
@@ -80,6 +93,19 @@ namespace Zoo.BudgetInfo
             }
 
             return netBudget;
+        }
+
+
+        public Dictionary<string, decimal> ShowExpense()
+        {
+
+            return expenseDictionary;
+        }
+
+        public Dictionary<string, decimal> ShowIncome()
+        {
+
+            return incomeDictionary;
         }
 
         public static Budget Instance()
