@@ -107,6 +107,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />
+    <None Include="Documents\Rambutan.zip" />
     <None Include="Documents\TeamWaterRambutan.docx" />
   </ItemGroup>
   <ItemGroup />
